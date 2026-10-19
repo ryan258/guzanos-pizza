@@ -1,0 +1,2115 @@
+{
+  "schema_version": 2,
+  "meta": {
+    "status": "draft",
+    "reviewed_on": "",
+    "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+  },
+  "brand": {
+    "headline": "Chicago-style pizza. Cold drinks. Game on.",
+    "intro": "Deep dish, thin crust, and trivia nights at nine locations across Arkansas, Missouri, and Texas.",
+    "eyebrow": "Chicago-style pizzeria · AR · MO · TX",
+    "tagline": "The best pizza, coldest drinks, and friendliest service.",
+    "note": "Unofficial redesign exercise built from public gusanos.pizza content. Not affiliated with Gusano's.",
+    "image": {
+      "src": "images/dining-room.svg",
+      "alt": "Illustration of a dining room with a table, chairs, and a potted plant.",
+      "width": 800,
+      "height": 600
+    },
+    "story_title": "From Little Rock to the Ozarks",
+    "story": [
+      "After success in Little Rock, the owners, who grew up in Northwest Arkansas, opened Bentonville in 2005.",
+      "Bella Vista, Fayetteville (2008, moved to Steamboat Dr. in 2012), Joplin (2009), Texarkana (2012), Rogers (2015), Springdale and Fort Smith (2018), and Shiloh Dr. (2026) followed."
+    ],
+    "ticker": [
+      "Trivia Tuesday and Wednesday",
+      "Order pickup online",
+      "Cater your tailgate"
+    ]
+  },
+  "announcement": {
+    "text": "",
+    "start": "",
+    "end": ""
+  },
+  "contacts": {
+    "email": "info@gusanospizza.com",
+    "phone": "",
+    "response": "Each location answers its own phone during open hours.",
+    "channels": []
+  },
+  "locations": [
+    {
+      "id": "bentonville",
+      "name": "Bentonville",
+      "address": "2905 S Walton Blvd #9, Bentonville, AR 72712",
+      "phone": "479-271-8242",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Gusano%27s+Pizza+2905+S+Walton+Blvd+%239%2C+Bentonville%2C+AR+72712",
+      "timezone": "America/Chicago",
+      "hours": [
+        {
+          "day": 0,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 1,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 2,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 3,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 4,
+          "intervals": [
+            [
+              "11:00",
+              "23:00"
+            ]
+          ]
+        },
+        {
+          "day": 5,
+          "intervals": [
+            [
+              "11:00",
+              "23:00"
+            ]
+          ]
+        },
+        {
+          "day": 6,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        }
+      ],
+      "exceptions": [],
+      "access": {
+        "seating": "Kids' game area, adults-only game room with pool tables and 25+ screens, expanded patio."
+      },
+      "meta": {
+        "status": "draft",
+        "reviewed_on": "",
+        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+      },
+      "email": "gusanos.bentonville@gusanospizza.com"
+    },
+    {
+      "id": "fayetteville-steamboat",
+      "name": "Fayetteville – Steamboat Dr.",
+      "address": "1267 Steamboat Dr, Fayetteville, AR 72704",
+      "phone": "479-287-4000",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Gusano%27s+Pizza+1267+Steamboat+Dr%2C+Fayetteville%2C+AR+72704",
+      "timezone": "America/Chicago",
+      "hours": [
+        {
+          "day": 0,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 1,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 2,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 3,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 4,
+          "intervals": [
+            [
+              "11:00",
+              "23:00"
+            ]
+          ]
+        },
+        {
+          "day": 5,
+          "intervals": [
+            [
+              "11:00",
+              "23:00"
+            ]
+          ]
+        },
+        {
+          "day": 6,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        }
+      ],
+      "exceptions": [],
+      "access": {
+        "seating": "Plenty of tables for game-day crowds.",
+        "parking": "Large parking lot."
+      },
+      "meta": {
+        "status": "draft",
+        "reviewed_on": "",
+        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+      },
+      "email": "gusanos.fayetteville@gusanospizza.com"
+    },
+    {
+      "id": "fayetteville-shiloh",
+      "name": "Fayetteville – Shiloh Dr.",
+      "address": "3913 Shiloh Dr, Suite 3, Fayetteville, AR 72703",
+      "phone": "479-332-4460",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Gusano%27s+Pizza+3913+Shiloh+Dr%2C+Suite+3%2C+Fayetteville%2C+AR+72703",
+      "timezone": "America/Chicago",
+      "hours": [
+        {
+          "day": 0,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 1,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 2,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 3,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 4,
+          "intervals": [
+            [
+              "11:00",
+              "23:00"
+            ]
+          ]
+        },
+        {
+          "day": 5,
+          "intervals": [
+            [
+              "11:00",
+              "23:00"
+            ]
+          ]
+        },
+        {
+          "day": 6,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        }
+      ],
+      "exceptions": [],
+      "access": {},
+      "meta": {
+        "status": "draft",
+        "reviewed_on": "",
+        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+      },
+      "email": "gusanos.fayetteville@gusanospizza.com"
+    },
+    {
+      "id": "rogers",
+      "name": "Rogers",
+      "address": "2603 W Pleasant Grove Rd #112, Rogers, AR 72758",
+      "phone": "479-636-0400",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Gusano%27s+Pizza+2603+W+Pleasant+Grove+Rd+%23112%2C+Rogers%2C+AR+72758",
+      "timezone": "America/Chicago",
+      "hours": [
+        {
+          "day": 0,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 1,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 2,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 3,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 4,
+          "intervals": [
+            [
+              "11:00",
+              "23:00"
+            ]
+          ]
+        },
+        {
+          "day": 5,
+          "intervals": [
+            [
+              "11:00",
+              "23:00"
+            ]
+          ]
+        },
+        {
+          "day": 6,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        }
+      ],
+      "exceptions": [],
+      "access": {
+        "seating": "Kids' game room; upstairs private room (the Skybox).",
+        "parking": "Plenty of parking."
+      },
+      "meta": {
+        "status": "draft",
+        "reviewed_on": "",
+        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+      },
+      "email": "gusanos.rogers@gusanospizza.com"
+    },
+    {
+      "id": "bella-vista",
+      "name": "Bella Vista",
+      "address": "19 Cunningham Corner, Bella Vista, AR 72714",
+      "phone": "479-876-6969",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Gusano%27s+Pizza+19+Cunningham+Corner%2C+Bella+Vista%2C+AR+72714",
+      "timezone": "America/Chicago",
+      "hours": [
+        {
+          "day": 0,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 1,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 2,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 3,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 4,
+          "intervals": [
+            [
+              "11:00",
+              "23:00"
+            ]
+          ]
+        },
+        {
+          "day": 5,
+          "intervals": [
+            [
+              "11:00",
+              "23:00"
+            ]
+          ]
+        },
+        {
+          "day": 6,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        }
+      ],
+      "exceptions": [],
+      "access": {
+        "seating": "Family dining room and a party room."
+      },
+      "meta": {
+        "status": "draft",
+        "reviewed_on": "",
+        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+      },
+      "email": "gusanos.bellavista@gusanospizza.com"
+    },
+    {
+      "id": "springdale",
+      "name": "Springdale",
+      "address": "1094 E Henri de Tonti Blvd, Springdale, AR 72762",
+      "phone": "479-927-6900",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Gusano%27s+Pizza+1094+E+Henri+de+Tonti+Blvd%2C+Springdale%2C+AR+72762",
+      "timezone": "America/Chicago",
+      "hours": [
+        {
+          "day": 0,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 1,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 2,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 3,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 4,
+          "intervals": [
+            [
+              "11:00",
+              "23:00"
+            ]
+          ]
+        },
+        {
+          "day": 5,
+          "intervals": [
+            [
+              "11:00",
+              "23:00"
+            ]
+          ]
+        },
+        {
+          "day": 6,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        }
+      ],
+      "exceptions": [],
+      "access": {},
+      "meta": {
+        "status": "draft",
+        "reviewed_on": "",
+        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+      },
+      "email": "info@gusanospizza.com"
+    },
+    {
+      "id": "fort-smith",
+      "name": "Fort Smith",
+      "address": "5505 Phoenix Ave, Fort Smith, AR 72903",
+      "phone": "479-434-6444",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Gusano%27s+Pizza+5505+Phoenix+Ave%2C+Fort+Smith%2C+AR+72903",
+      "timezone": "America/Chicago",
+      "hours": [
+        {
+          "day": 0,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 1,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 2,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 3,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 4,
+          "intervals": [
+            [
+              "11:00",
+              "23:00"
+            ]
+          ]
+        },
+        {
+          "day": 5,
+          "intervals": [
+            [
+              "11:00",
+              "23:00"
+            ]
+          ]
+        },
+        {
+          "day": 6,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        }
+      ],
+      "exceptions": [],
+      "access": {
+        "seating": "Large patio."
+      },
+      "meta": {
+        "status": "draft",
+        "reviewed_on": "",
+        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+      },
+      "email": "info@gusanospizza.com"
+    },
+    {
+      "id": "joplin",
+      "name": "Joplin",
+      "address": "3929 E 7th St, Joplin, MO 64801",
+      "phone": "417-623-9090",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Gusano%27s+Pizza+3929+E+7th+St%2C+Joplin%2C+MO+64801",
+      "timezone": "America/Chicago",
+      "hours": [
+        {
+          "day": 0,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 1,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 2,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 3,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 4,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 5,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 6,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        }
+      ],
+      "exceptions": [],
+      "access": {
+        "seating": "Big screens throughout and a large patio.",
+        "parking": "Plenty of parking."
+      },
+      "meta": {
+        "status": "draft",
+        "reviewed_on": "",
+        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+      },
+      "email": "gusanos.joplin@gusanospizza.com"
+    },
+    {
+      "id": "texarkana",
+      "name": "Texarkana",
+      "address": "2820 Richmond Rd, Texarkana, TX 75503",
+      "phone": "903-792-8646",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Gusano%27s+Pizza+2820+Richmond+Rd%2C+Texarkana%2C+TX+75503",
+      "timezone": "America/Chicago",
+      "hours": [
+        {
+          "day": 0,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 1,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 2,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 3,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 4,
+          "intervals": [
+            [
+              "11:00",
+              "23:00"
+            ]
+          ]
+        },
+        {
+          "day": 5,
+          "intervals": [
+            [
+              "11:00",
+              "23:00"
+            ]
+          ]
+        },
+        {
+          "day": 6,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        }
+      ],
+      "exceptions": [],
+      "access": {},
+      "meta": {
+        "status": "draft",
+        "reviewed_on": "",
+        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+      },
+      "email": "gusanos.texarkana@gusanospizza.com"
+    }
+  ],
+  "services": [
+    {
+      "id": "dine-in",
+      "label": "Dine in",
+      "state": "available",
+      "location_ids": []
+    },
+    {
+      "id": "pickup",
+      "label": "Pickup",
+      "state": "available",
+      "location_ids": []
+    },
+    {
+      "id": "catering",
+      "label": "Catering",
+      "state": "available",
+      "location_ids": []
+    }
+  ],
+  "actions": [
+    {
+      "id": "ordering-pickup-bentonville",
+      "module": "ordering",
+      "service_id": "pickup",
+      "location_id": "bentonville",
+      "label": "Order pickup – Bentonville",
+      "state": "available",
+      "url": "https://gusanosbn.hrpos.heartland.us/menu",
+      "provider": "Heartland",
+      "note": "Online ordering opens on Heartland.",
+      "terms": "Prices and availability are confirmed by the ordering provider.",
+      "fallback_email": "",
+      "fallback_phone": "479-271-8242",
+      "meta": {
+        "status": "draft",
+        "reviewed_on": "",
+        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+      }
+    },
+    {
+      "id": "ordering-pickup-fayetteville-steamboat",
+      "module": "ordering",
+      "service_id": "pickup",
+      "location_id": "fayetteville-steamboat",
+      "label": "Order pickup – Fayetteville – Steamboat Dr.",
+      "state": "available",
+      "url": "https://gusanosfv.hrpos.heartland.us/menu",
+      "provider": "Heartland",
+      "note": "Online ordering opens on Heartland.",
+      "terms": "Prices and availability are confirmed by the ordering provider.",
+      "fallback_email": "",
+      "fallback_phone": "479-287-4000",
+      "meta": {
+        "status": "draft",
+        "reviewed_on": "",
+        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+      }
+    },
+    {
+      "id": "ordering-pickup-fayetteville-shiloh",
+      "module": "ordering",
+      "service_id": "pickup",
+      "location_id": "fayetteville-shiloh",
+      "label": "Order pickup – Fayetteville – Shiloh Dr.",
+      "state": "available",
+      "url": "https://gusanosuptownfv.hrpos.heartland.us/menu",
+      "provider": "Heartland",
+      "note": "Online ordering opens on Heartland.",
+      "terms": "Prices and availability are confirmed by the ordering provider.",
+      "fallback_email": "",
+      "fallback_phone": "479-332-4460",
+      "meta": {
+        "status": "draft",
+        "reviewed_on": "",
+        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+      }
+    },
+    {
+      "id": "ordering-pickup-rogers",
+      "module": "ordering",
+      "service_id": "pickup",
+      "location_id": "rogers",
+      "label": "Order pickup – Rogers",
+      "state": "available",
+      "url": "https://gusanosrg.hrpos.heartland.us/menu",
+      "provider": "Heartland",
+      "note": "Online ordering opens on Heartland.",
+      "terms": "Prices and availability are confirmed by the ordering provider.",
+      "fallback_email": "",
+      "fallback_phone": "479-636-0400",
+      "meta": {
+        "status": "draft",
+        "reviewed_on": "",
+        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+      }
+    },
+    {
+      "id": "ordering-pickup-bella-vista",
+      "module": "ordering",
+      "service_id": "pickup",
+      "location_id": "bella-vista",
+      "label": "Order pickup – Bella Vista",
+      "state": "available",
+      "url": "https://gusanosbv.hrpos.heartland.us/menu",
+      "provider": "Heartland",
+      "note": "Online ordering opens on Heartland.",
+      "terms": "Prices and availability are confirmed by the ordering provider.",
+      "fallback_email": "",
+      "fallback_phone": "479-876-6969",
+      "meta": {
+        "status": "draft",
+        "reviewed_on": "",
+        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+      }
+    },
+    {
+      "id": "ordering-pickup-springdale",
+      "module": "ordering",
+      "service_id": "pickup",
+      "location_id": "springdale",
+      "label": "Order pickup – Springdale",
+      "state": "available",
+      "url": "https://gusanossd.hrpos.heartland.us/menu",
+      "provider": "Heartland",
+      "note": "Online ordering opens on Heartland.",
+      "terms": "Prices and availability are confirmed by the ordering provider.",
+      "fallback_email": "",
+      "fallback_phone": "479-927-6900",
+      "meta": {
+        "status": "draft",
+        "reviewed_on": "",
+        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+      }
+    },
+    {
+      "id": "ordering-pickup-fort-smith",
+      "module": "ordering",
+      "service_id": "pickup",
+      "location_id": "fort-smith",
+      "label": "Order pickup – Fort Smith",
+      "state": "available",
+      "url": "https://www.toasttab.com/gusanos-fort-smith/",
+      "provider": "Toast",
+      "note": "Online ordering opens on Toast.",
+      "terms": "Prices and availability are confirmed by the ordering provider.",
+      "fallback_email": "",
+      "fallback_phone": "479-434-6444",
+      "meta": {
+        "status": "draft",
+        "reviewed_on": "",
+        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+      }
+    },
+    {
+      "id": "ordering-pickup-joplin",
+      "module": "ordering",
+      "service_id": "pickup",
+      "location_id": "joplin",
+      "label": "Order pickup – Joplin",
+      "state": "unavailable",
+      "url": "",
+      "provider": "",
+      "note": "Call the restaurant to order.",
+      "terms": "Prices and availability are confirmed by the ordering provider.",
+      "fallback_email": "",
+      "fallback_phone": "417-623-9090",
+      "meta": {
+        "status": "draft",
+        "reviewed_on": "",
+        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+      }
+    },
+    {
+      "id": "ordering-pickup-texarkana",
+      "module": "ordering",
+      "service_id": "pickup",
+      "location_id": "texarkana",
+      "label": "Order pickup – Texarkana",
+      "state": "available",
+      "url": "https://gusanostexarkana.hrpos.heartland.us/menu",
+      "provider": "Heartland",
+      "note": "Online ordering opens on Heartland.",
+      "terms": "Prices and availability are confirmed by the ordering provider.",
+      "fallback_email": "",
+      "fallback_phone": "903-792-8646",
+      "meta": {
+        "status": "draft",
+        "reviewed_on": "",
+        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+      }
+    }
+  ],
+  "menu": {
+    "currency": "USD",
+    "reviewed_on": "",
+    "note": "Prices are from the 2025 group menu, pages 1–2. Each location sets its own prices, so check your location's online ordering menu for current prices.",
+    "allergen_note": "Ask your location about ingredients and cross-contact before ordering.",
+    "categories": [
+      {
+        "id": "pizza",
+        "label": "Specialty pizza",
+        "eyebrow": "Every specialty in thin, traditional, or Chicago-style crust",
+        "items": [
+          {
+            "id": "carnivore-craze",
+            "name": "Carnivore Craze",
+            "description": "Pepperoni, crumbled Italian sausage, Canadian bacon, hamburger, marinara, and mozzarella.",
+            "price": "",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Thin or traditional: 8\" $10.99 · 10\" $15.99 · 13\" $20.99 · 16\" $28.99",
+              "Chicago-style: 9\" $18.99 · 12\" $28.99"
+            ],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          },
+          {
+            "id": "spicy-pepperoni",
+            "name": "Spicy Pepperoni",
+            "description": "Pepperoni, diced jalapeños, diced purple onions, marinara, and mozzarella.",
+            "price": "",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Thin or traditional: 8\" $10.99 · 10\" $15.99 · 13\" $20.99 · 16\" $28.99",
+              "Chicago-style: 9\" $18.99 · 12\" $28.99"
+            ],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          },
+          {
+            "id": "ditka",
+            "name": "Ditka",
+            "description": "Pepperoni, crumbled Italian sausage, fresh jalapeños, fresh basil, marinara, and mozzarella.",
+            "price": "",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Thin or traditional: 8\" $10.99 · 10\" $15.99 · 13\" $20.99 · 16\" $28.99",
+              "Chicago-style: 9\" $18.99 · 12\" $28.99"
+            ],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          },
+          {
+            "id": "margherita",
+            "name": "Margherita",
+            "description": "Red sauce base with tomatoes, fresh basil, and mozzarella.",
+            "price": "",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Thin or traditional: 8\" $10.99 · 10\" $15.99 · 13\" $20.99 · 16\" $28.99",
+              "Chicago-style: 9\" $18.99 · 12\" $28.99"
+            ],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          },
+          {
+            "id": "the-big-cheese",
+            "name": "The Big Cheese",
+            "description": "Cheese, cheese, and more cheese.",
+            "price": "",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Thin or traditional: 8\" $10.99 · 10\" $15.99 · 13\" $20.99 · 16\" $28.99",
+              "Chicago-style: 9\" $18.99 · 12\" $28.99"
+            ],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          },
+          {
+            "id": "grubs-choice",
+            "name": "Grub's Choice",
+            "description": "Pepperoni, crumbled Italian sausage, purple onions, mushrooms, marinara, and mozzarella.",
+            "price": "",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Thin or traditional: 8\" $10.99 · 10\" $15.99 · 13\" $20.99 · 16\" $28.99",
+              "Chicago-style: 9\" $18.99 · 12\" $28.99"
+            ],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          },
+          {
+            "id": "moosehead",
+            "name": "Moosehead",
+            "description": "Pepperoni, crumbled Italian sausage, green olives, jalapeños, marinara, and mozzarella.",
+            "price": "",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Thin or traditional: 8\" $10.99 · 10\" $15.99 · 13\" $20.99 · 16\" $28.99",
+              "Chicago-style: 9\" $18.99 · 12\" $28.99"
+            ],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          },
+          {
+            "id": "herbivore-delight",
+            "name": "Herbivore Delight",
+            "description": "Mushrooms, purple onions, tomatoes, green peppers, black olives, marinara, and mozzarella.",
+            "price": "",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Thin or traditional: 8\" $10.99 · 10\" $15.99 · 13\" $20.99 · 16\" $28.99",
+              "Chicago-style: 9\" $18.99 · 12\" $28.99"
+            ],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          },
+          {
+            "id": "sicilian-lovers",
+            "name": "Sicilian Lovers",
+            "description": "Pepperoni, salami, purple onions, banana peppers, minced garlic, marinara, mozzarella, and a sprinkle of fairy dust.",
+            "price": "",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Thin or traditional: 8\" $10.99 · 10\" $15.99 · 13\" $20.99 · 16\" $28.99",
+              "Chicago-style: 9\" $18.99 · 12\" $28.99"
+            ],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          },
+          {
+            "id": "hawaiian",
+            "name": "Hawaiian",
+            "description": "Canadian bacon, pineapple, marinara, and mozzarella.",
+            "price": "",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Thin or traditional: 8\" $10.99 · 10\" $15.99 · 13\" $20.99 · 16\" $28.99",
+              "Chicago-style: 9\" $18.99 · 12\" $28.99"
+            ],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          },
+          {
+            "id": "hot-honey-pepperoni",
+            "name": "Hot Honey Pepperoni",
+            "description": "Thick-cut pepperoni, fresh basil, marinara, mozzarella, and a drizzle of hot honey.",
+            "price": "",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Thin or traditional: 8\" $10.99 · 10\" $15.99 · 13\" $20.99 · 16\" $28.99",
+              "Chicago-style: 9\" $18.99 · 12\" $28.99"
+            ],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          },
+          {
+            "id": "the-deluxe",
+            "name": "The Deluxe",
+            "description": "Pepperoni, crumbled Italian sausage, Canadian bacon, hamburger, green peppers, onions, and mushrooms.",
+            "price": "",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Thin or traditional: 8\" $11.99 · 10\" $17.49 · 13\" $22.99 · 16\" $29.99",
+              "Chicago-style: 9\" $20.99 · 12\" $29.99"
+            ],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "appetizers",
+        "label": "Appetizers",
+        "eyebrow": "",
+        "items": [
+          {
+            "id": "breadstix",
+            "name": "Breadstix with cheese",
+            "description": "Homemade pizza dough topped with mozzarella and spices, with homemade ranch and marinara.",
+            "price": "7.99",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Add pepperoni +$0.75"
+            ],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          },
+          {
+            "id": "pizzadilla",
+            "name": "Pizzadilla",
+            "description": "Garlic-herb tortilla stuffed with mozzarella and pepperoni, with homemade ranch and marinara.",
+            "price": "9.99",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          },
+          {
+            "id": "supreme-pizzadilla",
+            "name": "Supreme Pizzadilla",
+            "description": "The Pizzadilla plus Canadian bacon, purple onions, and green peppers.",
+            "price": "10.99",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          },
+          {
+            "id": "buffalo-chicken-dip",
+            "name": "Buffalo chicken dip",
+            "description": "Shredded chicken, buffalo sauce, cream cheese, ranch, and melted cheddar, with Frito scoops.",
+            "price": "13.99",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Extra Frito scoops +$2.49"
+            ],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          },
+          {
+            "id": "hot-wings",
+            "name": "Hot wings",
+            "description": "Eight wings with celery and blue cheese or homemade ranch.",
+            "price": "12.49",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Buffalo, honey habanero, teriyaki, or BBQ"
+            ],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          },
+          {
+            "id": "spicy-spinach-dip",
+            "name": "Spicy spinach dip",
+            "description": "Cream cheese, spinach, tomatoes, and spices, with Frito scoops.",
+            "price": "13.99",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Extra Frito scoops +$2.49"
+            ],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          },
+          {
+            "id": "meatball-skillet",
+            "name": "Meatball skillet",
+            "description": "Three 2 oz Fontanini meatballs in homemade marinara with melted provolone and Italian seasoning.",
+            "price": "11.49",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          },
+          {
+            "id": "pizza-dip",
+            "name": "Pizza dip",
+            "description": "Cream cheese, homemade marinara, green peppers, onions, and pepperoni under mozzarella, with Frito scoops.",
+            "price": "12.99",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Extra Frito scoops +$2.49"
+            ],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "salads",
+        "label": "Salads",
+        "eyebrow": "",
+        "items": [
+          {
+            "id": "caesar-salad",
+            "name": "Large Caesar salad",
+            "description": "Romaine, parmesan, and croutons in Caesar dressing.",
+            "price": "10.49",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Add chicken +$5.49"
+            ],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          },
+          {
+            "id": "veggie-salad",
+            "name": "Veggie salad",
+            "description": "Iceberg with green peppers, purple onions, black olives, mushrooms, tomatoes, mozzarella, and croutons.",
+            "price": "11.99",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          },
+          {
+            "id": "dinner-salad",
+            "name": "Dinner salad",
+            "description": "Iceberg, tomatoes, mozzarella, and croutons.",
+            "price": "10.49",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          },
+          {
+            "id": "greek-salad",
+            "name": "Greek salad",
+            "description": "Romaine with black and green olives, purple onions, and feta, with Greek dressing.",
+            "price": "11.99",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          },
+          {
+            "id": "italian-salad",
+            "name": "Italian salad",
+            "description": "Chopped iceberg with ham, pepperoni, purple onions, tomato, mozzarella, black olives, and pepperoncini, with Italian dressing.",
+            "price": "13.49",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [],
+            "meta": {
+              "status": "draft",
+              "reviewed_on": "",
+              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "collections": {
+    "specials": [
+      {
+        "id": "weekly-specials",
+        "title": "Weekly specials",
+        "text": "Dine-in deals all week. Ask your location for today's lineup.",
+        "state": "available",
+        "location_ids": [
+          "bentonville",
+          "fayetteville-steamboat",
+          "fayetteville-shiloh",
+          "rogers",
+          "bella-vista",
+          "springdale",
+          "fort-smith",
+          "joplin"
+        ],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/wp-content/uploads/2026/03/ (March 2026 calendar inserts, the newest posted; read 2026-10-19)"
+        },
+        "facts": [
+          {
+            "label": "All day, every day",
+            "value": "$15 domestic buckets · $22.50 High Noon buckets"
+          },
+          {
+            "label": "Lunch, Mon–Fri 11 am–2 pm",
+            "value": "8\" one-topping pizza, salad, and drink $11.49"
+          },
+          {
+            "label": "Happy hour, Mon–Fri 3–7 pm",
+            "value": "$1 off drafts, wells, and house wine"
+          },
+          {
+            "label": "Happiest hour, Mon–Fri 5–6 pm",
+            "value": "$1.50 12 oz domestic draft · $3 22 oz domestic draft"
+          },
+          {
+            "label": "Monday after 4 pm",
+            "value": "$8 domestic pitchers · $4 kids' cheese or pepperoni · Buy one, get one 50% off ultra-thin crust"
+          },
+          {
+            "label": "Tuesday after 4 pm",
+            "value": "$3 domestic bottles · $4 kids' cheese or pepperoni · $4.99 Chicago dog basket (extra dog $3.49)"
+          },
+          {
+            "label": "Wednesday after 4 pm",
+            "value": "$5 signature drinks · $4.99 breadsticks with cheese · $13.99 13\" one-topping"
+          },
+          {
+            "label": "Thursday after 4 pm",
+            "value": "50¢ off tall boy cans · $37.99 12\" Chicago-style two-topping and domestic pitcher"
+          },
+          {
+            "label": "Friday after 4 pm",
+            "value": "$4 house wine"
+          },
+          {
+            "label": "Saturday",
+            "value": "$8 domestic pitcher · $3 Fireball · $29.99 16\" two-topping with breadsticks"
+          },
+          {
+            "label": "Sunday",
+            "value": "$3 mimosa, screwdriver, or Bloody Mary · $38.99 Sunday family special: 13\" specialty, 13\" one-topping, and breadsticks with cheese"
+          },
+          {
+            "label": "Terms",
+            "value": "All specials are dine-in only."
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "trivia-bentonville",
+        "title": "Trivia night – Bentonville",
+        "text": "Bring a team and test what you know.",
+        "state": "available",
+        "location_ids": [
+          "bentonville"
+        ],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+        },
+        "facts": [
+          {
+            "label": "When",
+            "value": "Tuesdays"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "trivia-fayetteville-steamboat",
+        "title": "Trivia night – Fayetteville – Steamboat Dr.",
+        "text": "Bring a team and test what you know.",
+        "state": "available",
+        "location_ids": [
+          "fayetteville-steamboat"
+        ],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+        },
+        "facts": [
+          {
+            "label": "When",
+            "value": "Wednesdays"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "student-night-fayetteville-steamboat",
+        "title": "Student discount night – Fayetteville – Steamboat Dr.",
+        "text": "Show your student ID for a discount.",
+        "state": "available",
+        "location_ids": [
+          "fayetteville-steamboat"
+        ],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+        },
+        "facts": [],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "trivia-bella-vista",
+        "title": "Trivia night – Bella Vista",
+        "text": "Bring a team and test what you know.",
+        "state": "available",
+        "location_ids": [
+          "bella-vista"
+        ],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+        },
+        "facts": [
+          {
+            "label": "When",
+            "value": "Tuesdays"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "trivia-springdale",
+        "title": "Trivia night – Springdale",
+        "text": "Bring a team and test what you know.",
+        "state": "available",
+        "location_ids": [
+          "springdale"
+        ],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+        },
+        "facts": [
+          {
+            "label": "When",
+            "value": "Tuesdays"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "trivia-fort-smith",
+        "title": "Trivia night – Fort Smith",
+        "text": "Bring a team and test what you know.",
+        "state": "available",
+        "location_ids": [
+          "fort-smith"
+        ],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+        },
+        "facts": [
+          {
+            "label": "When",
+            "value": "Wednesdays"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "trivia-joplin",
+        "title": "Trivia night – Joplin",
+        "text": "Bring a team and test what you know.",
+        "state": "available",
+        "location_ids": [
+          "joplin"
+        ],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+        },
+        "facts": [
+          {
+            "label": "When",
+            "value": "Wednesdays"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "student-night-joplin",
+        "title": "Student discount night – Joplin",
+        "text": "Show your student ID for a discount.",
+        "state": "available",
+        "location_ids": [
+          "joplin"
+        ],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+        },
+        "facts": [],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "weekly-specials-texarkana",
+        "title": "Weekly specials – Texarkana",
+        "text": "Dine-in deals all week. Ask your location for today's lineup.",
+        "state": "available",
+        "location_ids": [
+          "texarkana"
+        ],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/wp-content/uploads/2026/03/ (March 2026 calendar inserts, the newest posted; read 2026-10-19)"
+        },
+        "facts": [
+          {
+            "label": "All day, every day",
+            "value": "$15 domestic buckets · $22.50 High Noon buckets · $17.50 Nutrl, Mich Ultra, and seltzer buckets"
+          },
+          {
+            "label": "Lunch, Mon–Fri 11 am–2 pm",
+            "value": "8\" one-topping pizza, salad, and drink $11.49"
+          },
+          {
+            "label": "Happy hour, Mon–Fri 3–7 pm",
+            "value": "$2.50 12 oz domestic draft · $4 22 oz domestic draft · $3.50 house wine"
+          },
+          {
+            "label": "Happiest hour, Mon–Fri 5–6 pm",
+            "value": "$1.50 12 oz domestic draft · $3 22 oz domestic draft"
+          },
+          {
+            "label": "Monday",
+            "value": "$8 domestic pitchers · $6 wings · $3 kids' cheese or pepperoni · Buy one, get one 50% off ultra-thin crust"
+          },
+          {
+            "label": "Tuesday",
+            "value": "$3 domestic bottles · $3 kids' cheese or pepperoni · $3 Chicago dogs"
+          },
+          {
+            "label": "Wednesday",
+            "value": "$5 signature drinks · $4.99 breadsticks with cheese · $13.99 13\" one-topping · Pint night: $3 domestic, $4 premium"
+          },
+          {
+            "label": "Thursday",
+            "value": "$37.99 12\" Chicago-style two-topping and domestic pitcher"
+          },
+          {
+            "label": "Friday",
+            "value": "$4 house wine"
+          },
+          {
+            "label": "Saturday",
+            "value": "$1 off all draft · $3 house wines and wells · $9 domestic pitcher · $3 Fireball · $29.99 16\" two-topping with breadsticks"
+          },
+          {
+            "label": "Sunday",
+            "value": "$3 mimosa, screwdriver, or Bloody Mary · $1 off all drafts · $8 domestic pitcher · $3 house wine and wells · $38.99 Sunday family special: 13\" specialty, 13\" one-topping, and breadsticks with cheese"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "trivia-texarkana",
+        "title": "Trivia night – Texarkana",
+        "text": "Bring a team and test what you know.",
+        "state": "available",
+        "location_ids": [
+          "texarkana"
+        ],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+        },
+        "facts": [
+          {
+            "label": "When",
+            "value": "Singo music trivia, Tuesdays at 7 pm"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "sandwich-of-the-day",
+        "title": "Sandwich of the day",
+        "text": "Ask your location what's on today's sandwich board.",
+        "state": "available",
+        "location_ids": [],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+        },
+        "facts": [],
+        "url": "",
+        "attachments": []
+      }
+    ],
+    "catering": [
+      {
+        "id": "tailgate-catering",
+        "title": "Tailgate and event catering",
+        "text": "Let Gusano's cater your next tailgate or event.",
+        "state": "available",
+        "location_ids": [],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+        },
+        "facts": [
+          {
+            "label": "Packages",
+            "value": "See the 2025 catering menu (PDF, 7 MB)"
+          }
+        ],
+        "url": "https://gusanos.pizza/wp-content/uploads/2025/06/GusanosCatering_2025.pdf",
+        "attachments": []
+      }
+    ],
+    "events": [
+      {
+        "id": "rogers-skybox",
+        "title": "The Skybox, Rogers",
+        "text": "Upstairs private room for work meetings, parties, holiday gatherings, and family get-togethers.",
+        "state": "available",
+        "location_ids": [
+          "rogers"
+        ],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+        },
+        "facts": [
+          {
+            "label": "Booking",
+            "value": "Call Rogers at 479-636-0400"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "bella-vista-party-room",
+        "title": "Party room, Bella Vista",
+        "text": "A party room added in the latest Bella Vista expansion.",
+        "state": "available",
+        "location_ids": [
+          "bella-vista"
+        ],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+        },
+        "facts": [
+          {
+            "label": "Booking",
+            "value": "Call Bella Vista at 479-876-6969"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      }
+    ],
+    "story": [
+      {
+        "id": "story-bentonville",
+        "title": "Bentonville",
+        "text": "The first Northwest Arkansas Gusano's, opened in 2005 off Rainbow Curve. Kids' game area, an adults-only game room with pool tables and 25+ big screens, and an expanded patio.",
+        "state": "available",
+        "location_ids": [
+          "bentonville"
+        ],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/ location pages (read 2026-10-19)"
+        },
+        "facts": [],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "story-fayetteville-steamboat",
+        "title": "Fayetteville – Steamboat Dr.",
+        "text": "Opened near the University of Arkansas in 2008 and moved to Steamboat Dr. in 2012. Close to the Boys & Girls Club, with plenty of tables and parking for Razorback game-day crowds.",
+        "state": "available",
+        "location_ids": [
+          "fayetteville-steamboat"
+        ],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/ location pages (read 2026-10-19)"
+        },
+        "facts": [],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "story-fayetteville-shiloh",
+        "title": "Fayetteville – Shiloh Dr.",
+        "text": "Opened in 2026 to serve the north side of Fayetteville.",
+        "state": "available",
+        "location_ids": [
+          "fayetteville-shiloh"
+        ],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/ location pages (read 2026-10-19)"
+        },
+        "facts": [],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "story-rogers",
+        "title": "Rogers",
+        "text": "Opened in 2015 off I-49 in Pleasant Grove. Upstairs private room (the Skybox), a kids' game room, and plenty of parking.",
+        "state": "available",
+        "location_ids": [
+          "rogers"
+        ],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/ location pages (read 2026-10-19)"
+        },
+        "facts": [],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "story-bella-vista",
+        "title": "Bella Vista",
+        "text": "Opened in Cunningham Corner for the Bella Vista regulars who were driving to Bentonville. Expanded twice, most recently to add a party room. Next to the golf courses.",
+        "state": "available",
+        "location_ids": [
+          "bella-vista"
+        ],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/ location pages (read 2026-10-19)"
+        },
+        "facts": [],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "story-springdale",
+        "title": "Springdale",
+        "text": "Opened in May 2018 for the Tontitown and Har-Ber area, close for Elm Springs and Siloam Springs too.",
+        "state": "available",
+        "location_ids": [
+          "springdale"
+        ],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/ location pages (read 2026-10-19)"
+        },
+        "facts": [],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "story-fort-smith",
+        "title": "Fort Smith",
+        "text": "Opened in fall 2018 on Phoenix Ave. for the River Valley. Modern dining room and a large patio.",
+        "state": "available",
+        "location_ids": [
+          "fort-smith"
+        ],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/ location pages (read 2026-10-19)"
+        },
+        "facts": [],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "story-joplin",
+        "title": "Joplin",
+        "text": "Opened in 2009 after a couple of Joplin locals asked for a Gusano's in their hometown. Off 7th St. in East Joplin, with big screens, plenty of parking, and a large patio.",
+        "state": "available",
+        "location_ids": [
+          "joplin"
+        ],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/ location pages (read 2026-10-19)"
+        },
+        "facts": [],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "story-texarkana",
+        "title": "Texarkana",
+        "text": "Opened on Richmond Rd. in 2012 for Southwest Arkansas and East Texas. A family spot for relaxing with friends.",
+        "state": "available",
+        "location_ids": [
+          "texarkana"
+        ],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/ location pages (read 2026-10-19)"
+        },
+        "facts": [],
+        "url": "",
+        "attachments": []
+      }
+    ],
+    "careers": [
+      {
+        "id": "join-the-team",
+        "title": "Work at Gusano's",
+        "text": "Apply online for a position at any location.",
+        "state": "available",
+        "location_ids": [],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+        },
+        "facts": [],
+        "url": "https://gusanos.pizza/employment/",
+        "attachments": []
+      }
+    ],
+    "accessibility": [
+      {
+        "id": "accessibility-1",
+        "title": "Plan your visit",
+        "text": "Each location page lists known parking and seating details. Call ahead for anything not listed.",
+        "state": "available",
+        "location_ids": [],
+        "meta": {
+          "status": "draft",
+          "reviewed_on": "",
+          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+        },
+        "facts": [],
+        "url": "",
+        "attachments": []
+      }
+    ]
+  },
+  "faq": [
+    {
+      "id": "hours",
+      "question": "What are your hours?",
+      "location_ids": [],
+      "answer": "Most locations are open 11 am–10 pm Sunday through Thursday and 11 am–11 pm Friday and Saturday. Joplin closes at 10 pm every night."
+    },
+    {
+      "id": "trivia",
+      "question": "When is trivia night?",
+      "location_ids": [],
+      "answer": "Each location runs its own trivia night. Choose your location to see its night."
+    },
+    {
+      "id": "private-room",
+      "question": "Can I book a room for a party?",
+      "location_ids": [
+        "rogers",
+        "bella-vista"
+      ],
+      "answer": "Rogers has an upstairs private room called the Skybox, and Bella Vista has a party room. Call the location to book."
+    },
+    {
+      "id": "dietary",
+      "question": "How do I ask about ingredients?",
+      "location_ids": [],
+      "answer": "Call your location before ordering. Staff can confirm ingredients and cross-contact."
+    },
+    {
+      "id": "specials",
+      "question": "Are the daily specials available for takeout?",
+      "location_ids": [
+        "bentonville",
+        "fayetteville-steamboat",
+        "fayetteville-shiloh",
+        "rogers",
+        "bella-vista",
+        "springdale",
+        "fort-smith",
+        "joplin"
+      ],
+      "answer": "No. The weekly specials are dine-in only."
+    }
+  ],
+  "gallery": [],
+  "policies": {
+    "privacy": "This site has no cookies, accounts, or analytics. It remembers the location you choose in your browser's local storage so pages open to it; choose All locations to clear it. Menu filters and the gathering planner run in your browser, and nothing you type is sent anywhere. Online ordering opens on Heartland or Toast, which have their own privacy policies.",
+    "reservations": "Confirm walk-ins, party limits, deposits, cancellations, and accessible booking alternatives.",
+    "giftcards": "Confirm redemption locations, purchase terms, balance help, and support.",
+    "loyalty": "Confirm earning, redemption, eligibility, account help, and terms.",
+    "newsletter": "Confirm frequency, consent, privacy, and unsubscribe process."
+  },
+  "publication": {
+    "domain": "",
+    "approved": false,
+    "privacy_reviewed": false,
+    "contact_reviewed": false
+  }
+}
