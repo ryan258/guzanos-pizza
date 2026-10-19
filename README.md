@@ -2,6 +2,8 @@
 
 A Hugo restaurant master with 24 selectable page modules, 18 reusable restaurant components in 54 layouts, a living style guide, nine restaurant examples, location-aware guest paths, and local owner tools. Lucyd is the diner demonstration. All sample business facts, prices, schedules, and artwork require review before use for a real restaurant.
 
+**Live preview:** [https://ryan258.github.io/gusanos-pizza/](https://ryan258.github.io/gusanos-pizza/)
+
 ## Start here
 
 Requires **Hugo 0.166.x extended and Python 3.11+**. Node is used only by the verification command for JavaScript syntax; no npm or Python package installation is needed.
