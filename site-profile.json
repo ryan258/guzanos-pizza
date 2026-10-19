@@ -1,0 +1,5 @@
+{
+  "profile": "profiles/gusanos-pizza.toml",
+  "preset": "presets/multi-location.toml",
+  "use_examples": false
+}

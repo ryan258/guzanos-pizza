@@ -1,0 +1,83 @@
+"baseURL" = "/"
+"locale" = "en-us"
+"title" = "Gusano's Chicago-Style Pizzeria"
+"enableRobotsTXT" = true
+"disableKinds" = ["taxonomy", "term", "RSS", "sitemap"]
+
+["module"]
+
+[["module"."mounts"]]
+"source" = "data"
+"target" = "data"
+
+[["module"."mounts"]]
+"source" = "presets"
+"target" = "data/restaurant_presets"
+
+["outputs"]
+"home" = ["HTML", "JSON"]
+
+["params"]
+"companyName" = "Gusano's Chicago-Style Pizzeria"
+"description" = "A modular restaurant website master, with Lucyd as its diner demonstration."
+"noindex" = true
+"reviewOnly" = true
+"mode" = "preview"
+"useExamples" = false
+"publicationValidated" = false
+"preset" = "multi-location"
+"accent" = "forest"
+"homeSections" = ["hero", "announcement", "visit", "menu", "directory", "story"]
+"profileID" = "gusanos-pizza"
+"designName" = "Around the neighborhood"
+"designDescription" = "A clear location-first layout with split visit cards and compact schedules for comparing branches."
+
+["params"."features"]
+"menu" = true
+"specials" = true
+"locations" = true
+"reservations" = false
+"ordering" = true
+"catering" = true
+"events" = true
+"planner" = true
+"gallery" = false
+"story" = true
+"team" = false
+"sourcing" = false
+"reviews" = false
+"giftcards" = false
+"loyalty" = false
+"newsletter" = false
+"news" = false
+"calendar" = false
+"careers" = true
+"faq" = true
+"contact" = true
+"accessibility" = true
+"press" = false
+"foodtruck" = false
+"visit" = true
+"search" = true
+"announcement" = true
+"quicklinks" = true
+
+["params"."componentLayouts"]
+"notice" = "banner"
+"dish-card" = "compact"
+"dietary-key" = "grid"
+"service-card" = "horizontal"
+"location-card" = "split"
+"hours-panel" = "compact"
+"offer-card" = "split"
+"package-card" = "split"
+"event-card" = "row"
+"quote-card" = "compact"
+"faq-list" = "split"
+"contact-panel" = "split"
+"menu-section" = "board"
+"tasting-menu" = "cards"
+"beverage-flight" = "compact"
+"team-profile" = "compact"
+"dining-space" = "compact"
+"visit-steps" = "tiles"

@@ -1,0 +1,24 @@
+{
+  "contract_version": 1,
+  "owner": "the-website-factory/scripts/scaffold_core.py",
+  "sha256": "c37493e72bf982162304a5610818db3a3d19f39031873716cd38ec683113f1e3",
+  "source_kind": "hot-eats",
+  "folders": [
+    "assets",
+    "content",
+    "data",
+    "layouts",
+    "static",
+    "scripts",
+    "docs",
+    "presets",
+    "examples"
+  ],
+  "files": [
+    "hugo.toml",
+    ".gitignore",
+    "README.md",
+    "he"
+  ],
+  "approval_inherited": false
+}

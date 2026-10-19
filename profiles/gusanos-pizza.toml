@@ -1,0 +1,11 @@
+title = "Gusano's Chicago-Style Pizzeria"
+[params]
+companyName = "Gusano's Chicago-Style Pizzeria"
+profileID = "gusanos-pizza"
+
+[params.features]
+reservations = false
+gallery = false
+team = false
+giftcards = false
+loyalty = false

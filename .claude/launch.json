@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "gusanos-preview",
+      "runtimeExecutable": "./he",
+      "runtimeArgs": ["preview"],
+      "port": 1417
+    },
+    {
+      "name": "hot-eats-preview",
+      "runtimeExecutable": "../hot-eats/he",
+      "runtimeArgs": ["preview", "--port", "1418"],
+      "port": 1418
+    }
+  ]
+}
