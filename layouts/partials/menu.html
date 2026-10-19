@@ -1,0 +1,22 @@
+{{ $data := partial "site-data.html" . }}
+{{ $level := .level | default 2 }}
+{{ $layout := partial "component-layout.html" "dish-card" }}
+<p>{{ $data.menu.note }}</p>
+<p class="menu-print-identity">{{ site.Params.companyName }} · {{ $data.menu.currency }}{{ with $data.menu.reviewed_on }} · Menu reviewed {{ . }}{{ end }}</p>
+{{ partial "shared/location-picker.html" . }}
+<div class="menu-tools" hidden>
+  <label for="menu-query">Find a dish or ingredient</label><input type="search" id="menu-query" placeholder="Search the menu">
+  <label for="service-context">Service</label><select id="service-context"><option value="">All services</option>{{ range $data.services }}<option value="{{ .id }}">{{ .label }}</option>{{ end }}</select>
+  <div class="menu-filters" role="group" aria-label="Filter menu categories">
+    <button type="button" data-filter="all" aria-pressed="true">All categories</button>
+    {{ range $data.menu.categories }}<button type="button" data-filter="{{ .id }}" aria-pressed="false">{{ .label }}</button>{{ end }}
+  </div>
+  <p id="menu-status" role="status"></p>
+</div>
+<div class="menu-grid" data-component-layout="{{ $layout }}" data-section-layout="{{ partial "component-layout.html" "menu-section" }}">
+{{ range $data.menu.categories }}
+  {{ $content := partial "menu-dishes.html" (dict "items" .items "currency" $data.menu.currency "layout" $layout "level" $level) }}
+  {{ partial "components/menu-section.html" (dict "data" (dict "title" .label "eyebrow" .eyebrow) "category" . "content" $content "level" $level "layout" (partial "component-layout.html" "menu-section")) }}
+{{ else }}<p class="empty-state">The menu is being updated. Contact the restaurant for current dishes and prices.</p>{{ end }}
+</div>
+<div class="menu-footnote">{{ partial "components/dietary-key.html" (dict "data" (dict "title" "Dietary information" "note" $data.menu.allergen_note) "level" $level "layout" (partial "component-layout.html" "dietary-key")) }}</div>
