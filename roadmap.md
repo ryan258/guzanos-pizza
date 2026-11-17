@@ -1,6 +1,6 @@
-# Project Roadmap: Hot Eats & Gusano's Pizza
+# Project Roadmap: Hot Eats & Windy Holler
 
-This roadmap outlines the completed architecture, current verified baseline, and prioritized future enhancements for the Hot Eats restaurant platform and Gusano's Chicago-Style Pizzeria implementation.
+This roadmap outlines the completed architecture, current verified baseline, and prioritized future enhancements for the Hot Eats restaurant platform and Windy Holler, its fictional parody pizzeria.
 
 ## Project Vision & Operating Principles
 
@@ -17,7 +17,7 @@ Hot Eats is a production-quality, local-first restaurant website library built f
 ### Architecture & Core Engine
 - [x] **24 Modular Restaurant Features**: Complete modular registry in `data/modules.json` covering Dining, Visit, Gatherings, and About with explicit dependency graphs (`requires`, `requires_any`).
 - [x] **9 Cohesive Presets**: Full styling, typography, palette, and layout configurations for `kitchen-sink`, `diner`, `cafe`, `fine-dining`, `fast-casual`, `bar`, `bakery`, `food-truck`, and `multi-location`.
-- [x] **Multi-Location Pizzeria Implementation**: Tailored profile (`profiles/gusanos-pizza.toml`) and multi-location preset for Gusano's Chicago-Style Pizzeria.
+- [x] **Multi-Location Pizzeria Implementation**: Profile (`profiles/windy-holler.toml`), custom brand stylesheet (`assets/css/windy-holler.css`), bespoke imagery (`assets/images/windy-holler/`, `static/images/parody/`), and brand-scoped partials (`layouts/partials/home-windy-holler.html`, `windy-holler-*.html`) for Windy Holler, a fictional Chicago-style pizzeria in Razorback territory.
 - [x] **Local Owner CLI (`./he`)**: Single entry point for `preview`, `build`, `doctor`, `test`, `check`, `today`, `menu`, `history`, `restore`, and operational utilities.
 - [x] **Independent Client Sculptor (`scripts/sculpt.py`)**: Staged, isolated client generation with frozen helper and provenance receipt, preventing accidental overwrites.
 
@@ -30,7 +30,7 @@ Hot Eats is a production-quality, local-first restaurant website library built f
 ### Data Integrity & Verification
 - [x] **Version 2 Restaurant Data Schema**: Rigorous validation in `scripts/model.py` for schedules, date exceptions, provider actions, pricing strings, media confinement, and presentation objects.
 - [x] **Owner Change Safety**: Diff-before-save, per-operation snapshots in `.local/history/`, and one-command rollback (`./he restore`).
-- [x] **Comprehensive Verification Suite (`./he test`)**: 64 automated unit tests, contracts, JS syntax checks, 9 preset builds, link/anchor auditing, SVG asset verification, and synthetic publication isolation.
+- [x] **Comprehensive Verification Suite (`./he test`)**: 65 automated unit tests, contracts, JS syntax checks, 9 preset builds, link/anchor auditing, SVG asset verification, and synthetic publication isolation.
 
 ---
 
@@ -43,10 +43,10 @@ Focus: Operational ergonomics, browser testing automation, and high-fidelity cli
    - Leverage the existing Python backend and validation pipeline; preview diffs and create snapshot backups before committing edits to `data/restaurant.json`.
    - Ensure touch- and keyboard-friendly controls optimized for mobile and desktop local browsers.
 
-2. **Gusano's Pizzeria Content Pack**
-   - Author a complete, authentic menu and location dataset for Gusano's Chicago-Style Pizzeria (deep dish specialties, pizza sizes, crust options, craft toppings, appetizers, and beverage pairings).
-   - Populate confirmed store hours, delivery/pickup service boundaries, and physical accessibility notes for all locations.
-   - Replace placeholder narrative records with authentic brand story, supplier partnerships, and catering guidelines.
+2. **Windy Holler Content Pack** (first pass done 2026-11-17)
+   - Fictional menu, six locations, specials, rooms, news dispatches, FAQ, and four original illustrations are in place.
+   - Next: structured pizza sizes and prices (engine change in hot-eats first) and recurring weekly events.
+   - Keep it fictional: no real business names, contacts, reviews, press, or staff.
 
 3. **Automated Browser Regression Harness**
    - Introduce an optional pinned browser test runner (Playwright / Puppeteer) to exercise interactive client journeys:
@@ -111,4 +111,4 @@ To preserve simplicity, speed, and privacy, the following are intentionally **ex
 - **No hosted databases or authentication servers**: No user logins, passwords, session cookies, or member databases.
 - **No integrated payment processing**: Credit card transactions and order fulfillment are handled exclusively by authorized external providers.
 - **No third-party analytics or surveillance trackers**: No Google Analytics, Meta Pixel, or marketing beacons.
-- **No automated remote deployments**: Deployment and publication remains strictly under explicit owner control.
+- **No automated publication**: The only automated deployment is the noindex Windy Holler preview to GitHub Pages on push to `main` (`.github/workflows/deploy.yml`). Publication builds and any other deployment remain under explicit owner control.

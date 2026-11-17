@@ -1,5 +1,13 @@
 # Verification evidence and owner handoff
 
+## Scope of inherited evidence
+
+This checkout now holds Windy Holler, a fictional parody pizzeria (profile `windy-holler`). On November 17, 2026 it replaced an earlier unofficial redesign dataset based on a real pizzeria. The October 12–13 records below describe the inherited engine and its nine examples and are retained as history.
+
+On November 17, 2026, with the Windy Holler data and brand templates (`windy-holler.css`, `windy-holler-*.html`, `home-windy-holler.html`, and `site.js` enhancements), `./he test` passed on the installed Hugo 0.168.0: 65 unit tests, JavaScript syntax, the current selection and all nine preset builds, links/assets/anchors, and the synthetic publication fixture. Windy Holler brand overrides are scoped to `profileid == "windy-holler"` with `previewpreset` unset and `useexamples` false, so all nine preset builds and `/site-kit/presets/` continue to render their own preset layouts. A CI-style build had 334 HTML pages including guide and example routes, every one carrying noindex. `./he doctor` now accepts Hugo 0.166 or newer (extended) and passes on 0.168.0; CI builds with 0.166.0. This is a local generated-output result, not approved facts, provider transactions or browser acceptance.
+
+The preview is publicly deployed to GitHub Pages by `.github/workflows/deploy.yml` on every push to `main` (noindex, review bar). That deployment is a preview, not a publication build. CI runs the full `scripts/verify.py` suite (the same as `./he test`) and refuses to deploy if any HTML page lacks noindex.
+
 ## October 13 remaining-page consistency pass
 
 The remaining restaurant pages were reviewed across all nine presets: service handoffs (ordering/reservations/gift cards/rewards/newsletters), catering, calendars/truck schedules, quotations, FAQs, contact, hours/location listings, editorial records (story/sourcing/news/careers/press), galleries, search, privacy, and record details. A route manifest derived from the current preset feature switches and illustrative data contained 258 guest pages: kitchen-sink 42, diner 29, café 26, fine dining 32, fast casual 24, bar 25, bakery 27, food truck 23, and multi-location 30. Guides and component-showcase routes were excluded from that count.

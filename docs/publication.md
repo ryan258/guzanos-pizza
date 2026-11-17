@@ -19,7 +19,9 @@ For each configured destination, verify the exact location/service, pricing/fees
 
 ## Hosting and recovery
 
-`static/_headers` describes headers for compatible hosts; Hugo's local server does not establish deployed behavior. The restrictive CSP supports local scripts/styles/images and external navigation; introducing embedded widgets or intake APIs requires a deliberate host/privacy/CSP review. No backend, D1 database, Turnstile, provider credentials, deployment workflow, or analytics collector is installed by this project.
+`static/_headers` describes headers for compatible hosts; Hugo's local server does not establish deployed behavior. The restrictive CSP supports local scripts/styles/images and external navigation; introducing embedded widgets or intake APIs requires a deliberate host/privacy/CSP review. No backend, D1 database, Turnstile, provider credentials, or analytics collector is installed by this project.
+
+This checkout has one deployment workflow: `.github/workflows/deploy.yml` builds the preview (noindex, review bar, guide and example routes) and deploys it to GitHub Pages on every push to `main`. That is a public preview, not a publication build. GitHub Pages ignores `static/_headers`, so its CSP and other headers are not applied there.
 
 Use the printed sibling build manifest to associate output with selected data, source hashes, and generated-file hashes. The wrapper compares source hashes before and after a build and refuses a success manifest if they changed. A failed output can remain for diagnosis; choose a new destination for retry and do not use an output without its successful manifest. Keep the prior accepted artifact and hosting rollback route before cutover. Deployment, DNS changes, provider transactions, and external messaging remain owner-controlled actions.
 

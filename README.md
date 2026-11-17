@@ -1,12 +1,14 @@
-# Hot Eats restaurant website library
+# Windy Holler: a fictional Chicago-style pizzeria
 
-A Hugo restaurant master with 24 selectable page modules, 18 reusable restaurant components in 54 layouts, a living style guide, nine restaurant examples, location-aware guest paths, and local owner tools. Lucyd is the diner demonstration. All sample business facts, prices, schedules, and artwork require review before use for a real restaurant.
+This checkout is **Windy Holler Chicago-Style Pizzeria**, a parody restaurant site: Chicago deep dish in Razorback territory. `site-profile.json` selects `profiles/windy-holler.toml` with the `multi-location` preset and `use_examples: false`; the records are in `data/restaurant.json`. Every name, address, phone number, dish, price, and story is invented and marked `demo`; see [CLIENT-START.md](CLIENT-START.md) for the fiction rules.
 
-**Live preview:** [https://ryan258.github.io/gusanos-pizza/](https://ryan258.github.io/gusanos-pizza/)
+The engine was copied from the Hot Eats master. Its nine illustrative presets, component library and owner tools remain useful engine references below.
+
+**Public preview:** [https://ryan258.github.io/guzanos-pizza/](https://ryan258.github.io/guzanos-pizza/). `.github/workflows/deploy.yml` deploys the preview build to GitHub Pages on every push to `main`: noindex on every page (CI fails the deploy otherwise), review bar, parody note, guide and example routes included. Anyone with the link can see it; noindex is not access control. It is not a publication build.
 
 ## Start here
 
-Requires **Hugo 0.166.x extended and Python 3.11+**. Node is used only by the verification command for JavaScript syntax; no npm or Python package installation is needed.
+Requires **Hugo 0.166 or newer (extended) and Python 3.11+**; CI builds with 0.166.0. Node is used only by the verification command for JavaScript syntax; no npm or Python package installation is needed.
 
 ```sh
 ./he preview
@@ -48,7 +50,7 @@ Use the wrapper to select profile, preset, and dataset consistently. Plain Hugo 
 
 ## Implemented local capabilities
 
-This revision has passed automated test and multi-preset build verification; see the [project roadmap](roadmap.md) and [enhancement register](docs/remediation-status.md).
+The inherited engine has historical automated and multi-preset evidence. See [verification scope](docs/verification.md) for the distinction between that history and this checkout’s current fictional dataset. Business facts, provider outcomes, browser/device/print use and publication remain separate acceptance checks.
 
 - Menu search, category/service/location filters, stable dish links, explicit sold-out states, and full/filtered printing.
 - Location detail pages, split schedules, date exceptions, access facts, click-to-call, and approved-schedule current-status display.
@@ -88,8 +90,9 @@ Builds use a fresh destination outside source and print a sibling source/data/ou
 | `scripts/model.py` | Versioned validation and configuration resolution |
 | `scripts/owner.py` | Local updates, snapshots, imports, and professional utilities |
 | `layouts/partials/modules/` | Independent module renderers |
+| `layouts/partials/windy-holler-*.html`, `home-windy-holler.html` | Brand-scoped Windy Holler templates (active when `profileID = "windy-holler"` and `use_examples: false`) |
 | `layouts/partials/components/`, `data/component_library.json` | Reusable restaurant components and guide-only example data |
-| `assets/` | Readable CSS/JavaScript, processed media |
+| `assets/` | Readable CSS/JavaScript (`windy-holler.css`, `site.js`) and processed media (`assets/images/windy-holler/`) |
 | `.local/` | Private snapshots/operational logs; excluded from public output and copying |
 
 Read [architecture](docs/architecture.md), [data model](docs/data-model.md), [module menu](docs/chisel-menu.md), [sculpting](docs/sculpting.md), and [remediation status](docs/remediation-status.md).
