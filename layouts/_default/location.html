@@ -1,4 +1,8 @@
 {{ define "main" }}
+{{ $config := partial "site-config.html" . }}
+{{ if and (eq $config.profileid "windy-holler") (not .Params.previewpreset) (not $config.useexamples) }}
+  {{ partial "windy-holler-location-detail.html" . }}
+{{ else }}
 {{ $data := partial "site-data.html" . }}
 {{ range where $data.locations "id" .Params.locationid }}
 {{ $loc := . }}{{ $id := .id }}
@@ -40,5 +44,6 @@
   {{ end }}
   {{ with .meta.reviewed_on }}<p>Details reviewed: {{ . }}</p>{{ end }}
 </article>
+{{ end }}
 {{ end }}
 {{ end }}

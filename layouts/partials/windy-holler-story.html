@@ -1,0 +1,173 @@
+{{/* 1. STORY HERO BANNER */}}
+<section class="wh-story-hero" aria-labelledby="wh-story-page-title">
+  <div class="wh-story-hero-backdrop" aria-hidden="true">
+    {{ partial "image.html" (dict "src" "images/windy-holler/skyline-backdrop.webp" "alt" "" "width" 1408 "height" 768 "class" "wh-skyline-backdrop-img" "sizes" "(max-width: 820px) 100vw, 75vw") }}
+  </div>
+
+  <div class="wrap wh-story-hero-inner">
+    <h1 id="wh-story-page-title" class="wh-story-hero-title">Our Story</h1>
+    <p class="wh-ribbon-tag wh-story-hero-ribbon">Chicago roots. Arkansas home.</p>
+    <p class="wh-story-hero-intro">Windy Holler brings the big, bold tradition of Chicago-style pizza to Arkansas, with a little local attitude baked in.</p>
+  </div>
+</section>
+
+{{/* 2. THE PIZZA THAT TRAVELED BAND */}}
+<section class="wh-traveled-band" aria-labelledby="wh-traveled-title">
+  <div class="wh-torn-edge wh-torn-edge-top" aria-hidden="true">
+    <svg viewBox="0 0 1440 28" preserveAspectRatio="none">
+      <path d="M0,28 L0,14 L38,18 L74,9 L118,16 L160,7 L210,17 L256,8 L302,15 L350,6 L402,16 L448,9 L496,18 L544,7 L592,15 L645,8 L698,17 L746,6 L798,16 L846,8 L898,17 L946,9 L996,16 L1044,7 L1098,16 L1146,8 L1196,17 L1246,7 L1296,16 L1348,9 L1396,17 L1440,11 L1440,28 Z" fill="#13342c"/>
+    </svg>
+  </div>
+
+  <div class="wrap wh-traveled-grid">
+    <div class="wh-traveled-head">
+      <h2 id="wh-traveled-title" class="wh-section-heading wh-heading-light wh-slanted">The Pizza<br>That Traveled</h2>
+      <div class="wh-brush-rule wh-brush-rule-sm" aria-hidden="true">
+        <svg viewBox="0 0 220 12" width="220" height="12" preserveAspectRatio="none">
+          <path d="M2 8 Q70 2 140 6 T218 5" fill="none" stroke="#b84a27" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <p class="wh-traveled-copy">It started with a simple idea: bring the deep-dish pizza we love from Chicago to Arkansas—and make it our own. Big, hearty, and built to share, it’s the kind of pizza that brings people together around the table.</p>
+
+    <div class="wh-traveled-media">
+      {{ partial "image.html" (dict "src" "images/windy-holler/menu-deep-dish.webp" "alt" "Chicago-style deep-dish pizza in a cast-iron pan with a lifted slice and melted mozzarella cheese pull." "width" 1200 "height" 900 "priority" true "sizes" "(max-width: 820px) 92vw, 34vw") }}
+    </div>
+  </div>
+</section>
+
+{{/* 3. LOCAL SPIRIT. LASTING FLAVOR. SPLIT BAND */}}
+<section class="wh-spirit-band" aria-labelledby="wh-spirit-title">
+  <div class="wh-spirit-media">
+    {{ partial "image.html" (dict "src" "images/windy-holler/story-mural.webp" "alt" "Weathered brick wall exterior of Windy Holler pizzeria at sunset with painted Windy Holler mural and industrial barn lamps." "width" 1200 "height" 800 "sizes" "(max-width: 820px) 100vw, 48vw") }}
+  </div>
+
+  <div class="wh-spirit-panel">
+    <div class="wh-spirit-top">
+      <div>
+        <h2 id="wh-spirit-title" class="wh-section-heading wh-heading-dark wh-slanted">Local Spirit.<br>Lasting Flavor.</h2>
+        <div class="wh-brush-rule wh-brush-rule-sm" aria-hidden="true">
+          <svg viewBox="0 0 220 12" width="220" height="12" preserveAspectRatio="none">
+            <path d="M2 8 Q70 2 140 6 T218 5" fill="none" stroke="#b84a27" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <svg class="wh-ar-star-badge" viewBox="0 0 150 110" width="132" height="96" aria-hidden="true">
+        <!-- Radiating lines -->
+        <g stroke="#b84a27" stroke-width="2.5" stroke-linecap="round">
+          <line x1="8" y1="36" x2="26" y2="44"/>
+          <line x1="4" y1="56" x2="24" y2="56"/>
+          <line x1="8" y1="76" x2="26" y2="68"/>
+          <line x1="142" y1="36" x2="124" y2="44"/>
+          <line x1="146" y1="56" x2="126" y2="56"/>
+          <line x1="142" y1="76" x2="124" y2="68"/>
+        </g>
+        <!-- Arkansas silhouette -->
+        <path d="M36,14 L112,14 L110,24 L122,27 L116,44 L106,66 L98,82 L97,98 L44,98 L43,84 L35,76 L35,34 Z" fill="#b84a27"/>
+        <!-- Center star -->
+        <polygon points="75,38 79,50 92,50 81.5,57.5 85.5,70 75,62.5 64.5,70 68.5,57.5 58,50 71,50" fill="#f6efe2"/>
+      </svg>
+    </div>
+
+    <p class="wh-spirit-copy">Arkansas gives Windy Holler its community, character, and sense of hospitality. We’re proud to be part of the neighborhoods we serve—six locations strong and still growing.</p>
+  </div>
+</section>
+
+{{/* 4. WHAT MAKES WINDY HOLLER DIFFERENT? */}}
+<section class="wh-pillars-band" aria-labelledby="wh-pillars-title">
+  <div class="wh-torn-edge wh-torn-edge-top" aria-hidden="true">
+    <svg viewBox="0 0 1440 28" preserveAspectRatio="none">
+      <path d="M0,28 L0,14 L38,18 L74,9 L118,16 L160,7 L210,17 L256,8 L302,15 L350,6 L402,16 L448,9 L496,18 L544,7 L592,15 L645,8 L698,17 L746,6 L798,16 L846,8 L898,17 L946,9 L996,16 L1044,7 L1098,16 L1146,8 L1196,17 L1246,7 L1296,16 L1348,9 L1396,17 L1440,11 L1440,28 Z" fill="#13342c"/>
+    </svg>
+  </div>
+
+  <div class="wrap wh-pillars-grid">
+    <div class="wh-pillars-head">
+      <h2 id="wh-pillars-title" class="wh-section-heading wh-heading-light wh-slanted">What Makes<br>Windy Holler<br>Different?</h2>
+      <div class="wh-brush-rule wh-brush-rule-sm" aria-hidden="true">
+        <svg viewBox="0 0 220 12" width="220" height="12" preserveAspectRatio="none">
+          <path d="M2 8 Q70 2 140 6 T218 5" fill="none" stroke="#b84a27" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <ul class="wh-pillars-list">
+      <li class="wh-pillar-item">
+        <svg class="wh-pillar-icon" width="68" height="52" viewBox="0 0 68 52" aria-hidden="true">
+          <!-- Steaming deep-dish pan -->
+          <path d="M24 14 Q22 9 25 5 M34 12 Q32 7 35 3 M44 14 Q42 9 45 5" fill="none" stroke="#c88b3a" stroke-width="2.2" stroke-linecap="round"/>
+          <ellipse cx="34" cy="27" rx="24" ry="8" fill="#c88b3a" opacity="0.24" stroke="#c88b3a" stroke-width="2.2"/>
+          <path d="M10 27 L12 37 C12 42 22 46 34 46 C46 46 56 42 56 37 L58 27" fill="none" stroke="#c88b3a" stroke-width="2.2"/>
+          <line x1="18" y1="22" x2="50" y2="32" stroke="#c88b3a" stroke-width="1.6"/>
+          <line x1="50" y1="22" x2="18" y2="32" stroke="#c88b3a" stroke-width="1.6"/>
+          <line x1="34" y1="19" x2="34" y2="35" stroke="#c88b3a" stroke-width="1.6"/>
+        </svg>
+        <h3>Chicago-Style Expertise</h3>
+        <p>Deep-dish and tavern-style classics.</p>
+      </li>
+
+      <li class="wh-pillar-item">
+        <svg class="wh-pillar-icon" width="72" height="52" viewBox="0 0 72 52" aria-hidden="true">
+          <!-- Ozark mountains & pines -->
+          <polygon points="8,44 26,14 44,44" fill="#c88b3a" opacity="0.28" stroke="#c88b3a" stroke-width="2.2" stroke-linejoin="round"/>
+          <polygon points="28,44 46,10 64,44" fill="#c88b3a" opacity="0.35" stroke="#c88b3a" stroke-width="2.2" stroke-linejoin="round"/>
+          <path d="M10 44 L15 32 L20 44 Z M50 44 L56 30 L62 44 Z" fill="#c88b3a"/>
+        </svg>
+        <h3>Arkansas Attitude</h3>
+        <p>Friendly, bold, and down-to-earth.</p>
+      </li>
+
+      <li class="wh-pillar-item">
+        <svg class="wh-pillar-icon" width="68" height="52" viewBox="0 0 68 52" aria-hidden="true">
+          <!-- Community trio -->
+          <circle cx="34" cy="17" r="6" fill="none" stroke="#c88b3a" stroke-width="2.2"/>
+          <path d="M22 42 C22 31 46 31 46 42" fill="#c88b3a" opacity="0.24" stroke="#c88b3a" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="17" cy="21" r="5" fill="none" stroke="#c88b3a" stroke-width="2"/>
+          <path d="M8 42 C8 34 24 34 24 42" fill="none" stroke="#c88b3a" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="51" cy="21" r="5" fill="none" stroke="#c88b3a" stroke-width="2"/>
+          <path d="M44 42 C44 34 60 34 60 42" fill="none" stroke="#c88b3a" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <h3>Community at Heart</h3>
+        <p>Great pizza, great people, right here in Arkansas.</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="wh-torn-edge wh-torn-edge-bottom" aria-hidden="true">
+    <svg viewBox="0 0 1440 28" preserveAspectRatio="none">
+      <path d="M0,0 L0,15 L44,9 L92,19 L140,8 L188,17 L238,9 L288,18 L340,7 L392,16 L444,9 L496,19 L548,8 L600,17 L652,9 L704,18 L756,7 L808,16 L860,9 L912,18 L964,8 L1016,17 L1068,9 L1120,19 L1172,8 L1224,17 L1276,9 L1328,18 L1380,8 L1440,16 L1440,0 Z" fill="#13342c"/>
+    </svg>
+  </div>
+</section>
+
+{{/* 5. COME PULL UP A CHAIR CTA BAND */}}
+<section class="wh-chair-band" aria-labelledby="wh-chair-title">
+  <div class="wh-chair-media">
+    {{ partial "image.html" (dict "src" "images/windy-holler/menu-deep-dish.webp" "alt" "Deep-dish pepperoni pizza slice with melted mozzarella cheese pull." "width" 1200 "height" 900 "sizes" "(max-width: 820px) 100vw, 48vw") }}
+  </div>
+
+  <div class="wh-chair-panel">
+    <h2 id="wh-chair-title" class="wh-chair-heading">
+      <span class="wh-chair-rays" aria-hidden="true"></span>
+      <span>Come Pull Up<br>A Chair.</span>
+      <span class="wh-chair-rays wh-chair-rays-right" aria-hidden="true"></span>
+    </h2>
+    <p class="wh-chair-copy">Whether you’re here for a deep-dish favorite, a tavern-style classic, or just a good meal with good company, you’ll always find a welcome at Windy Holler.</p>
+    <div class="wh-chair-actions">
+      {{ if partial "feature-enabled.html" "menu" }}
+        <a class="wh-btn wh-btn-forest" data-context-link href="{{ partial "site-url.html" "menu/" }}">
+          <span>Explore the Menu</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      {{ end }}
+      {{ if partial "feature-enabled.html" "locations" }}
+        <a class="wh-btn wh-btn-primary" data-context-link href="{{ partial "site-url.html" "locations/" }}">
+          <span>Find a Location</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</section>

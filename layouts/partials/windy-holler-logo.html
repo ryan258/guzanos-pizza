@@ -1,0 +1,64 @@
+{{ $clipID := .clipID | default "wh-crest-clip" }}
+{{ $arcID := printf "%s-arc" $clipID }}
+{{ $sunID := printf "%s-sun" $clipID }}
+<svg class="wh-logo-svg" viewBox="0 0 280 120" width="230" height="99" aria-hidden="true" focusable="false">
+  <defs>
+    <clipPath id="{{ $clipID }}">
+      <path d="M46 52 C64 4, 216 4, 234 52 Z"/>
+    </clipPath>
+    <radialGradient id="{{ $sunID }}" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#e2a84b"/>
+      <stop offset="70%" stop-color="#c88b3a"/>
+      <stop offset="100%" stop-color="#b47528"/>
+    </radialGradient>
+    <path id="{{ $arcID }}" d="M26,82 Q140,68 254,82"/>
+  </defs>
+
+  <!-- Crest sky & golden sun -->
+  <g clip-path="url(#{{ $clipID }})">
+    <rect x="40" y="2" width="200" height="54" fill="#184237"/>
+    <circle cx="156" cy="34" r="24" fill="url(#{{ $sunID }})"/>
+    <!-- Distant ridge -->
+    <path d="M40 52 Q86 28 130 42 Q178 24 240 44 L240 56 L40 56 Z" fill="#1d4e40"/>
+    <!-- Detailed Chicago skyline -->
+    <g fill="#0b201a">
+      <rect x="66" y="34" width="11" height="20"/>
+      <rect x="79" y="27" width="12" height="27"/>
+      <rect x="93" y="21" width="13" height="33"/>
+      <!-- Stepped Willis-style tower -->
+      <rect x="112" y="13" width="15" height="41"/>
+      <rect x="115" y="9" width="9" height="5"/>
+      <rect x="116" y="3" width="1.8" height="7"/>
+      <rect x="121" y="2" width="1.8" height="8"/>
+      <!-- Hancock-style taper -->
+      <polygon points="131,54 134,19 144,19 147,54"/>
+      <rect x="136" y="12" width="1.5" height="7"/>
+      <rect x="140" y="12" width="1.5" height="7"/>
+      <rect x="150" y="24" width="12" height="30"/>
+      <rect x="165" y="29" width="11" height="25"/>
+      <rect x="179" y="33" width="10" height="21"/>
+    </g>
+    <!-- Burnt-orange horizon glow & Ozark pine silhouette -->
+    <path d="M44 52 Q140 37 236 52 Z" fill="#b84a27" opacity="0.9"/>
+    <path d="M48 52 L55 37 L62 52 L68 39 L75 52 L80 42 L86 52 Z M192 52 L198 40 L204 52 L210 37 L217 52 L223 41 L230 52 Z" fill="#0b201a"/>
+  </g>
+
+  <!-- Crest arch frame -->
+  <path d="M46 52 C64 4, 216 4, 234 52" fill="none" stroke="#c88b3a" stroke-width="2.2" opacity="0.82"/>
+  <path d="M44 52 L236 52" stroke="#b84a27" stroke-width="2" opacity="0.85"/>
+
+  <!-- Arched WINDY HOLLER wordmark -->
+  <text text-anchor="middle" fill="#091a15" font-family="'Oswald', 'Arial Narrow', Impact, sans-serif" font-weight="700" font-size="33" letter-spacing="1.4" transform="translate(1.5, 2)">
+    <textPath href="#{{ $arcID }}" startOffset="50%">WINDY HOLLER</textPath>
+  </text>
+  <text text-anchor="middle" fill="#f6efe2" font-family="'Oswald', 'Arial Narrow', Impact, sans-serif" font-weight="700" font-size="33" letter-spacing="1.4">
+    <textPath href="#{{ $arcID }}" startOffset="50%">WINDY HOLLER</textPath>
+  </text>
+
+  <!-- Notched burnt-orange banner -->
+  <g transform="rotate(-1.4 140 98)">
+    <polygon points="36,86 244,86 239,97 244,108 36,108 41,97" fill="#b84a27"/>
+    <polygon points="36,86 244,86 242,88.5 38,88.5" fill="#d4633e" opacity="0.5"/>
+    <text x="140" y="101.5" text-anchor="middle" fill="#f6efe2" font-family="'Oswald', 'Arial Narrow', Arial, sans-serif" font-weight="700" font-size="12" letter-spacing="1.8">CHICAGO-STYLE PIZZERIA&#8482;</text>
+  </g>
+</svg>

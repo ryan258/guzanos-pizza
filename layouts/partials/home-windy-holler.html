@@ -1,0 +1,195 @@
+{{ $data := partial "site-data.html" . }}
+
+{{/* 1. HERO BAND */}}
+<section class="wh-hero" aria-labelledby="hero-title">
+  <div class="wh-hero-backdrop" aria-hidden="true">
+    {{ partial "image.html" (dict "src" "images/windy-holler/skyline-backdrop.webp" "alt" "" "width" 1408 "height" 768 "class" "wh-skyline-backdrop-img" "sizes" "(max-width: 820px) 100vw, 75vw") }}
+  </div>
+
+  <div class="wrap wh-hero-grid">
+    <div class="wh-hero-copy">
+      {{ with $data.brand.eyebrow }}
+        <p class="wh-ribbon-tag">{{ . }}</p>
+      {{ end }}
+      <h1 id="hero-title" class="wh-hero-title">
+        <span>{{ replace ($data.brand.headline | htmlEscape) ". " ".<br>" | safeHTML }}</span>
+      </h1>
+      <div class="wh-brush-rule" aria-hidden="true">
+        <svg viewBox="0 0 320 16" width="320" height="16" preserveAspectRatio="none">
+          <path d="M2 10 Q95 3 195 8 T318 6" fill="none" stroke="#b84a27" stroke-width="6" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <p class="wh-hero-intro">{{ $data.brand.intro }}</p>
+      <div class="wh-hero-actions">
+        {{ if partial "feature-enabled.html" "menu" }}
+          <a class="wh-btn wh-btn-primary" data-context-link href="{{ partial "site-url.html" "menu/" }}">
+            <span>Explore the menu</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        {{ end }}
+        {{ if partial "feature-enabled.html" "locations" }}
+          <a class="wh-btn wh-btn-outline" data-context-link href="{{ partial "site-url.html" "locations/" }}">
+            <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5A4.5 4.5 0 0 0 3.5 6c0 3.4 4.5 8.5 4.5 8.5S12.5 9.4 12.5 6A4.5 4.5 0 0 0 8 1.5Zm0 6A1.5 1.5 0 1 1 8 4.5a1.5 1.5 0 0 1 0 3Z" fill="currentColor"/></svg>
+            <span>Find your Windy Holler</span>
+          </a>
+        {{ end }}
+      </div>
+    </div>
+
+    <div class="wh-hero-media">
+      {{ with $data.brand.image }}
+        <div class="wh-hero-pizza-frame">
+          {{ partial "image.html" (merge . (dict "priority" true "class" "wh-hero-pizza-img" "sizes" "(max-width: 900px) 92vw, 52vw")) }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ partial "home-announcement.html" . }}
+
+{{/* 2. OUR MENU BAND */}}
+{{ if partial "feature-enabled.html" "menu" }}
+<section class="wh-menu-band" aria-labelledby="wh-menu-title">
+  <div class="wh-torn-edge wh-torn-edge-top" aria-hidden="true">
+    <svg viewBox="0 0 1440 28" preserveAspectRatio="none">
+      <path d="M0,28 L0,14 L38,18 L74,9 L118,16 L160,7 L210,17 L256,8 L302,15 L350,6 L402,16 L448,9 L496,18 L544,7 L592,15 L645,8 L698,17 L746,6 L798,16 L846,8 L898,17 L946,9 L996,16 L1044,7 L1098,16 L1146,8 L1196,17 L1246,7 L1296,16 L1348,9 L1396,17 L1440,11 L1440,28 Z" fill="#13342c"/>
+    </svg>
+  </div>
+
+  <div class="wrap wh-menu-inner">
+    <div class="wh-menu-head">
+      <div class="wh-menu-title-group">
+        <h2 id="wh-menu-title" class="wh-section-heading wh-heading-light">Our Menu</h2>
+        <div class="wh-brush-rule wh-brush-rule-sm" aria-hidden="true">
+          <svg viewBox="0 0 220 12" width="220" height="12" preserveAspectRatio="none">
+            <path d="M2 8 Q70 2 140 6 T218 5" fill="none" stroke="#b84a27" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+      <p class="wh-menu-subtitle">Chicago classics, holler favorites, and plenty of both.</p>
+      <a class="wh-btn wh-btn-primary wh-menu-cta" data-context-link href="{{ partial "site-url.html" "menu/" }}">
+        <span>View full menu</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    <div class="wh-menu-cards">
+      {{ $cards := slice
+        (dict "title" "Deep Dish Pizza" "src" "images/windy-holler/menu-deep-dish.webp" "alt" "Chicago-style deep-dish pizza slice with melted mozzarella cheese pull in a cast-iron pan." "href" "menu/")
+        (dict "title" "Tavern-Style Pizza" "src" "images/windy-holler/menu-tavern-style.webp" "alt" "Crispy thin-crust pepperoni tavern-style pizza cut into squares." "href" "menu/")
+        (dict "title" "Wings & Apps" "src" "images/windy-holler/menu-wings-apps.webp" "alt" "Glazed chicken wings in a stoneware bowl with celery sticks and ranch dip." "href" "menu/")
+        (dict "title" "Salads & More" "src" "images/windy-holler/menu-salads-more.webp" "alt" "Crisp romaine salad topped with golden croutons and shaved parmesan." "href" "menu/")
+      }}
+      {{ range $cards }}
+        <a class="wh-menu-card" data-context-link href="{{ partial "site-url.html" .href }}">
+          <div class="wh-menu-card-media">
+            {{ partial "image.html" (dict "src" .src "alt" .alt "width" 800 "height" 600 "sizes" "(max-width: 600px) 92vw, (max-width: 1024px) 46vw, 23vw") }}
+          </div>
+          <span class="wh-menu-card-label">{{ .title }}</span>
+        </a>
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="wh-torn-edge wh-torn-edge-bottom" aria-hidden="true">
+    <svg viewBox="0 0 1440 28" preserveAspectRatio="none">
+      <path d="M0,0 L0,15 L44,9 L92,19 L140,8 L188,17 L238,9 L288,18 L340,7 L392,16 L444,9 L496,19 L548,8 L600,17 L652,9 L704,18 L756,7 L808,16 L860,9 L912,18 L964,8 L1016,17 L1068,9 L1120,19 L1172,8 L1224,17 L1276,9 L1328,18 L1380,8 L1440,16 L1440,0 Z" fill="#13342c"/>
+    </svg>
+  </div>
+</section>
+{{ end }}
+
+{{/* 3. SIX LOCATIONS ACROSS ARKANSAS BAND */}}
+{{ if partial "feature-enabled.html" "locations" }}
+<section class="wh-locations-band" aria-labelledby="wh-locations-title">
+  <div class="wrap wh-locations-grid">
+    <div class="wh-locations-intro">
+      <h2 id="wh-locations-title" class="wh-section-heading wh-heading-dark">
+        Six<br>Locations<br>Across<br>Arkansas
+      </h2>
+      <div class="wh-brush-rule wh-brush-rule-sm" aria-hidden="true">
+        <svg viewBox="0 0 220 12" width="220" height="12" preserveAspectRatio="none">
+          <path d="M2 8 Q70 2 140 6 T218 5" fill="none" stroke="#b84a27" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="wh-state-map" aria-hidden="true">
+      <svg viewBox="0 0 220 205" width="196" height="183">
+        <defs>
+          <filter id="wh-ar-ink" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="2" result="noise"/>
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.6" xChannelSelector="R" yChannelSelector="G"/>
+          </filter>
+        </defs>
+        <!-- Textured Arkansas silhouette -->
+        <path d="M18,16 L184,16 L181,34 L203,40 L196,56 L188,74 L177,95 L167,114 L154,138 L150,152 L149,188 L37,188 L35,160 L27,154 L17,138 L17,60 Z" fill="#b84a27" filter="url(#wh-ar-ink)"/>
+        <!-- Subtle interior state grain highlight -->
+        <path d="M24,22 L176,22" stroke="#d4633e" stroke-width="1.5" opacity="0.45"/>
+        <!-- Six location pins -->
+        <g fill="#f6efe2">
+          <path d="M46 36a8.5 8.5 0 0 0-8.5 8.5c0 6.2 8.5 15 8.5 15s8.5-8.8 8.5-15A8.5 8.5 0 0 0 46 36Zm0 11.5a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/>
+          <path d="M68 28a8 8 0 0 0-8 8c0 5.8 8 14 8 14s8-8.2 8-14a8 8 0 0 0-8-8Zm0 10.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/>
+          <path d="M52 58a8 8 0 0 0-8 8c0 5.8 8 14 8 14s8-8.2 8-14a8 8 0 0 0-8-8Zm0 10.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/>
+          <path d="M37 96a8 8 0 0 0-8 8c0 5.8 8 14 8 14s8-8.2 8-14a8 8 0 0 0-8-8Zm0 10.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/>
+          <path d="M106 94a8.5 8.5 0 0 0-8.5 8.5c0 6.2 8.5 15 8.5 15s8.5-8.8 8.5-15a8.5 8.5 0 0 0-8.5-8.5Zm0 11.5a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/>
+          <path d="M44 148a8 8 0 0 0-8 8c0 5.8 8 14 8 14s8-8.2 8-14a8 8 0 0 0-8-8Zm0 10.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/>
+        </g>
+      </svg>
+    </div>
+
+    <ul class="wh-locations-list">
+      {{ range $data.locations }}
+        {{ $parts := split .name " – " }}
+        {{ $city := index $parts 0 }}
+        {{ $street := index (split .address ",") 0 }}
+        <li>
+          <a class="wh-location-item" href="{{ partial "site-url.html" (printf "locations/%s/" .id) }}">
+            <svg class="wh-pin-icon" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7Zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z" fill="#b84a27"/>
+            </svg>
+            <span class="wh-location-meta">
+              <strong class="wh-location-city">{{ $city }}</strong>
+              <span class="wh-location-street">{{ $street }}</span>
+            </span>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}
+
+{{/* 4. OUR STORY SPLIT BAND */}}
+{{ if partial "feature-enabled.html" "story" }}
+<section class="wh-story-band" aria-labelledby="wh-story-title">
+  <div class="wh-story-media">
+    {{ partial "image.html" (dict "src" "images/windy-holler/story-mural.webp" "alt" "Weathered brick wall exterior of Windy Holler pizzeria at sunset with painted Windy Holler mural and industrial barn lamps." "width" 1200 "height" 800 "sizes" "(max-width: 820px) 100vw, 50vw") }}
+  </div>
+  <div class="wh-story-panel">
+    <svg class="wh-story-skyline" viewBox="0 0 260 300" aria-hidden="true">
+      <g fill="none" stroke="#f6efe2" stroke-width="1.4" opacity="0.18">
+        <rect x="45" y="185" width="28" height="115"/>
+        <rect x="82" y="140" width="32" height="160"/>
+        <rect x="122" y="65" width="44" height="235"/>
+        <line x1="132" y1="22" x2="132" y2="65"/>
+        <line x1="154" y1="18" x2="154" y2="65"/>
+        <rect x="174" y="118" width="36" height="182"/>
+        <rect x="216" y="160" width="28" height="140"/>
+      </g>
+    </svg>
+    <div class="wh-story-content">
+      <p class="wh-ribbon-tag wh-ribbon-tag-sm">Our Story</p>
+      <h2 id="wh-story-title" class="wh-section-heading wh-heading-light">{{ $data.brand.story_title }}</h2>
+      {{ range $data.brand.story }}
+        <p class="wh-story-copy">{{ . }}</p>
+      {{ end }}
+      <a class="wh-btn wh-btn-light-outline" href="{{ partial "site-url.html" "story/" }}">
+        <span>Read our story</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+{{ end }}

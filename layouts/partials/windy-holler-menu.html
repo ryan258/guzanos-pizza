@@ -1,0 +1,129 @@
+{{/* 1. MENU HERO BANNER */}}
+<section class="wh-menu-hero" aria-labelledby="wh-menu-page-title">
+  <div class="wh-menu-hero-backdrop" aria-hidden="true">
+    {{ partial "image.html" (dict "src" "images/windy-holler/skyline-backdrop.webp" "alt" "" "width" 1408 "height" 768 "class" "wh-skyline-backdrop-img" "sizes" "(max-width: 820px) 100vw, 75vw") }}
+  </div>
+
+  <div class="wrap wh-menu-hero-inner">
+    <h1 id="wh-menu-page-title" class="wh-menu-hero-title">Our Menu</h1>
+    <p class="wh-ribbon-tag wh-menu-hero-ribbon">Chicago pizza. Holler favorites. And plenty of both.</p>
+  </div>
+</section>
+
+{{/* 2. CATEGORY JUMP BAR */}}
+<nav class="wh-cat-bar" aria-label="Menu categories">
+  <div class="wrap wh-cat-bar-inner">
+    {{ $cats := slice
+      (dict "label" "Pizza" "filter" "pizza" "active" true)
+      (dict "label" "Wings & Apps" "filter" "appetizers" "active" false)
+      (dict "label" "Salads" "filter" "salads" "active" false)
+      (dict "label" "Sides" "filter" "appetizers" "active" false)
+      (dict "label" "Desserts" "filter" "sweets" "active" false)
+      (dict "label" "Drinks" "filter" "drinks" "active" false)
+    }}
+    {{ range $cats }}
+      <button type="button" class="wh-cat-pill{{ if .active }} is-active{{ end }}" data-wh-cat-jump="{{ .filter }}" aria-pressed="{{ if .active }}true{{ else }}false{{ end }}">{{ .label }}</button>
+    {{ end }}
+  </div>
+</nav>
+
+{{/* 3. EDITORIAL SPLIT SHOWCASES */}}
+<section class="wh-pizza-showcases" aria-label="Signature pizza styles">
+  <div class="wrap wh-showcase-stack">
+    <article class="wh-showcase-row">
+      <div class="wh-showcase-copy">
+        <p class="wh-showcase-kicker">Chicago-Style</p>
+        <h2 class="wh-showcase-title">Deep Dish</h2>
+        <div class="wh-brush-rule wh-brush-rule-sm" aria-hidden="true">
+          <svg viewBox="0 0 220 12" width="220" height="12" preserveAspectRatio="none">
+            <path d="M2 8 Q70 2 140 6 T218 5" fill="none" stroke="#b84a27" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p class="wh-showcase-desc">The Windy Holler classic. A thick, hearty pizza with a buttery crust, layers of cheese, and our signature sauce on top.</p>
+      </div>
+      <div class="wh-showcase-media">
+        {{ partial "image.html" (dict "src" "images/windy-holler/hero-deep-dish.webp" "alt" "Chicago-style deep-dish pizza in a cast-iron pan with a lifted slice and melted mozzarella cheese pull." "width" 1200 "height" 900 "priority" true "sizes" "(max-width: 820px) 94vw, 52vw") }}
+      </div>
+    </article>
+
+    <article class="wh-showcase-row wh-showcase-row-reverse">
+      <div class="wh-showcase-media">
+        {{ partial "image.html" (dict "src" "images/windy-holler/menu-tavern-style.webp" "alt" "Crispy thin-crust Chicago tavern-style pepperoni pizza cut into shareable squares." "width" 1200 "height" 900 "sizes" "(max-width: 820px) 94vw, 52vw") }}
+      </div>
+      <div class="wh-showcase-copy">
+        <p class="wh-showcase-kicker">Tavern-Style</p>
+        <h2 class="wh-showcase-title">Pizza</h2>
+        <div class="wh-brush-rule wh-brush-rule-sm" aria-hidden="true">
+          <svg viewBox="0 0 220 12" width="220" height="12" preserveAspectRatio="none">
+            <path d="M2 8 Q70 2 140 6 T218 5" fill="none" stroke="#b84a27" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p class="wh-showcase-desc">A Chicago favorite with an Arkansas twist. Thin, crispy, and cut into shareable squares (“tavern cut”) for maximum flavor.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+{{/* 4. EXPLORE THE FULL MENU GRID */}}
+<section class="wh-explore-menu" aria-labelledby="wh-explore-title">
+  <div class="wrap">
+    <div class="wh-explore-header">
+      <h2 id="wh-explore-title" class="wh-ribbon-tag wh-explore-ribbon">Explore the full menu</h2>
+    </div>
+
+    <div class="wh-explore-grid">
+      {{ $explore := slice
+        (dict "title" "Wings & Apps" "desc" "Crowd-pleasing starters, classic wings, and more." "src" "images/windy-holler/menu-wings-apps.webp" "alt" "Glazed chicken wings in a stoneware bowl with celery sticks and ranch dip." "filter" "appetizers")
+        (dict "title" "Salads" "desc" "Fresh salads with bold flavor." "src" "images/windy-holler/menu-salads-more.webp" "alt" "Crisp romaine salad topped with golden croutons and shaved parmesan." "filter" "salads")
+        (dict "title" "Sides" "desc" "Perfect additions to any meal." "src" "images/windy-holler/menu-sides.webp" "alt" "Golden toasted cheesy garlic bread triangles with marinara dipping sauce." "filter" "appetizers")
+        (dict "title" "Desserts" "desc" "Sweet finishes worth sharing." "src" "images/windy-holler/menu-desserts.webp" "alt" "Warm dark chocolate brownie topped with vanilla bean ice cream and chocolate drizzle." "filter" "sweets")
+      }}
+      {{ range $explore }}
+        <a class="wh-explore-card" href="#wh-full-menu" data-wh-cat-jump="{{ .filter }}">
+          <div class="wh-explore-card-media">
+            {{ partial "image.html" (dict "src" .src "alt" .alt "width" 800 "height" 600 "sizes" "(max-width: 600px) 92vw, (max-width: 1024px) 46vw, 23vw") }}
+          </div>
+          <div class="wh-explore-card-body">
+            <div class="wh-explore-card-text">
+              <strong class="wh-explore-card-title">{{ .title }}</strong>
+              <span class="wh-explore-card-desc">{{ .desc }}</span>
+            </div>
+            <span class="wh-explore-card-arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{/* 5. INTERACTIVE FULL MENU BOARD */}}
+<section id="wh-full-menu" class="wh-full-menu-section" aria-label="Full menu listings">
+  <div class="wrap">
+    {{ partial "modules/menu.html" . }}
+  </div>
+</section>
+
+{{/* 6. READY TO ORDER CTA BAND */}}
+{{ if partial "feature-enabled.html" "ordering" }}
+<section class="wh-ready-band" aria-labelledby="wh-ready-title">
+  <div class="wh-ready-trees" aria-hidden="true">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path d="M0,120 L0,62 Q180,38 360,58 Q560,26 760,54 Q980,24 1180,50 Q1320,34 1440,56 L1440,120 Z" fill="#184237" opacity="0.55"/>
+      <path d="M0,120 L0,84 L20,62 L40,84 L62,56 L84,86 L108,60 L132,88 L158,52 L184,84 L212,64 L238,90 L264,56 L290,86 L318,62 L344,90 L372,54 L398,84 L426,64 L452,90 L480,58 L506,88 L534,62 L560,92 L588,54 L614,84 L642,64 L668,90 L696,56 L722,86 L750,62 L776,90 L804,54 L830,84 L858,64 L884,90 L912,56 L938,86 L966,62 L992,90 L1020,54 L1046,84 L1074,64 L1100,90 L1128,56 L1154,86 L1182,62 L1208,90 L1236,54 L1262,84 L1290,64 L1316,90 L1344,56 L1370,86 L1398,62 L1440,88 L1440,120 Z" fill="#0e2a22"/>
+    </svg>
+  </div>
+  <div class="wrap wh-ready-inner">
+    <h2 id="wh-ready-title" class="wh-ready-heading">
+      <span class="wh-ready-rays" aria-hidden="true"></span>
+      <span>Ready to Order?</span>
+      <span class="wh-ready-rays wh-ready-rays-right" aria-hidden="true"></span>
+    </h2>
+    <a class="wh-btn wh-btn-primary wh-ready-btn" data-context-link href="{{ partial "site-url.html" "ordering/" }}">
+      <span>Order Online</span>
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M9.5 2.5h4v4M13.5 2.5l-6.5 6.5M6.5 3.5H3.5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</section>
+{{ end }}

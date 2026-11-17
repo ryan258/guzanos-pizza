@@ -1,1 +1,6 @@
-{{ range (partial "site-config.html" .).homesections }}{{ partial (printf "home-%s.html" .) $ }}{{ end }}
+{{ $config := partial "site-config.html" . }}
+{{ if and (eq $config.profileid "windy-holler") (not .Params.previewpreset) (not $config.useexamples) }}
+  {{ partial "home-windy-holler.html" . }}
+{{ else }}
+  {{ range $config.homesections }}{{ partial (printf "home-%s.html" .) $ }}{{ end }}
+{{ end }}

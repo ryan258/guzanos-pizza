@@ -1,5 +1,6 @@
 {{ $config := partial "site-config.html" . }}
 {{ $data := partial "site-data.html" . }}
+{{ $isWindyHoller := and (eq $config.profileid "windy-holler") (not .Params.previewpreset) (not $config.useexamples) }}
 <!doctype html>
 <html lang="{{ site.Language.Locale | default "en" }}">
 <head>
@@ -7,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Params.companyName }}{{ end }}</title>
   <meta name="description" content="{{ .Description | default $data.brand.intro }}">
-  <meta name="theme-color" content="#f6f0df">
+  <meta name="theme-color" content="{{ if $isWindyHoller }}#13342c{{ else }}#f6f0df{{ end }}">
   {{ if ne site.Params.mode "publication" }}<meta name="robots" content="noindex, nofollow">{{ else }}
     <link rel="canonical" href="{{ .Permalink }}">
     <meta property="og:title" content="{{ .Title | default site.Title }}">
@@ -19,18 +20,54 @@
     {{ if .Params.locationid }}{{ partial "shared/schema.html" . }}{{ end }}
   {{ end }}
   <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
-  {{ $css := slice (resources.Get "css/site.css") (resources.Get "css/components.css") (resources.Get "css/presets.css") | resources.Concat "css/restaurant.css" | minify | fingerprint }}
+  {{ if $isWindyHoller }}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,500&family=Oswald:wght@500;600;700&display=swap">
+  {{ end }}
+  {{ $css := slice (resources.Get "css/site.css") (resources.Get "css/components.css") (resources.Get "css/presets.css") (resources.Get "css/windy-holler.css") | resources.Concat "css/restaurant.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
   {{ if eq .Layout "site-kit" }}
     {{ $guideCSS := resources.Get "css/style-guide.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $guideCSS.RelPermalink }}" integrity="{{ $guideCSS.Data.Integrity }}">
   {{ end }}
 </head>
-<body data-preset="{{ $config.preset }}" data-accent="{{ $config.accent }}" data-base="{{ partial "site-url.html" ("") }}"{{ with .Params.locationid }} data-location-default="{{ . }}"{{ end }}>
+<body data-preset="{{ $config.preset }}" data-accent="{{ $config.accent }}"{{ if $isWindyHoller }} data-brand="windy-holler"{{ end }} data-base="{{ partial "site-url.html" ("") }}"{{ with .Params.locationid }} data-location-default="{{ . }}"{{ end }}>
   <a class="skip" href="#main">Skip to content</a>
   {{ if ne site.Params.mode "publication" }}
     <div class="preview-bar">{{ site.Params.companyName }} · {{ site.Params.mode }} · illustrative or unapproved content{{ with .Params.previewpreset }} · {{ humanize . }} design{{ end }}</div>
   {{ end }}
+  {{ if $isWindyHoller }}
+    <header class="wh-header" data-wh-header>
+      <div class="wrap wh-header-inner" data-wh-header-inner>
+        <a class="wh-logo-link" href="{{ partial "site-url.html" ("") }}" aria-label="{{ site.Params.companyName }} home">
+          {{ partial "windy-holler-logo.html" (dict "clipID" "wh-crest-header") }}
+        </a>
+        <nav class="wh-nav" aria-label="Main navigation">
+          <button class="wh-menu-button" type="button" popovertarget="wh-site-menu" popovertargetaction="toggle" aria-controls="wh-site-menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+            <span>Menu</span>
+          </button>
+          <ul id="wh-site-menu" class="wh-site-menu" popover="auto">
+            {{ if partial "feature-enabled.html" "menu" }}<li><a href="{{ partial "site-url.html" "menu/" }}" data-context-link{{ if eq $.Params.module "menu" }} aria-current="page"{{ end }}>Menu</a></li>{{ end }}
+            {{ if partial "feature-enabled.html" "specials" }}<li><a href="{{ partial "site-url.html" "specials/" }}" data-context-link{{ if eq $.Params.module "specials" }} aria-current="page"{{ end }}>Specials</a></li>{{ end }}
+            {{ if partial "feature-enabled.html" "locations" }}<li><a href="{{ partial "site-url.html" "locations/" }}" data-context-link{{ if eq $.Params.module "locations" }} aria-current="page"{{ end }}>Locations</a></li>{{ end }}
+            {{ if partial "feature-enabled.html" "story" }}<li><a href="{{ partial "site-url.html" "story/" }}"{{ if eq $.Params.module "story" }} aria-current="page"{{ end }}>Our Story</a></li>{{ end }}
+            {{ if partial "feature-enabled.html" "catering" }}<li><a href="{{ partial "site-url.html" "catering/" }}" data-context-link{{ if eq $.Params.module "catering" }} aria-current="page"{{ end }}>Catering</a></li>{{ end }}
+            {{ if partial "feature-enabled.html" "contact" }}<li><a href="{{ partial "site-url.html" "contact/" }}" data-context-link{{ if eq $.Params.module "contact" }} aria-current="page"{{ end }}>Contact</a></li>{{ end }}
+            {{ if partial "feature-enabled.html" "ordering" }}
+              <li class="wh-nav-cta-item">
+                <a class="wh-btn wh-btn-primary wh-nav-cta" href="{{ partial "site-url.html" "ordering/" }}" data-context-link{{ if eq $.Params.module "ordering" }} aria-current="page"{{ end }}>
+                  <span>Order Online</span>
+                  <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M9.5 2.5h4v4M13.5 2.5l-6.5 6.5M6.5 3.5H3.5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </nav>
+      </div>
+    </header>
+  {{ else }}
   <header class="site-header wrap">
     <a class="wordmark" href="{{ partial "site-url.html" ("") }}" aria-label="{{ site.Params.companyName }} home">{{ site.Params.companyName }}<span aria-hidden="true">✳</span></a>
     <nav aria-label="Main navigation">
@@ -67,7 +104,68 @@
       </details>
     </nav>
   </header>
+  {{ end }}
   <main id="main" tabindex="-1">{{ block "main" . }}{{ end }}</main>
+  {{ if $isWindyHoller }}
+    <footer class="wh-footer">
+      <div class="wrap wh-footer-grid">
+        <a class="wh-footer-logo" href="{{ partial "site-url.html" ("") }}" aria-label="{{ site.Params.companyName }} home">
+          {{ partial "windy-holler-logo.html" (dict "clipID" "wh-crest-footer") }}
+        </a>
+
+        <nav class="wh-footer-nav" aria-label="Footer navigation">
+          <ul>
+            {{ if partial "feature-enabled.html" "menu" }}<li><a href="{{ partial "site-url.html" "menu/" }}" data-context-link>Menu</a></li>{{ end }}
+            {{ if partial "feature-enabled.html" "specials" }}<li><a href="{{ partial "site-url.html" "specials/" }}" data-context-link>Specials</a></li>{{ end }}
+            {{ if partial "feature-enabled.html" "locations" }}<li><a href="{{ partial "site-url.html" "locations/" }}" data-context-link>Locations</a></li>{{ end }}
+            {{ if partial "feature-enabled.html" "story" }}<li><a href="{{ partial "site-url.html" "story/" }}">Our Story</a></li>{{ end }}
+            {{ if partial "feature-enabled.html" "catering" }}<li><a href="{{ partial "site-url.html" "catering/" }}" data-context-link>Catering</a></li>{{ end }}
+            {{ if partial "feature-enabled.html" "contact" }}<li><a href="{{ partial "site-url.html" "contact/" }}" data-context-link>Contact</a></li>{{ end }}
+          </ul>
+        </nav>
+
+        <div class="wh-newsletter">
+          <h2 id="wh-newsletter-heading" class="wh-newsletter-title">Stay in the Holler</h2>
+          <p class="wh-newsletter-desc">Get updates, special offers, and new menu news.</p>
+          <form class="wh-newsletter-form" action="{{ partial "site-url.html" "contact/" }}" method="GET" aria-labelledby="wh-newsletter-heading" novalidate data-wh-newsletter>
+            <label class="visually-hidden" for="wh-newsletter-email">Email address</label>
+            <input id="wh-newsletter-email" name="email" type="email" autocomplete="email" autocorrect="off" autocapitalize="none" spellcheck="false" enterkeyhint="send" placeholder="Enter your email" required aria-describedby="wh-newsletter-status">
+            <button type="submit" aria-label="Subscribe to newsletter">
+              <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </form>
+          <p id="wh-newsletter-status" class="wh-newsletter-status" role="status" aria-live="polite"></p>
+        </div>
+
+        <div class="wh-social" aria-label="Social channels">
+          <a href="{{ partial "site-url.html" "contact/" }}" aria-label="Windy Holler on Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-1.56 19.88v-7h-2.5V12h2.5V9.8c0-2.47 1.47-3.84 3.72-3.84 1.08 0 2.21.19 2.21.19v2.43h-1.24c-1.22 0-1.6.76-1.6 1.54V12h2.72l-.43 2.88h-2.29v7A10 10 0 0 0 12 2Z" fill="currentColor"/></svg>
+          </a>
+          <a href="{{ partial "site-url.html" "contact/" }}" aria-label="Windy Holler on Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+          </a>
+          <a href="{{ partial "site-url.html" "contact/" }}" aria-label="Windy Holler on TikTok">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 3v10.2a3.7 3.7 0 1 1-2.6-3.53v2.5a1.4 1.4 0 1 0 1 1.34V3h2.1a4.2 4.2 0 0 0 4 3.9V9a6.2 6.2 0 0 1-4.5-1.9Z" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="wrap wh-footer-meta">
+        <span>© {{ now.Year }} {{ site.Params.companyName }}</span>
+        <div class="wh-footer-legal">
+          <a href="{{ partial "site-url.html" ("privacy/") }}">Privacy</a>
+          {{ if partial "feature-enabled.html" "accessibility" }}<a href="{{ partial "site-url.html" ("accessibility/") }}">Access information</a>{{ end }}
+          {{ if ne site.Params.mode "publication" }}<a href="{{ partial "site-url.html" "site-kit/" }}">Style & operator guide</a>{{ end }}
+        </div>
+      </div>
+
+      <div class="wh-footer-trees" aria-hidden="true">
+        <svg viewBox="0 0 1440 44" preserveAspectRatio="none">
+          <path d="M0,44 L0,30 L16,16 L32,30 L46,18 L60,32 L78,12 L96,30 L114,20 L130,34 L148,14 L166,32 L188,22 L206,36 L228,16 L248,32 L270,14 L290,32 L314,22 L334,36 L356,16 L376,32 L400,18 L420,34 L444,12 L466,30 L490,22 L512,34 L536,16 L558,32 L582,14 L604,34 L628,20 L650,36 L674,16 L696,32 L720,12 L742,32 L766,20 L788,36 L812,16 L834,32 L858,14 L880,34 L904,20 L926,36 L950,16 L972,32 L996,12 L1018,32 L1042,20 L1064,36 L1088,16 L1110,32 L1134,14 L1156,34 L1180,20 L1202,36 L1226,16 L1248,32 L1272,14 L1294,34 L1318,20 L1340,36 L1364,16 L1386,32 L1410,14 L1440,32 L1440,44 Z" fill="#0b201a"/>
+        </svg>
+      </div>
+    </footer>
+  {{ else }}
   <footer class="wrap footer">
     <a class="wordmark" href="{{ partial "site-url.html" ("") }}">{{ site.Params.companyName }}</a>
     <p>{{ $data.brand.tagline }}</p>
@@ -76,6 +174,7 @@
     {{ if ne site.Params.mode "publication" }}<a href="{{ partial "site-url.html" "site-kit/" }}"{{ if .Params.previewpreset }} target="_top"{{ end }}>Style & operator guide</a>{{ end }}
     <span>© {{ now.Year }} {{ site.Params.companyName }}</span>
   </footer>
+  {{ end }}
   {{ if and (partial "feature-enabled.html" "quicklinks") (ne .Layout "site-kit") }}
     <nav class="quicklinks" aria-label="Quick actions">
       {{ range slice "menu" "ordering" "reservations" "locations" "foodtruck" }}
