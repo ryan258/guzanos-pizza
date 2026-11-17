@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f6f0df"/>
+  <path d="M0 230C110 170 230 190 330 220 450 160 580 150 800 210V600H0Z" fill="#ccd9c7"/>
+  <path d="M0 320C150 260 300 290 420 300 560 250 690 260 800 290V600H0Z" fill="#a8c3a2"/>
+  <path d="M0 430C160 380 330 400 470 420 620 390 720 400 800 410V600H0Z" fill="#8fae8a"/>
+  <g fill="#426650">
+    <path d="M90 300l22-56 22 56Z"/><path d="M130 312l18-46 18 46Z"/><path d="M640 262l20-50 20 50Z"/>
+    <path d="M680 276l16-42 16 42Z"/><path d="M600 430l24-62 24 62Z"/><path d="M110 470l26-66 26 66Z"/>
+    <path d="M700 460l20-52 20 52Z"/>
+  </g>
+  <path d="M150 600C220 530 540 548 486 470 436 400 252 432 304 360 346 302 528 322 506 262 490 218 424 222 434 186" fill="none" stroke="#5b5048" stroke-width="40" stroke-linecap="round"/>
+  <path d="M150 600C220 530 540 548 486 470 436 400 252 432 304 360 346 302 528 322 506 262 490 218 424 222 434 186" fill="none" stroke="#f6f0df" stroke-width="4" stroke-dasharray="14 12"/>
+  <g transform="translate(372 420) rotate(-10)">
+    <path d="M14 -40c-8 -10 8 -18 0 -30M44 -40c-8 -10 8 -18 0 -30M74 -40c-8 -10 8 -18 0 -30" stroke="#a8a29a" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <rect x="0" y="-6" width="92" height="28" rx="3" fill="#c48a46"/>
+    <path d="M0 -6l12 -24h92l-12 24Z" fill="#d9a35f"/>
+    <path d="M30 -18h40" stroke="#b23a2a" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="20" cy="26" r="9" fill="#3a4a5a"/><circle cx="72" cy="26" r="9" fill="#3a4a5a"/>
+  </g>
+  <g transform="translate(560 520)">
+    <rect x="-4" y="0" width="8" height="60" fill="#73543b"/>
+    <path d="M0 -38l36 36-36 36-36-36Z" fill="#f2c14e" stroke="#73543b" stroke-width="4"/>
+    <path d="M-14 6c10-22 28-22 18-2s16 18 22-8" fill="none" stroke="#3a4a5a" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>

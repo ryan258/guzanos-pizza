@@ -1,0 +1,13 @@
+title = "Windy Holler Chicago-Style Pizzeria"
+[params]
+companyName = "Windy Holler Chicago-Style Pizzeria"
+profileID = "windy-holler"
+
+[params.features]
+reservations = false
+# Parody pack: news dispatches and original illustrations.
+news = true
+gallery = true
+team = false
+giftcards = false
+loyalty = false

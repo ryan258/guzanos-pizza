@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f6f0df"/>
+  <rect width="400" height="600" fill="#ccd9c7" opacity=".55"/>
+  <rect x="400" width="400" height="600" fill="#e8c9a4" opacity=".55"/>
+  <circle cx="400" cy="316" r="206" fill="#73543b"/>
+  <circle cx="400" cy="306" r="200" fill="#c48a46"/>
+  <circle cx="400" cy="306" r="178" fill="#b23a2a"/>
+  <circle cx="400" cy="306" r="166" fill="#f2c14e"/>
+  <g fill="#b23a2a">
+    <circle cx="320" cy="240" r="22"/><circle cx="300" cy="350" r="22"/><circle cx="350" cy="420" r="20"/>
+    <circle cx="470" cy="230" r="22"/><circle cx="500" cy="340" r="22"/><circle cx="450" cy="420" r="20"/>
+    <circle cx="350" cy="300" r="18"/><circle cx="460" cy="300" r="18"/>
+  </g>
+  <g fill="#426650"><path d="M380 250l12-8 6 12-12 6Z"/><path d="M290 420l12-8 6 12-12 6Z"/><path d="M510 410l12-8 6 12-12 6Z"/></g>
+  <path d="M400 40V572" stroke="#3a4a5a" stroke-width="7" stroke-dasharray="20 14"/>
+  <g font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="64" text-anchor="middle">
+    <text x="200" y="100" fill="#426650">AR</text>
+    <text x="600" y="100" fill="#9d2235">TX</text>
+  </g>
+  <g transform="translate(640 470) rotate(-28)">
+    <rect x="0" y="-8" width="120" height="16" rx="4" fill="#b9c4cc"/>
+    <rect x="-56" y="-10" width="60" height="20" rx="8" fill="#73543b"/>
+  </g>
+</svg>

@@ -1,31 +1,33 @@
 {
   "schema_version": 2,
   "meta": {
-    "status": "draft",
+    "status": "demo",
     "reviewed_on": "",
-    "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+    "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
   },
   "brand": {
-    "headline": "Chicago-style pizza. Cold drinks. Game on.",
-    "intro": "Deep dish, thin crust, and trivia nights at nine locations across Arkansas, Missouri, and Texas.",
-    "eyebrow": "Chicago-style pizzeria · AR · MO · TX",
-    "tagline": "The best pizza, coldest drinks, and friendliest service.",
-    "note": "Unofficial redesign exercise built from public gusanos.pizza content. Not affiliated with Gusano's.",
+    "headline": "Deep dish. No apologies.",
+    "intro": "Chicago-style pizza with serious substance and a little Arkansas rebellion. Pull up a chair. Bring your appetite.",
+    "eyebrow": "Chicago-style pizza. Arkansas attitude.",
+    "tagline": "Chicago roots. Arkansas home.",
+    "note": "Windy Holler is a fictional parody pizzeria. Every name, address, phone number, dish, price, and story on this site is invented. Not affiliated with any real restaurant or with the University of Arkansas.",
     "image": {
-      "src": "images/dining-room.svg",
-      "alt": "Illustration of a dining room with a table, chairs, and a potted plant.",
-      "width": 800,
-      "height": 600
+      "src": "images/windy-holler/hero-deep-dish.webp",
+      "alt": "Cast-iron pan of Chicago-style deep-dish pizza with a lifted slice and melted mozzarella cheese pull.",
+      "width": 1200,
+      "height": 900
     },
-    "story_title": "From Little Rock to the Ozarks",
+    "story_title": "Chicago roots. Arkansas home.",
     "story": [
-      "After success in Little Rock, the owners, who grew up in Northwest Arkansas, opened Bentonville in 2005.",
-      "Bella Vista, Fayetteville (2008, moved to Steamboat Dr. in 2012), Joplin (2009), Texarkana (2012), Rogers (2015), Springdale and Fort Smith (2018), and Shiloh Dr. (2026) followed."
+      "Windy Holler brings the big, bold tradition of Chicago-style pizza to Arkansas, with a little local attitude baked in."
     ],
     "ticker": [
-      "Trivia Tuesday and Wednesday",
-      "Order pickup online",
-      "Cater your tailgate"
+      "Tavern-cut Tuesday",
+      "Trivia most nights",
+      "Tailgate pans",
+      "Deep dish: a pizza with a basement",
+      "Fork, knife, Woo Pig",
+      "Hold the ketchup"
     ]
   },
   "announcement": {
@@ -34,18 +36,105 @@
     "end": ""
   },
   "contacts": {
-    "email": "info@gusanospizza.com",
-    "phone": "",
-    "response": "Each location answers its own phone during open hours.",
+    "email": "hello@windyholler.example",
+    "phone": "479-555-0100",
+    "response": "Fictional staff answer fictional phones remarkably fast.",
     "channels": []
   },
   "locations": [
     {
+      "id": "fayetteville",
+      "name": "Fayetteville – The Loop",
+      "address": "1 Lake Shore Holler, Fayetteville, AR",
+      "phone": "479-555-0101",
+      "email": "",
+      "map_url": "",
+      "timezone": "America/Chicago",
+      "hours": [
+        {
+          "day": 0,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 1,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 2,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 3,
+          "intervals": [
+            [
+              "11:00",
+              "22:00"
+            ]
+          ]
+        },
+        {
+          "day": 4,
+          "intervals": [
+            [
+              "11:00",
+              "24:00"
+            ]
+          ]
+        },
+        {
+          "day": 5,
+          "intervals": [
+            [
+              "11:00",
+              "24:00"
+            ]
+          ]
+        },
+        {
+          "day": 6,
+          "intervals": [
+            [
+              "12:00",
+              "21:00"
+            ]
+          ]
+        }
+      ],
+      "exceptions": [],
+      "access": {
+        "parking": "A small lot out back that fills up two hours before kickoff, plus street parking.",
+        "entrance": "Front door at street level with no steps.",
+        "seating": "Booths, high-tops, and the Bleacher Room in back.",
+        "sensory": "Loud on game days. Quiet enough for a conversation at lunch."
+      },
+      "meta": {
+        "status": "demo",
+        "reviewed_on": "",
+        "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+      }
+    },
+    {
       "id": "bentonville",
-      "name": "Bentonville",
-      "address": "2905 S Walton Blvd #9, Bentonville, AR 72712",
-      "phone": "479-271-8242",
-      "map_url": "https://www.google.com/maps/search/?api=1&query=Gusano%27s+Pizza+2905+S+Walton+Blvd+%239%2C+Bentonville%2C+AR+72712",
+      "name": "Bentonville – Upper Wacker",
+      "address": "312 Upper Wacker Holler, Bentonville, AR",
+      "phone": "479-555-0102",
+      "email": "",
+      "map_url": "",
       "timezone": "America/Chicago",
       "hours": [
         {
@@ -89,7 +178,7 @@
           "intervals": [
             [
               "11:00",
-              "23:00"
+              "24:00"
             ]
           ]
         },
@@ -98,7 +187,7 @@
           "intervals": [
             [
               "11:00",
-              "23:00"
+              "24:00"
             ]
           ]
         },
@@ -106,194 +195,31 @@
           "day": 6,
           "intervals": [
             [
-              "11:00",
-              "22:00"
+              "12:00",
+              "21:00"
             ]
           ]
         }
       ],
       "exceptions": [],
       "access": {
-        "seating": "Kids' game area, adults-only game room with pool tables and 25+ screens, expanded patio."
+        "parking": "Shared lot with plenty of spaces, including accessible spaces by the door.",
+        "entrance": "Automatic door on the north side.",
+        "seating": "A dining room full of big screens and a patio for nice evenings."
       },
       "meta": {
-        "status": "draft",
+        "status": "demo",
         "reviewed_on": "",
-        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-      },
-      "email": "gusanos.bentonville@gusanospizza.com"
-    },
-    {
-      "id": "fayetteville-steamboat",
-      "name": "Fayetteville – Steamboat Dr.",
-      "address": "1267 Steamboat Dr, Fayetteville, AR 72704",
-      "phone": "479-287-4000",
-      "map_url": "https://www.google.com/maps/search/?api=1&query=Gusano%27s+Pizza+1267+Steamboat+Dr%2C+Fayetteville%2C+AR+72704",
-      "timezone": "America/Chicago",
-      "hours": [
-        {
-          "day": 0,
-          "intervals": [
-            [
-              "11:00",
-              "22:00"
-            ]
-          ]
-        },
-        {
-          "day": 1,
-          "intervals": [
-            [
-              "11:00",
-              "22:00"
-            ]
-          ]
-        },
-        {
-          "day": 2,
-          "intervals": [
-            [
-              "11:00",
-              "22:00"
-            ]
-          ]
-        },
-        {
-          "day": 3,
-          "intervals": [
-            [
-              "11:00",
-              "22:00"
-            ]
-          ]
-        },
-        {
-          "day": 4,
-          "intervals": [
-            [
-              "11:00",
-              "23:00"
-            ]
-          ]
-        },
-        {
-          "day": 5,
-          "intervals": [
-            [
-              "11:00",
-              "23:00"
-            ]
-          ]
-        },
-        {
-          "day": 6,
-          "intervals": [
-            [
-              "11:00",
-              "22:00"
-            ]
-          ]
-        }
-      ],
-      "exceptions": [],
-      "access": {
-        "seating": "Plenty of tables for game-day crowds.",
-        "parking": "Large parking lot."
-      },
-      "meta": {
-        "status": "draft",
-        "reviewed_on": "",
-        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-      },
-      "email": "gusanos.fayetteville@gusanospizza.com"
-    },
-    {
-      "id": "fayetteville-shiloh",
-      "name": "Fayetteville – Shiloh Dr.",
-      "address": "3913 Shiloh Dr, Suite 3, Fayetteville, AR 72703",
-      "phone": "479-332-4460",
-      "map_url": "https://www.google.com/maps/search/?api=1&query=Gusano%27s+Pizza+3913+Shiloh+Dr%2C+Suite+3%2C+Fayetteville%2C+AR+72703",
-      "timezone": "America/Chicago",
-      "hours": [
-        {
-          "day": 0,
-          "intervals": [
-            [
-              "11:00",
-              "22:00"
-            ]
-          ]
-        },
-        {
-          "day": 1,
-          "intervals": [
-            [
-              "11:00",
-              "22:00"
-            ]
-          ]
-        },
-        {
-          "day": 2,
-          "intervals": [
-            [
-              "11:00",
-              "22:00"
-            ]
-          ]
-        },
-        {
-          "day": 3,
-          "intervals": [
-            [
-              "11:00",
-              "22:00"
-            ]
-          ]
-        },
-        {
-          "day": 4,
-          "intervals": [
-            [
-              "11:00",
-              "23:00"
-            ]
-          ]
-        },
-        {
-          "day": 5,
-          "intervals": [
-            [
-              "11:00",
-              "23:00"
-            ]
-          ]
-        },
-        {
-          "day": 6,
-          "intervals": [
-            [
-              "11:00",
-              "22:00"
-            ]
-          ]
-        }
-      ],
-      "exceptions": [],
-      "access": {},
-      "meta": {
-        "status": "draft",
-        "reviewed_on": "",
-        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-      },
-      "email": "gusanos.fayetteville@gusanospizza.com"
+        "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+      }
     },
     {
       "id": "rogers",
-      "name": "Rogers",
-      "address": "2603 W Pleasant Grove Rd #112, Rogers, AR 72758",
-      "phone": "479-636-0400",
-      "map_url": "https://www.google.com/maps/search/?api=1&query=Gusano%27s+Pizza+2603+W+Pleasant+Grove+Rd+%23112%2C+Rogers%2C+AR+72758",
+      "name": "Rogers – The Upper Deck",
+      "address": "1060 W Addison Hill, Rogers, AR",
+      "phone": "479-555-0103",
+      "email": "",
+      "map_url": "",
       "timezone": "America/Chicago",
       "hours": [
         {
@@ -337,7 +263,7 @@
           "intervals": [
             [
               "11:00",
-              "23:00"
+              "24:00"
             ]
           ]
         },
@@ -346,7 +272,7 @@
           "intervals": [
             [
               "11:00",
-              "23:00"
+              "24:00"
             ]
           ]
         },
@@ -354,113 +280,31 @@
           "day": 6,
           "intervals": [
             [
-              "11:00",
-              "22:00"
+              "12:00",
+              "21:00"
             ]
           ]
         }
       ],
       "exceptions": [],
       "access": {
-        "seating": "Kids' game room; upstairs private room (the Skybox).",
-        "parking": "Plenty of parking."
+        "parking": "Large lot off the frontage road.",
+        "entrance": "Ground-floor entrance; the Upper Deck room is upstairs by stairs or elevator.",
+        "seating": "Main dining room, a kids' corner, and the Upper Deck private room."
       },
       "meta": {
-        "status": "draft",
+        "status": "demo",
         "reviewed_on": "",
-        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-      },
-      "email": "gusanos.rogers@gusanospizza.com"
-    },
-    {
-      "id": "bella-vista",
-      "name": "Bella Vista",
-      "address": "19 Cunningham Corner, Bella Vista, AR 72714",
-      "phone": "479-876-6969",
-      "map_url": "https://www.google.com/maps/search/?api=1&query=Gusano%27s+Pizza+19+Cunningham+Corner%2C+Bella+Vista%2C+AR+72714",
-      "timezone": "America/Chicago",
-      "hours": [
-        {
-          "day": 0,
-          "intervals": [
-            [
-              "11:00",
-              "22:00"
-            ]
-          ]
-        },
-        {
-          "day": 1,
-          "intervals": [
-            [
-              "11:00",
-              "22:00"
-            ]
-          ]
-        },
-        {
-          "day": 2,
-          "intervals": [
-            [
-              "11:00",
-              "22:00"
-            ]
-          ]
-        },
-        {
-          "day": 3,
-          "intervals": [
-            [
-              "11:00",
-              "22:00"
-            ]
-          ]
-        },
-        {
-          "day": 4,
-          "intervals": [
-            [
-              "11:00",
-              "23:00"
-            ]
-          ]
-        },
-        {
-          "day": 5,
-          "intervals": [
-            [
-              "11:00",
-              "23:00"
-            ]
-          ]
-        },
-        {
-          "day": 6,
-          "intervals": [
-            [
-              "11:00",
-              "22:00"
-            ]
-          ]
-        }
-      ],
-      "exceptions": [],
-      "access": {
-        "seating": "Family dining room and a party room."
-      },
-      "meta": {
-        "status": "draft",
-        "reviewed_on": "",
-        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-      },
-      "email": "gusanos.bellavista@gusanospizza.com"
+        "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+      }
     },
     {
       "id": "springdale",
-      "name": "Springdale",
-      "address": "1094 E Henri de Tonti Blvd, Springdale, AR 72762",
-      "phone": "479-927-6900",
-      "map_url": "https://www.google.com/maps/search/?api=1&query=Gusano%27s+Pizza+1094+E+Henri+de+Tonti+Blvd%2C+Springdale%2C+AR+72762",
+      "name": "Springdale – Midway",
+      "address": "5700 Midway Bend, Springdale, AR",
+      "phone": "479-555-0104",
+      "email": "",
+      "map_url": "",
       "timezone": "America/Chicago",
       "hours": [
         {
@@ -504,7 +348,7 @@
           "intervals": [
             [
               "11:00",
-              "23:00"
+              "24:00"
             ]
           ]
         },
@@ -513,7 +357,7 @@
           "intervals": [
             [
               "11:00",
-              "23:00"
+              "24:00"
             ]
           ]
         },
@@ -521,27 +365,30 @@
           "day": 6,
           "intervals": [
             [
-              "11:00",
-              "22:00"
+              "12:00",
+              "21:00"
             ]
           ]
         }
       ],
       "exceptions": [],
-      "access": {},
-      "meta": {
-        "status": "draft",
-        "reviewed_on": "",
-        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+      "access": {
+        "parking": "Front lot with a drive-through lane that leads nowhere, for tradition.",
+        "seating": "Long family tables and a counter facing the ovens."
       },
-      "email": "info@gusanospizza.com"
+      "meta": {
+        "status": "demo",
+        "reviewed_on": "",
+        "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+      }
     },
     {
       "id": "fort-smith",
-      "name": "Fort Smith",
-      "address": "5505 Phoenix Ave, Fort Smith, AR 72903",
-      "phone": "479-434-6444",
-      "map_url": "https://www.google.com/maps/search/?api=1&query=Gusano%27s+Pizza+5505+Phoenix+Ave%2C+Fort+Smith%2C+AR+72903",
+      "name": "Fort Smith – River North",
+      "address": "1 River North Landing, Fort Smith, AR",
+      "phone": "479-555-0105",
+      "email": "",
+      "map_url": "",
       "timezone": "America/Chicago",
       "hours": [
         {
@@ -585,7 +432,7 @@
           "intervals": [
             [
               "11:00",
-              "23:00"
+              "24:00"
             ]
           ]
         },
@@ -594,7 +441,7 @@
           "intervals": [
             [
               "11:00",
-              "23:00"
+              "24:00"
             ]
           ]
         },
@@ -602,113 +449,31 @@
           "day": 6,
           "intervals": [
             [
-              "11:00",
-              "22:00"
+              "12:00",
+              "21:00"
             ]
           ]
         }
       ],
       "exceptions": [],
       "access": {
-        "seating": "Large patio."
+        "parking": "Riverside lot shared with a bait shop that does not exist either.",
+        "entrance": "Ramp to the side door from the lot.",
+        "seating": "Dining room and a large patio facing the river."
       },
       "meta": {
-        "status": "draft",
+        "status": "demo",
         "reviewed_on": "",
-        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-      },
-      "email": "info@gusanospizza.com"
-    },
-    {
-      "id": "joplin",
-      "name": "Joplin",
-      "address": "3929 E 7th St, Joplin, MO 64801",
-      "phone": "417-623-9090",
-      "map_url": "https://www.google.com/maps/search/?api=1&query=Gusano%27s+Pizza+3929+E+7th+St%2C+Joplin%2C+MO+64801",
-      "timezone": "America/Chicago",
-      "hours": [
-        {
-          "day": 0,
-          "intervals": [
-            [
-              "11:00",
-              "22:00"
-            ]
-          ]
-        },
-        {
-          "day": 1,
-          "intervals": [
-            [
-              "11:00",
-              "22:00"
-            ]
-          ]
-        },
-        {
-          "day": 2,
-          "intervals": [
-            [
-              "11:00",
-              "22:00"
-            ]
-          ]
-        },
-        {
-          "day": 3,
-          "intervals": [
-            [
-              "11:00",
-              "22:00"
-            ]
-          ]
-        },
-        {
-          "day": 4,
-          "intervals": [
-            [
-              "11:00",
-              "22:00"
-            ]
-          ]
-        },
-        {
-          "day": 5,
-          "intervals": [
-            [
-              "11:00",
-              "22:00"
-            ]
-          ]
-        },
-        {
-          "day": 6,
-          "intervals": [
-            [
-              "11:00",
-              "22:00"
-            ]
-          ]
-        }
-      ],
-      "exceptions": [],
-      "access": {
-        "seating": "Big screens throughout and a large patio.",
-        "parking": "Plenty of parking."
-      },
-      "meta": {
-        "status": "draft",
-        "reviewed_on": "",
-        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-      },
-      "email": "gusanos.joplin@gusanospizza.com"
+        "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+      }
     },
     {
       "id": "texarkana",
-      "name": "Texarkana",
-      "address": "2820 Richmond Rd, Texarkana, TX 75503",
-      "phone": "903-792-8646",
-      "map_url": "https://www.google.com/maps/search/?api=1&query=Gusano%27s+Pizza+2820+Richmond+Rd%2C+Texarkana%2C+TX+75503",
+      "name": "Texarkana – State Line",
+      "address": "773 State Line Holler, Texarkana (state depends where you stand)",
+      "phone": "903-555-0106",
+      "email": "",
+      "map_url": "",
       "timezone": "America/Chicago",
       "hours": [
         {
@@ -752,7 +517,7 @@
           "intervals": [
             [
               "11:00",
-              "23:00"
+              "24:00"
             ]
           ]
         },
@@ -761,7 +526,7 @@
           "intervals": [
             [
               "11:00",
-              "23:00"
+              "24:00"
             ]
           ]
         },
@@ -769,20 +534,22 @@
           "day": 6,
           "intervals": [
             [
-              "11:00",
-              "22:00"
+              "12:00",
+              "21:00"
             ]
           ]
         }
       ],
       "exceptions": [],
-      "access": {},
-      "meta": {
-        "status": "draft",
-        "reviewed_on": "",
-        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+      "access": {
+        "parking": "Lot straddles the state line. Park in whichever state you prefer.",
+        "seating": "Arkansas side has booths. Texas side has bigger booths."
       },
-      "email": "gusanos.texarkana@gusanospizza.com"
+      "meta": {
+        "status": "demo",
+        "reviewed_on": "",
+        "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+      }
     }
   ],
   "services": [
@@ -795,7 +562,7 @@
     {
       "id": "pickup",
       "label": "Pickup",
-      "state": "available",
+      "state": "unavailable",
       "location_ids": []
     },
     {
@@ -807,60 +574,41 @@
   ],
   "actions": [
     {
+      "id": "ordering-pickup-fayetteville",
+      "module": "ordering",
+      "service_id": "pickup",
+      "location_id": "fayetteville",
+      "label": "Order pickup – Fayetteville",
+      "state": "unavailable",
+      "url": "",
+      "provider": "",
+      "note": "Windy Holler is fictional, so there is nothing to order. The instinct is admirable.",
+      "terms": "",
+      "fallback_email": "",
+      "fallback_phone": "479-555-0101",
+      "meta": {
+        "status": "demo",
+        "reviewed_on": "",
+        "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+      }
+    },
+    {
       "id": "ordering-pickup-bentonville",
       "module": "ordering",
       "service_id": "pickup",
       "location_id": "bentonville",
       "label": "Order pickup – Bentonville",
-      "state": "available",
-      "url": "https://gusanosbn.hrpos.heartland.us/menu",
-      "provider": "Heartland",
-      "note": "Online ordering opens on Heartland.",
-      "terms": "Prices and availability are confirmed by the ordering provider.",
+      "state": "unavailable",
+      "url": "",
+      "provider": "",
+      "note": "Windy Holler is fictional, so there is nothing to order. The instinct is admirable.",
+      "terms": "",
       "fallback_email": "",
-      "fallback_phone": "479-271-8242",
+      "fallback_phone": "479-555-0102",
       "meta": {
-        "status": "draft",
+        "status": "demo",
         "reviewed_on": "",
-        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-      }
-    },
-    {
-      "id": "ordering-pickup-fayetteville-steamboat",
-      "module": "ordering",
-      "service_id": "pickup",
-      "location_id": "fayetteville-steamboat",
-      "label": "Order pickup – Fayetteville – Steamboat Dr.",
-      "state": "available",
-      "url": "https://gusanosfv.hrpos.heartland.us/menu",
-      "provider": "Heartland",
-      "note": "Online ordering opens on Heartland.",
-      "terms": "Prices and availability are confirmed by the ordering provider.",
-      "fallback_email": "",
-      "fallback_phone": "479-287-4000",
-      "meta": {
-        "status": "draft",
-        "reviewed_on": "",
-        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-      }
-    },
-    {
-      "id": "ordering-pickup-fayetteville-shiloh",
-      "module": "ordering",
-      "service_id": "pickup",
-      "location_id": "fayetteville-shiloh",
-      "label": "Order pickup – Fayetteville – Shiloh Dr.",
-      "state": "available",
-      "url": "https://gusanosuptownfv.hrpos.heartland.us/menu",
-      "provider": "Heartland",
-      "note": "Online ordering opens on Heartland.",
-      "terms": "Prices and availability are confirmed by the ordering provider.",
-      "fallback_email": "",
-      "fallback_phone": "479-332-4460",
-      "meta": {
-        "status": "draft",
-        "reviewed_on": "",
-        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+        "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
       }
     },
     {
@@ -869,36 +617,17 @@
       "service_id": "pickup",
       "location_id": "rogers",
       "label": "Order pickup – Rogers",
-      "state": "available",
-      "url": "https://gusanosrg.hrpos.heartland.us/menu",
-      "provider": "Heartland",
-      "note": "Online ordering opens on Heartland.",
-      "terms": "Prices and availability are confirmed by the ordering provider.",
+      "state": "unavailable",
+      "url": "",
+      "provider": "",
+      "note": "Windy Holler is fictional, so there is nothing to order. The instinct is admirable.",
+      "terms": "",
       "fallback_email": "",
-      "fallback_phone": "479-636-0400",
+      "fallback_phone": "479-555-0103",
       "meta": {
-        "status": "draft",
+        "status": "demo",
         "reviewed_on": "",
-        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-      }
-    },
-    {
-      "id": "ordering-pickup-bella-vista",
-      "module": "ordering",
-      "service_id": "pickup",
-      "location_id": "bella-vista",
-      "label": "Order pickup – Bella Vista",
-      "state": "available",
-      "url": "https://gusanosbv.hrpos.heartland.us/menu",
-      "provider": "Heartland",
-      "note": "Online ordering opens on Heartland.",
-      "terms": "Prices and availability are confirmed by the ordering provider.",
-      "fallback_email": "",
-      "fallback_phone": "479-876-6969",
-      "meta": {
-        "status": "draft",
-        "reviewed_on": "",
-        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+        "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
       }
     },
     {
@@ -907,17 +636,17 @@
       "service_id": "pickup",
       "location_id": "springdale",
       "label": "Order pickup – Springdale",
-      "state": "available",
-      "url": "https://gusanossd.hrpos.heartland.us/menu",
-      "provider": "Heartland",
-      "note": "Online ordering opens on Heartland.",
-      "terms": "Prices and availability are confirmed by the ordering provider.",
+      "state": "unavailable",
+      "url": "",
+      "provider": "",
+      "note": "Windy Holler is fictional, so there is nothing to order. The instinct is admirable.",
+      "terms": "",
       "fallback_email": "",
-      "fallback_phone": "479-927-6900",
+      "fallback_phone": "479-555-0104",
       "meta": {
-        "status": "draft",
+        "status": "demo",
         "reviewed_on": "",
-        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+        "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
       }
     },
     {
@@ -926,36 +655,17 @@
       "service_id": "pickup",
       "location_id": "fort-smith",
       "label": "Order pickup – Fort Smith",
-      "state": "available",
-      "url": "https://www.toasttab.com/gusanos-fort-smith/",
-      "provider": "Toast",
-      "note": "Online ordering opens on Toast.",
-      "terms": "Prices and availability are confirmed by the ordering provider.",
-      "fallback_email": "",
-      "fallback_phone": "479-434-6444",
-      "meta": {
-        "status": "draft",
-        "reviewed_on": "",
-        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-      }
-    },
-    {
-      "id": "ordering-pickup-joplin",
-      "module": "ordering",
-      "service_id": "pickup",
-      "location_id": "joplin",
-      "label": "Order pickup – Joplin",
       "state": "unavailable",
       "url": "",
       "provider": "",
-      "note": "Call the restaurant to order.",
-      "terms": "Prices and availability are confirmed by the ordering provider.",
+      "note": "Windy Holler is fictional, so there is nothing to order. The instinct is admirable.",
+      "terms": "",
       "fallback_email": "",
-      "fallback_phone": "417-623-9090",
+      "fallback_phone": "479-555-0105",
       "meta": {
-        "status": "draft",
+        "status": "demo",
         "reviewed_on": "",
-        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+        "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
       }
     },
     {
@@ -964,1143 +674,22 @@
       "service_id": "pickup",
       "location_id": "texarkana",
       "label": "Order pickup – Texarkana",
-      "state": "available",
-      "url": "https://gusanostexarkana.hrpos.heartland.us/menu",
-      "provider": "Heartland",
-      "note": "Online ordering opens on Heartland.",
-      "terms": "Prices and availability are confirmed by the ordering provider.",
+      "state": "unavailable",
+      "url": "",
+      "provider": "",
+      "note": "Windy Holler is fictional, so there is nothing to order. The instinct is admirable.",
+      "terms": "",
       "fallback_email": "",
-      "fallback_phone": "903-792-8646",
+      "fallback_phone": "903-555-0106",
       "meta": {
-        "status": "draft",
+        "status": "demo",
         "reviewed_on": "",
-        "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
+        "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
       }
     }
   ],
-  "menu": {
-    "currency": "USD",
-    "reviewed_on": "",
-    "note": "Prices are from the 2025 group menu, pages 1–2. Each location sets its own prices, so check your location's online ordering menu for current prices.",
-    "allergen_note": "Ask your location about ingredients and cross-contact before ordering.",
-    "categories": [
-      {
-        "id": "pizza",
-        "label": "Specialty pizza",
-        "eyebrow": "Every specialty in thin, traditional, or Chicago-style crust",
-        "items": [
-          {
-            "id": "carnivore-craze",
-            "name": "Carnivore Craze",
-            "description": "Pepperoni, crumbled Italian sausage, Canadian bacon, hamburger, marinara, and mozzarella.",
-            "price": "",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [
-              "Thin or traditional: 8\" $10.99 · 10\" $15.99 · 13\" $20.99 · 16\" $28.99",
-              "Chicago-style: 9\" $18.99 · 12\" $28.99"
-            ],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          },
-          {
-            "id": "spicy-pepperoni",
-            "name": "Spicy Pepperoni",
-            "description": "Pepperoni, diced jalapeños, diced purple onions, marinara, and mozzarella.",
-            "price": "",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [
-              "Thin or traditional: 8\" $10.99 · 10\" $15.99 · 13\" $20.99 · 16\" $28.99",
-              "Chicago-style: 9\" $18.99 · 12\" $28.99"
-            ],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          },
-          {
-            "id": "ditka",
-            "name": "Ditka",
-            "description": "Pepperoni, crumbled Italian sausage, fresh jalapeños, fresh basil, marinara, and mozzarella.",
-            "price": "",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [
-              "Thin or traditional: 8\" $10.99 · 10\" $15.99 · 13\" $20.99 · 16\" $28.99",
-              "Chicago-style: 9\" $18.99 · 12\" $28.99"
-            ],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          },
-          {
-            "id": "margherita",
-            "name": "Margherita",
-            "description": "Red sauce base with tomatoes, fresh basil, and mozzarella.",
-            "price": "",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [
-              "Thin or traditional: 8\" $10.99 · 10\" $15.99 · 13\" $20.99 · 16\" $28.99",
-              "Chicago-style: 9\" $18.99 · 12\" $28.99"
-            ],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          },
-          {
-            "id": "the-big-cheese",
-            "name": "The Big Cheese",
-            "description": "Cheese, cheese, and more cheese.",
-            "price": "",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [
-              "Thin or traditional: 8\" $10.99 · 10\" $15.99 · 13\" $20.99 · 16\" $28.99",
-              "Chicago-style: 9\" $18.99 · 12\" $28.99"
-            ],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          },
-          {
-            "id": "grubs-choice",
-            "name": "Grub's Choice",
-            "description": "Pepperoni, crumbled Italian sausage, purple onions, mushrooms, marinara, and mozzarella.",
-            "price": "",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [
-              "Thin or traditional: 8\" $10.99 · 10\" $15.99 · 13\" $20.99 · 16\" $28.99",
-              "Chicago-style: 9\" $18.99 · 12\" $28.99"
-            ],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          },
-          {
-            "id": "moosehead",
-            "name": "Moosehead",
-            "description": "Pepperoni, crumbled Italian sausage, green olives, jalapeños, marinara, and mozzarella.",
-            "price": "",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [
-              "Thin or traditional: 8\" $10.99 · 10\" $15.99 · 13\" $20.99 · 16\" $28.99",
-              "Chicago-style: 9\" $18.99 · 12\" $28.99"
-            ],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          },
-          {
-            "id": "herbivore-delight",
-            "name": "Herbivore Delight",
-            "description": "Mushrooms, purple onions, tomatoes, green peppers, black olives, marinara, and mozzarella.",
-            "price": "",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [
-              "Thin or traditional: 8\" $10.99 · 10\" $15.99 · 13\" $20.99 · 16\" $28.99",
-              "Chicago-style: 9\" $18.99 · 12\" $28.99"
-            ],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          },
-          {
-            "id": "sicilian-lovers",
-            "name": "Sicilian Lovers",
-            "description": "Pepperoni, salami, purple onions, banana peppers, minced garlic, marinara, mozzarella, and a sprinkle of fairy dust.",
-            "price": "",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [
-              "Thin or traditional: 8\" $10.99 · 10\" $15.99 · 13\" $20.99 · 16\" $28.99",
-              "Chicago-style: 9\" $18.99 · 12\" $28.99"
-            ],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          },
-          {
-            "id": "hawaiian",
-            "name": "Hawaiian",
-            "description": "Canadian bacon, pineapple, marinara, and mozzarella.",
-            "price": "",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [
-              "Thin or traditional: 8\" $10.99 · 10\" $15.99 · 13\" $20.99 · 16\" $28.99",
-              "Chicago-style: 9\" $18.99 · 12\" $28.99"
-            ],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          },
-          {
-            "id": "hot-honey-pepperoni",
-            "name": "Hot Honey Pepperoni",
-            "description": "Thick-cut pepperoni, fresh basil, marinara, mozzarella, and a drizzle of hot honey.",
-            "price": "",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [
-              "Thin or traditional: 8\" $10.99 · 10\" $15.99 · 13\" $20.99 · 16\" $28.99",
-              "Chicago-style: 9\" $18.99 · 12\" $28.99"
-            ],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          },
-          {
-            "id": "the-deluxe",
-            "name": "The Deluxe",
-            "description": "Pepperoni, crumbled Italian sausage, Canadian bacon, hamburger, green peppers, onions, and mushrooms.",
-            "price": "",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [
-              "Thin or traditional: 8\" $11.99 · 10\" $17.49 · 13\" $22.99 · 16\" $29.99",
-              "Chicago-style: 9\" $20.99 · 12\" $29.99"
-            ],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          }
-        ]
-      },
-      {
-        "id": "appetizers",
-        "label": "Appetizers",
-        "eyebrow": "",
-        "items": [
-          {
-            "id": "breadstix",
-            "name": "Breadstix with cheese",
-            "description": "Homemade pizza dough topped with mozzarella and spices, with homemade ranch and marinara.",
-            "price": "7.99",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [
-              "Add pepperoni +$0.75"
-            ],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          },
-          {
-            "id": "pizzadilla",
-            "name": "Pizzadilla",
-            "description": "Garlic-herb tortilla stuffed with mozzarella and pepperoni, with homemade ranch and marinara.",
-            "price": "9.99",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          },
-          {
-            "id": "supreme-pizzadilla",
-            "name": "Supreme Pizzadilla",
-            "description": "The Pizzadilla plus Canadian bacon, purple onions, and green peppers.",
-            "price": "10.99",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          },
-          {
-            "id": "buffalo-chicken-dip",
-            "name": "Buffalo chicken dip",
-            "description": "Shredded chicken, buffalo sauce, cream cheese, ranch, and melted cheddar, with Frito scoops.",
-            "price": "13.99",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [
-              "Extra Frito scoops +$2.49"
-            ],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          },
-          {
-            "id": "hot-wings",
-            "name": "Hot wings",
-            "description": "Eight wings with celery and blue cheese or homemade ranch.",
-            "price": "12.49",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [
-              "Buffalo, honey habanero, teriyaki, or BBQ"
-            ],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          },
-          {
-            "id": "spicy-spinach-dip",
-            "name": "Spicy spinach dip",
-            "description": "Cream cheese, spinach, tomatoes, and spices, with Frito scoops.",
-            "price": "13.99",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [
-              "Extra Frito scoops +$2.49"
-            ],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          },
-          {
-            "id": "meatball-skillet",
-            "name": "Meatball skillet",
-            "description": "Three 2 oz Fontanini meatballs in homemade marinara with melted provolone and Italian seasoning.",
-            "price": "11.49",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          },
-          {
-            "id": "pizza-dip",
-            "name": "Pizza dip",
-            "description": "Cream cheese, homemade marinara, green peppers, onions, and pepperoni under mozzarella, with Frito scoops.",
-            "price": "12.99",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [
-              "Extra Frito scoops +$2.49"
-            ],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          }
-        ]
-      },
-      {
-        "id": "salads",
-        "label": "Salads",
-        "eyebrow": "",
-        "items": [
-          {
-            "id": "caesar-salad",
-            "name": "Large Caesar salad",
-            "description": "Romaine, parmesan, and croutons in Caesar dressing.",
-            "price": "10.49",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [
-              "Add chicken +$5.49"
-            ],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          },
-          {
-            "id": "veggie-salad",
-            "name": "Veggie salad",
-            "description": "Iceberg with green peppers, purple onions, black olives, mushrooms, tomatoes, mozzarella, and croutons.",
-            "price": "11.99",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          },
-          {
-            "id": "dinner-salad",
-            "name": "Dinner salad",
-            "description": "Iceberg, tomatoes, mozzarella, and croutons.",
-            "price": "10.49",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          },
-          {
-            "id": "greek-salad",
-            "name": "Greek salad",
-            "description": "Romaine with black and green olives, purple onions, and feta, with Greek dressing.",
-            "price": "11.99",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          },
-          {
-            "id": "italian-salad",
-            "name": "Italian salad",
-            "description": "Chopped iceberg with ham, pepperoni, purple onions, tomato, mozzarella, black olives, and pepperoncini, with Italian dressing.",
-            "price": "13.49",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [],
-            "meta": {
-              "status": "draft",
-              "reviewed_on": "",
-              "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-            }
-          }
-        ]
-      }
-    ]
-  },
-  "collections": {
-    "specials": [
-      {
-        "id": "weekly-specials",
-        "title": "Weekly specials",
-        "text": "Dine-in deals all week. Ask your location for today's lineup.",
-        "state": "available",
-        "location_ids": [
-          "bentonville",
-          "fayetteville-steamboat",
-          "fayetteville-shiloh",
-          "rogers",
-          "bella-vista",
-          "springdale",
-          "fort-smith",
-          "joplin"
-        ],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/wp-content/uploads/2026/03/ (March 2026 calendar inserts, the newest posted; read 2026-10-19)"
-        },
-        "facts": [
-          {
-            "label": "All day, every day",
-            "value": "$15 domestic buckets · $22.50 High Noon buckets"
-          },
-          {
-            "label": "Lunch, Mon–Fri 11 am–2 pm",
-            "value": "8\" one-topping pizza, salad, and drink $11.49"
-          },
-          {
-            "label": "Happy hour, Mon–Fri 3–7 pm",
-            "value": "$1 off drafts, wells, and house wine"
-          },
-          {
-            "label": "Happiest hour, Mon–Fri 5–6 pm",
-            "value": "$1.50 12 oz domestic draft · $3 22 oz domestic draft"
-          },
-          {
-            "label": "Monday after 4 pm",
-            "value": "$8 domestic pitchers · $4 kids' cheese or pepperoni · Buy one, get one 50% off ultra-thin crust"
-          },
-          {
-            "label": "Tuesday after 4 pm",
-            "value": "$3 domestic bottles · $4 kids' cheese or pepperoni · $4.99 Chicago dog basket (extra dog $3.49)"
-          },
-          {
-            "label": "Wednesday after 4 pm",
-            "value": "$5 signature drinks · $4.99 breadsticks with cheese · $13.99 13\" one-topping"
-          },
-          {
-            "label": "Thursday after 4 pm",
-            "value": "50¢ off tall boy cans · $37.99 12\" Chicago-style two-topping and domestic pitcher"
-          },
-          {
-            "label": "Friday after 4 pm",
-            "value": "$4 house wine"
-          },
-          {
-            "label": "Saturday",
-            "value": "$8 domestic pitcher · $3 Fireball · $29.99 16\" two-topping with breadsticks"
-          },
-          {
-            "label": "Sunday",
-            "value": "$3 mimosa, screwdriver, or Bloody Mary · $38.99 Sunday family special: 13\" specialty, 13\" one-topping, and breadsticks with cheese"
-          },
-          {
-            "label": "Terms",
-            "value": "All specials are dine-in only."
-          }
-        ],
-        "url": "",
-        "attachments": []
-      },
-      {
-        "id": "trivia-bentonville",
-        "title": "Trivia night – Bentonville",
-        "text": "Bring a team and test what you know.",
-        "state": "available",
-        "location_ids": [
-          "bentonville"
-        ],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-        },
-        "facts": [
-          {
-            "label": "When",
-            "value": "Tuesdays"
-          }
-        ],
-        "url": "",
-        "attachments": []
-      },
-      {
-        "id": "trivia-fayetteville-steamboat",
-        "title": "Trivia night – Fayetteville – Steamboat Dr.",
-        "text": "Bring a team and test what you know.",
-        "state": "available",
-        "location_ids": [
-          "fayetteville-steamboat"
-        ],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-        },
-        "facts": [
-          {
-            "label": "When",
-            "value": "Wednesdays"
-          }
-        ],
-        "url": "",
-        "attachments": []
-      },
-      {
-        "id": "student-night-fayetteville-steamboat",
-        "title": "Student discount night – Fayetteville – Steamboat Dr.",
-        "text": "Show your student ID for a discount.",
-        "state": "available",
-        "location_ids": [
-          "fayetteville-steamboat"
-        ],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-        },
-        "facts": [],
-        "url": "",
-        "attachments": []
-      },
-      {
-        "id": "trivia-bella-vista",
-        "title": "Trivia night – Bella Vista",
-        "text": "Bring a team and test what you know.",
-        "state": "available",
-        "location_ids": [
-          "bella-vista"
-        ],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-        },
-        "facts": [
-          {
-            "label": "When",
-            "value": "Tuesdays"
-          }
-        ],
-        "url": "",
-        "attachments": []
-      },
-      {
-        "id": "trivia-springdale",
-        "title": "Trivia night – Springdale",
-        "text": "Bring a team and test what you know.",
-        "state": "available",
-        "location_ids": [
-          "springdale"
-        ],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-        },
-        "facts": [
-          {
-            "label": "When",
-            "value": "Tuesdays"
-          }
-        ],
-        "url": "",
-        "attachments": []
-      },
-      {
-        "id": "trivia-fort-smith",
-        "title": "Trivia night – Fort Smith",
-        "text": "Bring a team and test what you know.",
-        "state": "available",
-        "location_ids": [
-          "fort-smith"
-        ],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-        },
-        "facts": [
-          {
-            "label": "When",
-            "value": "Wednesdays"
-          }
-        ],
-        "url": "",
-        "attachments": []
-      },
-      {
-        "id": "trivia-joplin",
-        "title": "Trivia night – Joplin",
-        "text": "Bring a team and test what you know.",
-        "state": "available",
-        "location_ids": [
-          "joplin"
-        ],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-        },
-        "facts": [
-          {
-            "label": "When",
-            "value": "Wednesdays"
-          }
-        ],
-        "url": "",
-        "attachments": []
-      },
-      {
-        "id": "student-night-joplin",
-        "title": "Student discount night – Joplin",
-        "text": "Show your student ID for a discount.",
-        "state": "available",
-        "location_ids": [
-          "joplin"
-        ],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-        },
-        "facts": [],
-        "url": "",
-        "attachments": []
-      },
-      {
-        "id": "weekly-specials-texarkana",
-        "title": "Weekly specials – Texarkana",
-        "text": "Dine-in deals all week. Ask your location for today's lineup.",
-        "state": "available",
-        "location_ids": [
-          "texarkana"
-        ],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/wp-content/uploads/2026/03/ (March 2026 calendar inserts, the newest posted; read 2026-10-19)"
-        },
-        "facts": [
-          {
-            "label": "All day, every day",
-            "value": "$15 domestic buckets · $22.50 High Noon buckets · $17.50 Nutrl, Mich Ultra, and seltzer buckets"
-          },
-          {
-            "label": "Lunch, Mon–Fri 11 am–2 pm",
-            "value": "8\" one-topping pizza, salad, and drink $11.49"
-          },
-          {
-            "label": "Happy hour, Mon–Fri 3–7 pm",
-            "value": "$2.50 12 oz domestic draft · $4 22 oz domestic draft · $3.50 house wine"
-          },
-          {
-            "label": "Happiest hour, Mon–Fri 5–6 pm",
-            "value": "$1.50 12 oz domestic draft · $3 22 oz domestic draft"
-          },
-          {
-            "label": "Monday",
-            "value": "$8 domestic pitchers · $6 wings · $3 kids' cheese or pepperoni · Buy one, get one 50% off ultra-thin crust"
-          },
-          {
-            "label": "Tuesday",
-            "value": "$3 domestic bottles · $3 kids' cheese or pepperoni · $3 Chicago dogs"
-          },
-          {
-            "label": "Wednesday",
-            "value": "$5 signature drinks · $4.99 breadsticks with cheese · $13.99 13\" one-topping · Pint night: $3 domestic, $4 premium"
-          },
-          {
-            "label": "Thursday",
-            "value": "$37.99 12\" Chicago-style two-topping and domestic pitcher"
-          },
-          {
-            "label": "Friday",
-            "value": "$4 house wine"
-          },
-          {
-            "label": "Saturday",
-            "value": "$1 off all draft · $3 house wines and wells · $9 domestic pitcher · $3 Fireball · $29.99 16\" two-topping with breadsticks"
-          },
-          {
-            "label": "Sunday",
-            "value": "$3 mimosa, screwdriver, or Bloody Mary · $1 off all drafts · $8 domestic pitcher · $3 house wine and wells · $38.99 Sunday family special: 13\" specialty, 13\" one-topping, and breadsticks with cheese"
-          }
-        ],
-        "url": "",
-        "attachments": []
-      },
-      {
-        "id": "trivia-texarkana",
-        "title": "Trivia night – Texarkana",
-        "text": "Bring a team and test what you know.",
-        "state": "available",
-        "location_ids": [
-          "texarkana"
-        ],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-        },
-        "facts": [
-          {
-            "label": "When",
-            "value": "Singo music trivia, Tuesdays at 7 pm"
-          }
-        ],
-        "url": "",
-        "attachments": []
-      },
-      {
-        "id": "sandwich-of-the-day",
-        "title": "Sandwich of the day",
-        "text": "Ask your location what's on today's sandwich board.",
-        "state": "available",
-        "location_ids": [],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-        },
-        "facts": [],
-        "url": "",
-        "attachments": []
-      }
-    ],
-    "catering": [
-      {
-        "id": "tailgate-catering",
-        "title": "Tailgate and event catering",
-        "text": "Let Gusano's cater your next tailgate or event.",
-        "state": "available",
-        "location_ids": [],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-        },
-        "facts": [
-          {
-            "label": "Packages",
-            "value": "See the 2025 catering menu (PDF, 7 MB)"
-          }
-        ],
-        "url": "https://gusanos.pizza/wp-content/uploads/2025/06/GusanosCatering_2025.pdf",
-        "attachments": []
-      }
-    ],
-    "events": [
-      {
-        "id": "rogers-skybox",
-        "title": "The Skybox, Rogers",
-        "text": "Upstairs private room for work meetings, parties, holiday gatherings, and family get-togethers.",
-        "state": "available",
-        "location_ids": [
-          "rogers"
-        ],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-        },
-        "facts": [
-          {
-            "label": "Booking",
-            "value": "Call Rogers at 479-636-0400"
-          }
-        ],
-        "url": "",
-        "attachments": []
-      },
-      {
-        "id": "bella-vista-party-room",
-        "title": "Party room, Bella Vista",
-        "text": "A party room added in the latest Bella Vista expansion.",
-        "state": "available",
-        "location_ids": [
-          "bella-vista"
-        ],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-        },
-        "facts": [
-          {
-            "label": "Booking",
-            "value": "Call Bella Vista at 479-876-6969"
-          }
-        ],
-        "url": "",
-        "attachments": []
-      }
-    ],
-    "story": [
-      {
-        "id": "story-bentonville",
-        "title": "Bentonville",
-        "text": "The first Northwest Arkansas Gusano's, opened in 2005 off Rainbow Curve. Kids' game area, an adults-only game room with pool tables and 25+ big screens, and an expanded patio.",
-        "state": "available",
-        "location_ids": [
-          "bentonville"
-        ],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/ location pages (read 2026-10-19)"
-        },
-        "facts": [],
-        "url": "",
-        "attachments": []
-      },
-      {
-        "id": "story-fayetteville-steamboat",
-        "title": "Fayetteville – Steamboat Dr.",
-        "text": "Opened near the University of Arkansas in 2008 and moved to Steamboat Dr. in 2012. Close to the Boys & Girls Club, with plenty of tables and parking for Razorback game-day crowds.",
-        "state": "available",
-        "location_ids": [
-          "fayetteville-steamboat"
-        ],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/ location pages (read 2026-10-19)"
-        },
-        "facts": [],
-        "url": "",
-        "attachments": []
-      },
-      {
-        "id": "story-fayetteville-shiloh",
-        "title": "Fayetteville – Shiloh Dr.",
-        "text": "Opened in 2026 to serve the north side of Fayetteville.",
-        "state": "available",
-        "location_ids": [
-          "fayetteville-shiloh"
-        ],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/ location pages (read 2026-10-19)"
-        },
-        "facts": [],
-        "url": "",
-        "attachments": []
-      },
-      {
-        "id": "story-rogers",
-        "title": "Rogers",
-        "text": "Opened in 2015 off I-49 in Pleasant Grove. Upstairs private room (the Skybox), a kids' game room, and plenty of parking.",
-        "state": "available",
-        "location_ids": [
-          "rogers"
-        ],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/ location pages (read 2026-10-19)"
-        },
-        "facts": [],
-        "url": "",
-        "attachments": []
-      },
-      {
-        "id": "story-bella-vista",
-        "title": "Bella Vista",
-        "text": "Opened in Cunningham Corner for the Bella Vista regulars who were driving to Bentonville. Expanded twice, most recently to add a party room. Next to the golf courses.",
-        "state": "available",
-        "location_ids": [
-          "bella-vista"
-        ],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/ location pages (read 2026-10-19)"
-        },
-        "facts": [],
-        "url": "",
-        "attachments": []
-      },
-      {
-        "id": "story-springdale",
-        "title": "Springdale",
-        "text": "Opened in May 2018 for the Tontitown and Har-Ber area, close for Elm Springs and Siloam Springs too.",
-        "state": "available",
-        "location_ids": [
-          "springdale"
-        ],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/ location pages (read 2026-10-19)"
-        },
-        "facts": [],
-        "url": "",
-        "attachments": []
-      },
-      {
-        "id": "story-fort-smith",
-        "title": "Fort Smith",
-        "text": "Opened in fall 2018 on Phoenix Ave. for the River Valley. Modern dining room and a large patio.",
-        "state": "available",
-        "location_ids": [
-          "fort-smith"
-        ],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/ location pages (read 2026-10-19)"
-        },
-        "facts": [],
-        "url": "",
-        "attachments": []
-      },
-      {
-        "id": "story-joplin",
-        "title": "Joplin",
-        "text": "Opened in 2009 after a couple of Joplin locals asked for a Gusano's in their hometown. Off 7th St. in East Joplin, with big screens, plenty of parking, and a large patio.",
-        "state": "available",
-        "location_ids": [
-          "joplin"
-        ],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/ location pages (read 2026-10-19)"
-        },
-        "facts": [],
-        "url": "",
-        "attachments": []
-      },
-      {
-        "id": "story-texarkana",
-        "title": "Texarkana",
-        "text": "Opened on Richmond Rd. in 2012 for Southwest Arkansas and East Texas. A family spot for relaxing with friends.",
-        "state": "available",
-        "location_ids": [
-          "texarkana"
-        ],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/ location pages (read 2026-10-19)"
-        },
-        "facts": [],
-        "url": "",
-        "attachments": []
-      }
-    ],
-    "careers": [
-      {
-        "id": "join-the-team",
-        "title": "Work at Gusano's",
-        "text": "Apply online for a position at any location.",
-        "state": "available",
-        "location_ids": [],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-        },
-        "facts": [],
-        "url": "https://gusanos.pizza/employment/",
-        "attachments": []
-      }
-    ],
-    "accessibility": [
-      {
-        "id": "accessibility-1",
-        "title": "Plan your visit",
-        "text": "Each location page lists known parking and seating details. Call ahead for anything not listed.",
-        "state": "available",
-        "location_ids": [],
-        "meta": {
-          "status": "draft",
-          "reviewed_on": "",
-          "source": "https://gusanos.pizza/ (read 2026-10-19; unofficial redesign exercise)"
-        },
-        "facts": [],
-        "url": "",
-        "attachments": []
-      }
-    ]
-  },
-  "faq": [
-    {
-      "id": "hours",
-      "question": "What are your hours?",
-      "location_ids": [],
-      "answer": "Most locations are open 11 am–10 pm Sunday through Thursday and 11 am–11 pm Friday and Saturday. Joplin closes at 10 pm every night."
-    },
-    {
-      "id": "trivia",
-      "question": "When is trivia night?",
-      "location_ids": [],
-      "answer": "Each location runs its own trivia night. Choose your location to see its night."
-    },
-    {
-      "id": "private-room",
-      "question": "Can I book a room for a party?",
-      "location_ids": [
-        "rogers",
-        "bella-vista"
-      ],
-      "answer": "Rogers has an upstairs private room called the Skybox, and Bella Vista has a party room. Call the location to book."
-    },
-    {
-      "id": "dietary",
-      "question": "How do I ask about ingredients?",
-      "location_ids": [],
-      "answer": "Call your location before ordering. Staff can confirm ingredients and cross-contact."
-    },
-    {
-      "id": "specials",
-      "question": "Are the daily specials available for takeout?",
-      "location_ids": [
-        "bentonville",
-        "fayetteville-steamboat",
-        "fayetteville-shiloh",
-        "rogers",
-        "bella-vista",
-        "springdale",
-        "fort-smith",
-        "joplin"
-      ],
-      "answer": "No. The weekly specials are dine-in only."
-    }
-  ],
-  "gallery": [],
   "policies": {
-    "privacy": "This site has no cookies, accounts, or analytics. It remembers the location you choose in your browser's local storage so pages open to it; choose All locations to clear it. Menu filters and the gathering planner run in your browser, and nothing you type is sent anywhere. Online ordering opens on Heartland or Toast, which have their own privacy policies.",
+    "privacy": "This site has no cookies, accounts, or analytics. It remembers the location you choose in your browser's local storage so pages open to it; choose All locations to clear it. Menu filters and the gathering planner run in your browser, and nothing you type is sent anywhere.",
     "reservations": "Confirm walk-ins, party limits, deposits, cancellations, and accessible booking alternatives.",
     "giftcards": "Confirm redemption locations, purchase terms, balance help, and support.",
     "loyalty": "Confirm earning, redemption, eligibility, account help, and terms.",
@@ -2111,5 +700,1391 @@
     "approved": false,
     "privacy_reviewed": false,
     "contact_reviewed": false
-  }
+  },
+  "menu": {
+    "currency": "USD",
+    "reviewed_on": "",
+    "note": "Fictional prices for a fictional pizzeria. Listed price is a 12-inch deep dish. Nothing here can be ordered.",
+    "allergen_note": "This is a parody menu. Real allergies deserve a real restaurant's answer.",
+    "categories": [
+      {
+        "id": "pizza",
+        "label": "Deep dish & tavern-cut",
+        "eyebrow": "The crust that needs a fork, and the one that doesn't",
+        "items": [
+          {
+            "id": "lake-shore-drive",
+            "name": "The Lake Shore Drive",
+            "description": "A wall-to-wall sausage patty under mozzarella and chunky crushed tomato. Takes the long way, worth it.",
+            "price": "26.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Deep dish: 9\" $17 · 12\" $26",
+              "Tavern-cut thin: 12\" $15 · 16\" $21"
+            ],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "big-shoulders",
+            "name": "The Big Shoulders",
+            "description": "Sausage, pepperoni, ham, and bacon on a crust that does its own lifting.",
+            "price": "29.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Deep dish: 9\" $19 · 12\" $29",
+              "Tavern-cut thin: 12\" $17 · 16\" $24"
+            ],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "pig-trail",
+            "name": "The Pig Trail",
+            "description": "Pepperoni, jalapeños, and hot honey, arranged in switchbacks.",
+            "price": "27.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Deep dish: 9\" $18 · 12\" $27",
+              "Tavern-cut thin: 12\" $16 · 16\" $22"
+            ],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "lake-effect",
+            "name": "The Lake Effect",
+            "description": "Mozzarella, provolone, parmesan, and ricotta, accumulating fast.",
+            "price": "25.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [
+              "vegetarian"
+            ],
+            "options": [
+              "Deep dish: 9\" $16 · 12\" $25",
+              "Tavern-cut thin: 12\" $14 · 16\" $20"
+            ],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "buffalo-river",
+            "name": "The Buffalo River",
+            "description": "Buffalo chicken, ranch drizzle, and a gentle current of hot sauce.",
+            "price": "27.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Deep dish: 9\" $18 · 12\" $27",
+              "Tavern-cut thin: 12\" $16 · 16\" $22"
+            ],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "italian-beef",
+            "name": "The Italian Beef",
+            "description": "Shaved beef, sweet peppers, hot giardiniera, and a little jus on the side for dunking.",
+            "price": "28.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Deep dish: 9\" $18 · 12\" $28",
+              "Tavern-cut thin: 12\" $16 · 16\" $23"
+            ],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "garden-holler",
+            "name": "The Garden Holler",
+            "description": "Spinach, mushrooms, green peppers, onions, black olives, and tomatoes.",
+            "price": "25.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [
+              "vegetarian"
+            ],
+            "options": [
+              "Deep dish: 9\" $16 · 12\" $25",
+              "Tavern-cut thin: 12\" $14 · 16\" $20"
+            ],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "second-city",
+            "name": "The Second City",
+            "description": "Tavern-cut thin only: pepperoni and giardiniera, cut in squares the way Chicago bars intended.",
+            "price": "17.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Tavern-cut thin: 12\" $17 · 16\" $23"
+            ],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "state-line",
+            "name": "The State Line",
+            "description": "Half Texas brisket, half Arkansas sausage, divided by a strict line of mozzarella. Texarkana only.",
+            "price": "30.00",
+            "state": "available",
+            "location_ids": [
+              "texarkana"
+            ],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Deep dish: 9\" $19 · 12\" $30",
+              "Tavern-cut thin: 12\" $18 · 16\" $25"
+            ],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          }
+        ]
+      },
+      {
+        "id": "appetizers",
+        "label": "Appetizers",
+        "eyebrow": "The opening drive",
+        "items": [
+          {
+            "id": "garlic-knots",
+            "name": "Garlic knots",
+            "description": "Six knots, garlic butter, parmesan, marinara for dipping.",
+            "price": "7.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [
+              "vegetarian"
+            ],
+            "options": [
+              "Add mozzarella +$1.50"
+            ],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "fried-pickles",
+            "name": "Ozark fried pickle chips",
+            "description": "Dill chips in cornmeal batter with buttermilk ranch.",
+            "price": "8.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [
+              "vegetarian"
+            ],
+            "options": [],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "giardiniera-fries",
+            "name": "Giardiniera fries",
+            "description": "Crinkle fries under hot giardiniera and melted provolone.",
+            "price": "9.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [
+              "vegetarian"
+            ],
+            "options": [],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "sorghum-wings",
+            "name": "Sorghum-glazed wings",
+            "description": "Eight wings in a sticky sorghum and black pepper glaze.",
+            "price": "13.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Make them hot +$0.50"
+            ],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "mozz-sticks",
+            "name": "Mozzarella wind sticks",
+            "description": "Breaded mozzarella, marinara, and a stiff breeze.",
+            "price": "9.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [
+              "vegetarian"
+            ],
+            "options": [],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          }
+        ]
+      },
+      {
+        "id": "salads",
+        "label": "Salads",
+        "eyebrow": "Something green before the deep end",
+        "items": [
+          {
+            "id": "chopped-salad",
+            "name": "Chicago chopped salad",
+            "description": "Romaine, salami, chickpeas, tomato, provolone, and pepperoncini in red wine vinaigrette.",
+            "price": "11.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "wedge",
+            "name": "Buttermilk wedge",
+            "description": "Iceberg wedge, bacon, tomato, and buttermilk ranch.",
+            "price": "10.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Hold the bacon"
+            ],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sweets",
+        "label": "Sweets",
+        "eyebrow": "Fourth quarter",
+        "items": [
+          {
+            "id": "blackberry-cobbler",
+            "name": "Ozark blackberry cobbler",
+            "description": "Baked in a deep-dish pan, because of course it is. Vanilla ice cream on top.",
+            "price": "7.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [
+              "vegetarian"
+            ],
+            "options": [],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "fried-pie",
+            "name": "Fried apple hand pie",
+            "description": "Half-moon pie, crimped edges, cinnamon sugar.",
+            "price": "5.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [
+              "vegetarian"
+            ],
+            "options": [],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "popcorn",
+            "name": "Cheddar-caramel popcorn",
+            "description": "A bag of half cheddar, half caramel. Shake it.",
+            "price": "4.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [
+              "vegetarian"
+            ],
+            "options": [],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          }
+        ]
+      },
+      {
+        "id": "drinks",
+        "label": "Pop (or Coke)",
+        "eyebrow": "Whatever you call it",
+        "items": [
+          {
+            "id": "fountain-pop",
+            "name": "Fountain pop",
+            "description": "It's Coke. It's pop. It's whatever you ordered.",
+            "price": "3.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Free refills"
+            ],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "sweet-tea",
+            "name": "Sweet tea",
+            "description": "Arkansas-sweet. Unsweet available for Chicagoans.",
+            "price": "3.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "lemonade",
+            "name": "Lemonade",
+            "description": "Fresh, cold, and not from the lake.",
+            "price": "3.50",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "collections": {
+    "specials": [
+      {
+        "id": "tavern-cut-tuesday",
+        "title": "Tavern-cut Tuesday",
+        "text": "Any 16-inch tavern-cut thin pizza for one flat price. Corner pieces are first come, first served.",
+        "state": "available",
+        "location_ids": [],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [
+          {
+            "label": "When",
+            "value": "Tuesdays, all day"
+          },
+          {
+            "label": "Deal",
+            "value": "Any 16-inch tavern-cut $16 (fictional)"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "game-day-deep-dish",
+        "title": "Game-day deep dish",
+        "text": "On home-game Saturdays, a 12-inch deep dish and a pitcher of pop. Calling the Hogs is free.",
+        "state": "available",
+        "location_ids": [],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [
+          {
+            "label": "When",
+            "value": "Home-game Saturdays"
+          },
+          {
+            "label": "Deal",
+            "value": "12-inch deep dish and pitcher of pop $30 (fictional)"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "trivia-fayetteville",
+        "title": "Trivia night: Da Hogs Bowl – Fayetteville",
+        "text": "Teams of up to six. Categories include Chicago, the Ozarks, and whether that was a casserole.",
+        "state": "available",
+        "location_ids": [
+          "fayetteville"
+        ],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [
+          {
+            "label": "When",
+            "value": "Wednesdays at 7 pm"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "trivia-bentonville",
+        "title": "Trivia night – Bentonville",
+        "text": "Bring a team and a pencil. The pencil is not fictional; bring your own.",
+        "state": "available",
+        "location_ids": [
+          "bentonville"
+        ],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [
+          {
+            "label": "When",
+            "value": "Tuesdays at 7 pm"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "trivia-texarkana",
+        "title": "Two-state trivia – Texarkana",
+        "text": "Every question asked once in Arkansas and once in Texas. Answers accepted from either side.",
+        "state": "available",
+        "location_ids": [
+          "texarkana"
+        ],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [
+          {
+            "label": "When",
+            "value": "Thursdays at 7 pm"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      }
+    ],
+    "catering": [
+      {
+        "id": "tailgate-pans",
+        "title": "Tailgate pans",
+        "text": "Half and full pans of deep dish cut into squares, carried to wherever you parked.",
+        "state": "available",
+        "location_ids": [],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [
+          {
+            "label": "Half pan",
+            "value": "Feeds 8 to 10 · $60 (fictional)"
+          },
+          {
+            "label": "Full pan",
+            "value": "Feeds 16 to 20 · $110 (fictional)"
+          },
+          {
+            "label": "Lead time",
+            "value": "48 hours, or one bye week"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      }
+    ],
+    "events": [
+      {
+        "id": "fayetteville-bleacher-room",
+        "title": "The Bleacher Room, Fayetteville",
+        "text": "A back room with long tables, a big screen, and ivy painted on one wall. Seats about 30.",
+        "state": "available",
+        "location_ids": [
+          "fayetteville"
+        ],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [
+          {
+            "label": "Booking",
+            "value": "Call Fayetteville at 479-555-0101 (fictional)"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "rogers-upper-deck",
+        "title": "The Upper Deck, Rogers",
+        "text": "Upstairs room overlooking the dining room, for parties, team dinners, and loud opinions about the bullpen.",
+        "state": "available",
+        "location_ids": [
+          "rogers"
+        ],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [
+          {
+            "label": "Booking",
+            "value": "Call Rogers at 479-555-0103 (fictional)"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      }
+    ],
+    "story": [
+      {
+        "id": "story-fayetteville",
+        "title": "Fayetteville",
+        "text": "The first Windy Holler, opened in a storefront that used to sell fishing lures. A few lures are still on the wall. Nobody remembers which ones are decorations.",
+        "state": "available",
+        "location_ids": [
+          "fayetteville"
+        ],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "story-bentonville",
+        "title": "Bentonville",
+        "text": "Opened on Upper Wacker Holler, a street the founders named themselves because the real one was taken. More big screens than tables, by design.",
+        "state": "available",
+        "location_ids": [
+          "bentonville"
+        ],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "story-rogers",
+        "title": "Rogers",
+        "text": "Built around the Upper Deck, an upstairs room that looks down on the dining room the way bleacher seats look down on the infield. The address is a tribute. It is not the ballpark.",
+        "state": "available",
+        "location_ids": [
+          "rogers"
+        ],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "story-springdale",
+        "title": "Springdale",
+        "text": "The family location: long tables, a counter facing the ovens, and a drive-through lane that has never served anyone.",
+        "state": "available",
+        "location_ids": [
+          "springdale"
+        ],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "story-fort-smith",
+        "title": "Fort Smith",
+        "text": "River North Landing, on a river that is not the Chicago River and is fine with that. Best patio sunsets in the chain, by our own vote.",
+        "state": "available",
+        "location_ids": [
+          "fort-smith"
+        ],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "story-texarkana",
+        "title": "Texarkana",
+        "text": "Opened on the state line so the pizza could be from two places at once. The kitchen is in Arkansas. The dessert case is in Texas. Probably.",
+        "state": "available",
+        "location_ids": [
+          "texarkana"
+        ],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [],
+        "url": "",
+        "attachments": []
+      }
+    ],
+    "careers": [
+      {
+        "id": "join-the-crew",
+        "title": "Join the crew",
+        "text": "Windy Holler is fictional, so every position is open and none of them pay. Real job seekers deserve a real restaurant.",
+        "state": "unavailable",
+        "location_ids": [],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [],
+        "url": "",
+        "attachments": []
+      }
+    ],
+    "accessibility": [
+      {
+        "id": "plan-your-visit",
+        "title": "Plan your visit",
+        "text": "Each location page lists parking, entrance, seating, and noise notes for this fictional restaurant. For a real place, call ahead about anything that matters to your visit.",
+        "state": "available",
+        "location_ids": [],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [],
+        "url": "",
+        "attachments": []
+      }
+    ],
+    "news": [
+      {
+        "id": "pig-trail-crossing",
+        "title": "Deep dish completes first Pig Trail crossing without spilling",
+        "text": "A 12-inch Chicago-style pie has crossed the Pig Trail from the river valley to Fayetteville with every layer intact. Witnesses credit the crust walls, which were built to Chicago building code and have never once heard of a switchback. The pie arrived at a tailgate, asked for a fork, and was told this is Arkansas, everybody has a fork.",
+        "state": "demo",
+        "location_ids": [
+          "fayetteville"
+        ],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [
+          {
+            "label": "Filed under",
+            "value": "Parody. Invented for a fictional pizzeria; nothing here happened."
+          },
+          {
+            "label": "Filed from",
+            "value": "Somewhere on the curvy part"
+          },
+          {
+            "label": "Casualties",
+            "value": "One napkin"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "lake-effect-cheese",
+        "title": "Lake-effect cheese advisory issued for Northwest Arkansas",
+        "text": "Forecasters tracking a cold front off Lake Michigan say it picked up a dangerous amount of mozzarella over Illinois and is now settling along I-49. Residents from Bentonville to Springdale should expect accumulations of two to three inches, mostly on deep-dish crusts. Shovels are not recommended. Forks are.",
+        "state": "demo",
+        "location_ids": [
+          "bentonville",
+          "rogers",
+          "springdale"
+        ],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [
+          {
+            "label": "Filed under",
+            "value": "Parody. Invented for a fictional pizzeria; nothing here happened."
+          },
+          {
+            "label": "Accumulation",
+            "value": "Two to three inches, all on the crust"
+          },
+          {
+            "label": "Advice",
+            "value": "Stay in, order pickup"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "crust-treaty",
+        "title": "Thin vs. deep summit ends in historic both-crusts treaty",
+        "text": "After a long night of negotiations over a booth table, deep-dish and tavern-cut delegations signed an accord recognizing that every Windy Holler pizza may be ordered either way. Observers called it the most significant peace in Northwest Arkansas since two neighbors agreed on how loud the game could be. The folded-slice faction has requested observer status.",
+        "state": "demo",
+        "location_ids": [],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [
+          {
+            "label": "Filed under",
+            "value": "Parody. Invented for a fictional pizzeria; nothing here happened."
+          },
+          {
+            "label": "Signed with",
+            "value": "A garlic knot"
+          },
+          {
+            "label": "Holdouts",
+            "value": "One guy who folds his slice"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "woo-pig-not-a-topping",
+        "title": "Chicago transplant learns “Woo Pig Sooie” is not a topping",
+        "text": "A recent arrival from Wicker Park reportedly tried to order a large Woo Pig Sooie with extra Sooie, under the impression it was a regional sausage. A table of regulars gently explained that it is a call, not a condiment, and that the arms go up first. He has since called the Hogs twice, both times over a Big Shoulders, and says it pairs well.",
+        "state": "demo",
+        "location_ids": [],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [
+          {
+            "label": "Filed under",
+            "value": "Parody. Invented for a fictional pizzeria; nothing here happened."
+          },
+          {
+            "label": "Correct order",
+            "value": "A Big Shoulders, then the call"
+          },
+          {
+            "label": "Arms",
+            "value": "Up first"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "big-shoulders-linebacker",
+        "title": "Big Shoulders pizza named honorary linebacker",
+        "text": "Sources inside a Saturday crowd confirm that the Big Shoulders, with sausage, pepperoni, ham, and bacon, has been voted the pizza most likely to make a goal-line stand. Asked for comment, the Big Shoulders remained a pizza. Its agent, a box, declined to open.",
+        "state": "demo",
+        "location_ids": [],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [
+          {
+            "label": "Filed under",
+            "value": "Parody. Invented for a fictional pizzeria; nothing here happened."
+          },
+          {
+            "label": "Position",
+            "value": "Middle of the table"
+          },
+          {
+            "label": "Strength",
+            "value": "Holds up on a second slice"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "two-state-pizza",
+        "title": "Texarkana deep dish now legally a two-state pizza",
+        "text": "Because Texarkana straddles a state line, legal scholars at a corner booth have concluded that any deep dish carried across State Line Avenue becomes a pizza of both Arkansas and Texas. It must now be cut in a manner acceptable to both states. The kitchen recommends a knife.",
+        "state": "demo",
+        "location_ids": [
+          "texarkana"
+        ],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [
+          {
+            "label": "Filed under",
+            "value": "Parody. Invented for a fictional pizzeria; nothing here happened."
+          },
+          {
+            "label": "Jurisdiction",
+            "value": "Arkansas and Texas"
+          },
+          {
+            "label": "Ruling",
+            "value": "Cut it anyway"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "the-l-to-the-ozarks",
+        "title": "Deep dish takes the L to the Ozarks, transfers at I-49",
+        "text": "Residents report that their Chicago-style pizza arrived speaking with a slight Chicago accent and asked for directions to “da lake.” Locals pointed it toward Beaver Lake. It said that would do.",
+        "state": "demo",
+        "location_ids": [],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [
+          {
+            "label": "Filed under",
+            "value": "Parody. Invented for a fictional pizzeria; nothing here happened."
+          },
+          {
+            "label": "Line",
+            "value": "Brown Line to I-49 Express"
+          },
+          {
+            "label": "Transfer time",
+            "value": "Longer than you'd think"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "upper-deck-rooftop",
+        "title": "The Upper Deck declared Benton County's closest thing to a rooftop seat",
+        "text": "An informal survey of people who have watched a game upstairs in Rogers finds the Upper Deck more than 600 miles from the nearest Chicago rooftop and about 30 feet from the nearest garlic knot. Respondents rated the view of the screens “very close” and the walk to the parking lot “much shorter than the Red Line.”",
+        "state": "demo",
+        "location_ids": [
+          "rogers"
+        ],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [
+          {
+            "label": "Filed under",
+            "value": "Parody. Invented for a fictional pizzeria; nothing here happened."
+          },
+          {
+            "label": "Booking",
+            "value": "Call Rogers at 479-555-0103 (fictional)"
+          },
+          {
+            "label": "Ivy",
+            "value": "Painted on"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "trivia-overtime",
+        "title": "Trivia night goes to overtime over whether deep dish is a casserole",
+        "text": "A routine Wednesday round stalled when a team answered “casserole” to the question “What is Chicago-style pizza?” The ruling went to review. Three hours, two pitchers of pop, and one garlic-knot-assisted diagram later, the host declared it a pizza that has made some bold life choices and awarded half a point.",
+        "state": "demo",
+        "location_ids": [
+          "fayetteville"
+        ],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [
+          {
+            "label": "Filed under",
+            "value": "Parody. Invented for a fictional pizzeria; nothing here happened."
+          },
+          {
+            "label": "Final ruling",
+            "value": "Pizza, with notes"
+          },
+          {
+            "label": "Points awarded",
+            "value": "One half"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "phrasebook",
+        "title": "A Chicago-to-Ozark phrasebook for new arrivals",
+        "text": "Moving from the Windy City to the Natural State? Most of the language carries over. A few terms need translation before your first trip to the counter.",
+        "state": "demo",
+        "location_ids": [],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [
+          {
+            "label": "Filed under",
+            "value": "Parody. Invented for a fictional pizzeria; nothing here happened."
+          },
+          {
+            "label": "Pop",
+            "value": "Coke, even when it is a Dr Pepper"
+          },
+          {
+            "label": "The lake",
+            "value": "Beaver Lake, unless you mean the other one"
+          },
+          {
+            "label": "Da Bears",
+            "value": "The Hogs"
+          },
+          {
+            "label": "The Loop",
+            "value": "The square"
+          },
+          {
+            "label": "Gym shoes",
+            "value": "Tennis shoes"
+          },
+          {
+            "label": "The expressway",
+            "value": "I-49"
+          },
+          {
+            "label": "Tavern cut",
+            "value": "On the menu, every day"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "how-to-eat-it",
+        "title": "Field guide: how to eat Chicago-style in Razorback country",
+        "text": "Step one, let it rest; the cheese is still deciding things. Step two, fork and knife, no shame. Step three, call the Hogs between bites, never during. Step four, leave the last slice for whoever drove. This guide is not affiliated with any coach, stadium, or tradition, and the cheese does not take instructions.",
+        "state": "demo",
+        "location_ids": [],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [
+          {
+            "label": "Filed under",
+            "value": "Parody. Invented for a fictional pizzeria; nothing here happened."
+          },
+          {
+            "label": "Utensils",
+            "value": "Fork and knife"
+          },
+          {
+            "label": "Calling the Hogs",
+            "value": "Between bites"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "bentonville-screen-consensus",
+        "title": "Bentonville game room reaches 25-screen consensus",
+        "text": "For the first time in recorded history, every big screen in the Bentonville dining room agreed on what to show. Scientists attribute the alignment to a Saturday kickoff and a nearby deep dish exerting gravitational pull. The jukebox abstained.",
+        "state": "demo",
+        "location_ids": [
+          "bentonville"
+        ],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [
+          {
+            "label": "Filed under",
+            "value": "Parody. Invented for a fictional pizzeria; nothing here happened."
+          },
+          {
+            "label": "Screens in agreement",
+            "value": "All of them"
+          },
+          {
+            "label": "Jukebox",
+            "value": "Abstained"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "fayetteville-citizenship",
+        "title": "Fayetteville location receives honorary Chicago citizenship",
+        "text": "The Lake Shore Holler location has been issued ceremonial papers recognizing it as a neighborhood of Chicago for all deep-dish purposes. Its first official act was asking where everyone parks. Its second was calling the Hogs, which Chicago has agreed not to ask about.",
+        "state": "demo",
+        "location_ids": [
+          "fayetteville"
+        ],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [
+          {
+            "label": "Filed under",
+            "value": "Parody. Invented for a fictional pizzeria; nothing here happened."
+          },
+          {
+            "label": "Status",
+            "value": "Honorary neighborhood"
+          },
+          {
+            "label": "Ward",
+            "value": "The Loop, sort of"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "golfers-19th-hole",
+        "title": "Local golfers adopt deep dish as the 19th hole",
+        "text": "Golfers coming off the courses north of Bentonville report that a deep dish is the only round where taking more strokes is encouraged. Handicaps will now be calculated by crust height. One player attempted to putt a garlic knot and was asked to stop.",
+        "state": "demo",
+        "location_ids": [
+          "bentonville"
+        ],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [
+          {
+            "label": "Filed under",
+            "value": "Parody. Invented for a fictional pizzeria; nothing here happened."
+          },
+          {
+            "label": "Par",
+            "value": "Two slices"
+          },
+          {
+            "label": "Hazards",
+            "value": "Hot cheese"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "springdale-tontitown-credentials",
+        "title": "Springdale deep dish asked to show its Italian credentials in Tontitown",
+        "text": "A Chicago-style pie on a short trip toward Tontitown was stopped at the edge of town by neighbors with deep Italian roots and asked to explain itself. It produced fresh basil, a marinara reference, and an apology for the crust height. It was waved through with a warning about ketchup.",
+        "state": "demo",
+        "location_ids": [
+          "springdale"
+        ],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [
+          {
+            "label": "Filed under",
+            "value": "Parody. Invented for a fictional pizzeria; nothing here happened."
+          },
+          {
+            "label": "Documents shown",
+            "value": "Basil, marinara"
+          },
+          {
+            "label": "Warning issued",
+            "value": "Ketchup"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      },
+      {
+        "id": "fort-smith-river-review",
+        "title": "Fort Smith deep dish reviews the Arkansas River",
+        "text": "A Chicago-style pizza visiting the River Valley inspected the Arkansas River and gave it high marks for width and sunsets, docking points only because it would not turn green on request. It then retired to the patio at River North Landing and filed its report in crumbs.",
+        "state": "demo",
+        "location_ids": [
+          "fort-smith"
+        ],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        },
+        "facts": [
+          {
+            "label": "Filed under",
+            "value": "Parody. Invented for a fictional pizzeria; nothing here happened."
+          },
+          {
+            "label": "River rating",
+            "value": "Four forks out of five"
+          },
+          {
+            "label": "Turned green",
+            "value": "No"
+          }
+        ],
+        "url": "",
+        "attachments": []
+      }
+    ]
+  },
+  "gallery": [
+    {
+      "id": "deep-dish-skyline",
+      "src": "images/parody/deep-dish-skyline.svg",
+      "alt": "A Chicago skyline rising out of a deep-dish crust, with green Ozark hills behind it.",
+      "width": 800,
+      "height": 600,
+      "caption": "The skyline, as seen from inside the crust. Original illustration, not a photograph of food served.",
+      "credit": "Original illustration for this parody site",
+      "permission": "Created for this site; no third-party artwork or logos",
+      "collection": "Parody",
+      "meta": {
+        "status": "demo",
+        "reviewed_on": "",
+        "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+      }
+    },
+    {
+      "id": "pig-trail",
+      "src": "images/parody/pig-trail.svg",
+      "alt": "A pizza box riding a winding mountain road through layered Ozark hills.",
+      "width": 800,
+      "height": 600,
+      "caption": "A deep dish attempts the Pig Trail. Original illustration, not a photograph of food served.",
+      "credit": "Original illustration for this parody site",
+      "permission": "Created for this site; no third-party artwork or logos",
+      "collection": "Parody",
+      "meta": {
+        "status": "demo",
+        "reviewed_on": "",
+        "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+      }
+    },
+    {
+      "id": "lake-effect-cheese",
+      "src": "images/parody/lake-effect-cheese.svg",
+      "alt": "A storm cloud dropping strings of cheese onto a deep-dish pizza below green hills.",
+      "width": 800,
+      "height": 600,
+      "caption": "Lake-effect cheese, drifting south. Original illustration, not a photograph of food served.",
+      "credit": "Original illustration for this parody site",
+      "permission": "Created for this site; no third-party artwork or logos",
+      "collection": "Parody",
+      "meta": {
+        "status": "demo",
+        "reviewed_on": "",
+        "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+      }
+    },
+    {
+      "id": "state-line",
+      "src": "images/parody/state-line.svg",
+      "alt": "A pizza cut down the middle by a dashed state line, labeled AR and TX.",
+      "width": 800,
+      "height": 600,
+      "caption": "The two-state pizza of Texarkana. Original illustration, not a photograph of food served.",
+      "credit": "Original illustration for this parody site",
+      "permission": "Created for this site; no third-party artwork or logos",
+      "collection": "Parody",
+      "meta": {
+        "status": "demo",
+        "reviewed_on": "",
+        "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "id": "is-this-real",
+      "question": "Is Windy Holler a real restaurant?",
+      "location_ids": [],
+      "answer": "No. Windy Holler is a parody pizzeria. Every name, address, phone number, dish, price, and story here is invented, and it is not affiliated with any real restaurant or with the University of Arkansas."
+    },
+    {
+      "id": "hours",
+      "question": "When are you open?",
+      "location_ids": [],
+      "answer": "On paper: 11 am–10 pm Monday through Thursday, 11 am–midnight Friday and Saturday, and noon–9 pm Sunday. In practice, never. We are fictional."
+    },
+    {
+      "id": "tavern-cut",
+      "question": "What is tavern cut?",
+      "location_ids": [],
+      "answer": "Thin crust cut into squares instead of wedges, the way Chicago bars have long served it. The corner pieces are the prize."
+    },
+    {
+      "id": "is-it-a-casserole",
+      "question": "Is Chicago-style deep dish a casserole?",
+      "location_ids": [],
+      "answer": "It is a pizza that has made some bold life choices. Every pizza here comes deep dish or tavern-cut thin, so you can pick your side of the argument."
+    },
+    {
+      "id": "fork-and-knife",
+      "question": "Do I really need a fork for the deep dish?",
+      "location_ids": [],
+      "answer": "You don't need one. You'll want one. A knife helps too."
+    },
+    {
+      "id": "private-room",
+      "question": "Can I book a room for a party?",
+      "location_ids": [
+        "fayetteville",
+        "rogers"
+      ],
+      "answer": "Fayetteville has the Bleacher Room and Rogers has the Upper Deck. Both are fictional, so they are always available and never bookable."
+    },
+    {
+      "id": "trivia",
+      "question": "When is trivia night?",
+      "location_ids": [],
+      "answer": "Fayetteville on Wednesdays, Bentonville on Tuesdays, and Texarkana on Thursdays, in both states."
+    }
+  ]
 }

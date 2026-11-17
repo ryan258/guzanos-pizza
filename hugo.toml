@@ -1,6 +1,6 @@
 "baseURL" = "/"
 "locale" = "en-us"
-"title" = "Gusano's Chicago-Style Pizzeria"
+"title" = "Windy Holler Chicago-Style Pizzeria"
 "enableRobotsTXT" = true
 "disableKinds" = ["taxonomy", "term", "RSS", "sitemap"]
 
@@ -18,8 +18,8 @@
 "home" = ["HTML", "JSON"]
 
 ["params"]
-"companyName" = "Gusano's Chicago-Style Pizzeria"
-"description" = "A modular restaurant website master, with Lucyd as its diner demonstration."
+"companyName" = "Windy Holler Chicago-Style Pizzeria"
+"description" = "Windy Holler, a fictional Chicago-style pizzeria in Razorback territory. Parody; nothing here is real."
 "noindex" = true
 "reviewOnly" = true
 "mode" = "preview"
@@ -28,7 +28,7 @@
 "preset" = "multi-location"
 "accent" = "forest"
 "homeSections" = ["hero", "announcement", "visit", "menu", "directory", "story"]
-"profileID" = "gusanos-pizza"
+"profileID" = "windy-holler"
 "designName" = "Around the neighborhood"
 "designDescription" = "A clear location-first layout with split visit cards and compact schedules for comparing branches."
 
