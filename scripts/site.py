@@ -6,6 +6,7 @@ import datetime as dt
 import hashlib
 import json
 from pathlib import Path
+import re
 import shutil
 import subprocess
 import sys
@@ -38,16 +39,25 @@ def source_hashes(root):
     }
 
 
+def hugo_supported(version):
+    # ponytail: minimum-only check; add an upper bound if a future Hugo breaks templates.
+    match = re.search(r"\bv(\d+)\.(\d+)\.", version)
+    return bool(match) and "extended" in version and (
+        int(match[1]),
+        int(match[2]),
+    ) >= (0, 166)
+
+
 def doctor(root=ROOT):
     if not shutil.which("hugo"):
         raise Invalid(
-            "Hugo 0.166.0 extended is required; install it before serving or building."
+            "Hugo 0.166 or newer (extended) is required; install it before serving or building."
         )
     version = subprocess.run(
         ["hugo", "version"], capture_output=True, text=True, check=True
     ).stdout.strip()
-    if "v0.166." not in version or "extended" not in version:
-        raise Invalid(f"Expected Hugo 0.166.x extended; found {version}")
+    if not hugo_supported(version):
+        raise Invalid(f"Expected Hugo 0.166 or newer, extended; found {version}")
     load_validated(root)
     print(
         f"Ready: {version}; Python {sys.version.split()[0]}; selected content and configuration are valid."

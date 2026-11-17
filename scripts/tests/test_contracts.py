@@ -18,6 +18,23 @@ import sculpt
 from owner import save_change
 
 
+class HugoVersionTests(unittest.TestCase):
+    def test_minimum_extended_version(self):
+        # scripts/site.py shadows the stdlib site module, so load it by path.
+        spec = importlib.util.spec_from_file_location(
+            "hot_eats_site", ROOT / "scripts/site.py"
+        )
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        hugo_supported = module.hugo_supported
+        ok = "hugo v0.{}.0+extended darwin/arm64"
+        self.assertTrue(hugo_supported(ok.format(166)))
+        self.assertTrue(hugo_supported(ok.format(168)))
+        self.assertTrue(hugo_supported("hugo v1.0.0+extended linux/amd64"))
+        self.assertFalse(hugo_supported(ok.format(165)))
+        self.assertFalse(hugo_supported("hugo v0.168.0 darwin/arm64"))
+
+
 class ModelTests(unittest.TestCase):
     def setUp(self):
         # Synthetic example fixtures stay independent of an owner's editable client.

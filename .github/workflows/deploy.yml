@@ -36,14 +36,23 @@ jobs:
       - name: Verify environment
         run: python3 scripts/site.py doctor
 
-      - name: Run unit test suite
-        run: python3 -m unittest discover -s scripts/tests
+      # Unit tests, JS syntax, all preset builds, links/anchors, publication fixture.
+      - name: Run full verification suite
+        run: python3 scripts/verify.py
 
       - name: Build site for GitHub Pages
         run: |
           python3 scripts/site.py build \
             --destination "$RUNNER_TEMP/site" \
-            --base-url "https://ryan258.github.io/gusanos-pizza/"
+            --base-url "https://ryan258.github.io/guzanos-pizza/"
+
+      # The public preview must never be indexable; fail the deploy if any page lacks noindex.
+      - name: Require noindex on every page
+        run: |
+          if grep -rL --include='*.html' 'name="robots" content="noindex' "$RUNNER_TEMP/site" | grep .; then
+            echo "Pages above are missing noindex; refusing to deploy."
+            exit 1
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

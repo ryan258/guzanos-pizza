@@ -1,7 +1,7 @@
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **gusanos-pizza** (459 symbols, 985 relationships, 20 execution flows).
+This project is indexed by GitNexus as **guzanos-pizza** (505 symbols, 1048 relationships, 21 execution flows).
 
 > Index stale? Run `node .gitnexus/run.cjs analyze --index-only` from the project root — it auto-selects an available runner. No `.gitnexus/run.cjs` yet? Bootstrap with `npx`, `bunx`, or `pnpm dlx` — e.g. `bunx gitnexus@latest analyze` (npm 11 npx crash; #1939).
 
@@ -25,10 +25,10 @@ This project is indexed by GitNexus as **gusanos-pizza** (459 symbols, 985 relat
 
 | Resource | Use for |
 | --- | --- |
-| `gitnexus://repo/gusanos-pizza/context` | Codebase overview, check index freshness |
-| `gitnexus://repo/gusanos-pizza/clusters` | All functional areas |
-| `gitnexus://repo/gusanos-pizza/processes` | All execution flows |
-| `gitnexus://repo/gusanos-pizza/process/{name}` | Step-by-step execution trace |
+| `gitnexus://repo/guzanos-pizza/context` | Codebase overview, check index freshness |
+| `gitnexus://repo/guzanos-pizza/clusters` | All functional areas |
+| `gitnexus://repo/guzanos-pizza/processes` | All execution flows |
+| `gitnexus://repo/guzanos-pizza/process/{name}` | Step-by-step execution trace |
 
 ## CLI
 
