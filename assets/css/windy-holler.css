@@ -3648,15 +3648,32 @@ body[data-brand="windy-holler"] {
   padding-inline: clamp(14px, 1.6vw, 22px);
 }
 
-/* Home hero: larger, slanted two-line headline beside a frameless pan. */
-.wh-hero-grid {
-  grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
-}
-
+/* Home hero: larger, slanted two-line headline beside a frameless pan.
+   "NO APOLOGIES." is about 6.2em wide; 8.1vw keeps it inside the copy column. */
 .wh-hero-title {
-  font-size: clamp(3rem, 0.4rem + 8.4vw, 7rem);
+  font-size: clamp(3rem, 8.1vw, 6.6rem);
   line-height: 0.9;
   transform: skewX(-7deg);
+}
+
+@media (min-width: 901px) {
+  .wh-hero-grid {
+    grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
+  }
+
+  .wh-hero-intro {
+    max-inline-size: 44ch;
+  }
+
+  /* Keep the skyline behind the pan, not behind the copy (dark ink on dark trees). */
+  .wh-hero-backdrop {
+    inline-size: min(58%, 860px);
+  }
+
+  .wh-hero-backdrop .wh-skyline-backdrop-img {
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 34%);
+    mask-image: linear-gradient(to right, transparent 0%, #000 34%);
+  }
 }
 
 .wh-hero-pizza-frame {
@@ -3682,6 +3699,24 @@ body[data-brand="windy-holler"] {
 
 .wh-showcase-media {
   aspect-ratio: 16 / 10;
+}
+
+/* Location cards: both actions stay on one line in the 3-up grid. */
+.wh-loc-card-actions .wh-btn {
+  padding-inline: 8px;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+/* Engine records inside brand pages (menu board, ordering cards) take the brand face, not the preset's Arial. */
+body[data-brand="windy-holler"] .restaurant-title,
+body[data-brand="windy-holler"] .menu-grid .dish .restaurant-title {
+  font-family: var(--wh-display);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--wh-forest);
 }
 
 @media (min-width: 901px) {

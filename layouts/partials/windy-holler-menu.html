@@ -6,7 +6,7 @@
 
   <div class="wrap wh-menu-hero-inner">
     <h1 id="wh-menu-page-title" class="wh-menu-hero-title">Our Menu</h1>
-    <p class="wh-ribbon-tag wh-menu-hero-ribbon">Chicago pizza. Holler favorites. And plenty of both.</p>
+    <p class="wh-ribbon-tag wh-menu-hero-ribbon">Chicago pizza. Ozark pantry. One fork per person, minimum.</p>
   </div>
 </section>
 
@@ -17,7 +17,7 @@
       (dict "label" "Pizza" "filter" "pizza" "active" true)
       (dict "label" "Wings & Apps" "filter" "appetizers" "active" false)
       (dict "label" "Salads" "filter" "salads" "active" false)
-      (dict "label" "Sides" "filter" "appetizers" "active" false)
+      (dict "label" "Sides" "filter" "sides" "active" false)
       (dict "label" "Desserts" "filter" "sweets" "active" false)
       (dict "label" "Drinks" "filter" "drinks" "active" false)
     }}
@@ -39,7 +39,7 @@
             <path d="M2 8 Q70 2 140 6 T218 5" fill="none" stroke="#b84a27" stroke-width="5" stroke-linecap="round"/>
           </svg>
         </div>
-        <p class="wh-showcase-desc">The Windy Holler classic. A thick, hearty pizza with a buttery crust, layers of cheese, and our signature sauce on top.</p>
+        <p class="wh-showcase-desc">Two inches deep on a cornmeal-butter crust: cheese on the bottom, fillings in the middle, crushed tomato on top. It’s built upside down on purpose, like a lot of good ideas.</p>
       </div>
       <div class="wh-showcase-media">
         {{ partial "image.html" (dict "src" "images/windy-holler/hero-deep-dish.webp" "alt" "Chicago-style deep-dish pizza in a cast-iron pan with a lifted slice and melted mozzarella cheese pull." "width" 1200 "height" 900 "priority" true "sizes" "(max-width: 820px) 94vw, 52vw") }}
@@ -58,7 +58,7 @@
             <path d="M2 8 Q70 2 140 6 T218 5" fill="none" stroke="#b84a27" stroke-width="5" stroke-linecap="round"/>
           </svg>
         </div>
-        <p class="wh-showcase-desc">A Chicago favorite with an Arkansas twist. Thin, crispy, and cut into shareable squares (“tavern cut”) for maximum flavor.</p>
+        <p class="wh-showcase-desc">Cracker-thin, crisp to the edge, and cut into squares the way Chicago bars served it to keep the beer flowing. The corner pieces are the prize; negotiate accordingly.</p>
       </div>
     </article>
   </div>
@@ -73,10 +73,10 @@
 
     <div class="wh-explore-grid">
       {{ $explore := slice
-        (dict "title" "Wings & Apps" "desc" "Crowd-pleasing starters, classic wings, and more." "src" "images/windy-holler/menu-wings-apps.webp" "alt" "Glazed chicken wings in a stoneware bowl with celery sticks and ranch dip." "filter" "appetizers")
-        (dict "title" "Salads" "desc" "Fresh salads with bold flavor." "src" "images/windy-holler/menu-salads-more.webp" "alt" "Crisp romaine salad topped with golden croutons and shaved parmesan." "filter" "salads")
-        (dict "title" "Sides" "desc" "Perfect additions to any meal." "src" "images/windy-holler/menu-sides.webp" "alt" "Golden toasted cheesy garlic bread triangles with marinara dipping sauce." "filter" "appetizers")
-        (dict "title" "Desserts" "desc" "Sweet finishes worth sharing." "src" "images/windy-holler/menu-desserts.webp" "alt" "Warm dark chocolate brownie topped with vanilla bean ice cream and chocolate drizzle." "filter" "sweets")
+        (dict "title" "Wings & Apps" "desc" "Sorghum wings, fried giardiniera, and a cheese dip with paperwork." "src" "images/windy-holler/menu-wings-apps.webp" "alt" "Glazed chicken wings in a stoneware bowl with celery sticks and ranch dip." "filter" "appetizers")
+        (dict "title" "Salads" "desc" "Cornbread croutons. That’s the whole pitch." "src" "images/windy-holler/menu-salads-more.webp" "alt" "Crisp romaine salad topped with golden croutons and shaved parmesan." "filter" "salads")
+        (dict "title" "Sides" "desc" "Garlic bread from under the street; rice from half the country." "src" "images/windy-holler/menu-sides.webp" "alt" "Golden toasted cheesy garlic bread triangles with marinara dipping sauce." "filter" "sides")
+        (dict "title" "Desserts" "desc" "Chocolate gravy, and a possum pie with no possum." "src" "images/windy-holler/menu-desserts.webp" "alt" "Warm dark chocolate brownie topped with vanilla bean ice cream and chocolate drizzle." "filter" "sweets")
       }}
       {{ range $explore }}
         <a class="wh-explore-card" href="#wh-full-menu" data-wh-cat-jump="{{ .filter }}">

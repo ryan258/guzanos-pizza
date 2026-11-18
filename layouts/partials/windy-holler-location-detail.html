@@ -52,7 +52,7 @@
           <h1 id="wh-locd-title" class="wh-locd-title">{{ $city }}</h1>
         </div>
         <p class="wh-ribbon-tag wh-locd-ribbon">Chicago-style pizza in the heart of {{ $cityUpper }}.</p>
-        <p class="wh-locd-desc">The location that brings Windy Holler’s big, bold Chicago-style pizza to {{ $city }}. Join us for deep dish, tavern-style favorites, and the same friendly Holler hospitality.</p>
+        <p class="wh-locd-desc">{{ range first 1 (where $data.collections.story "id" (printf "story-%s" $id)) }}{{ .text }}{{ else }}Windy Holler’s deep dish and tavern-cut, served in {{ $city }}.{{ end }}</p>
       </div>
 
       <dl class="wh-locd-facts">
@@ -76,7 +76,7 @@
           <dt class="visually-hidden">Hours</dt>
           <dd>
             <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#b84a27" stroke-width="2"/><path d="M12 7v5l3.5 2" fill="none" stroke="#b84a27" stroke-width="2" stroke-linecap="round"/></svg>
-            <span>Sun–Thu: 11:00 AM – 10:00 PM<br>Fri–Sat: 11:00 AM – 11:00 PM</span>
+            {{/* ponytail: mirrors data hours (all six locations share them); render from shared/hours.html if they ever differ */}}<span>Mon–Thu 11 AM – 10 PM<br>Fri–Sat 11 AM – midnight<br>Sun noon – 9 PM</span>
           </dd>
         </div>
       </dl>
@@ -124,23 +124,23 @@
         <ul class="wh-amenities-list">
           <li>
             <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v8a3 3 0 0 0 3 3v7M10 3v6M13 3v8a3 3 0 0 1-3 3M17 3v18M17 3c2 1.5 2.5 5 2 8h-2" fill="none" stroke="#b84a27" stroke-width="1.8" stroke-linecap="round"/></svg>
-            <span>Dine-In</span>
+            <span>Dine-in (forks provided)</span>
           </li>
           <li>
             <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l1 12H5L6 8Z" fill="none" stroke="#b84a27" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8V6a3 3 0 0 1 6 0v2" fill="none" stroke="#b84a27" stroke-width="1.8" stroke-linecap="round"/></svg>
-            <span>Carryout</span>
+            <span>Leftover boxes, deep-dish depth</span>
           </li>
           <li>
             <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l1.5-5h11L19 13v5h-2v-1.5H7V18H5v-5Z" fill="#b84a27"/><circle cx="8" cy="14" r="1.2" fill="#f6efe2"/><circle cx="16" cy="14" r="1.2" fill="#f6efe2"/></svg>
-            <span>Delivery</span>
+            <span>Tailgate pans, 48 hours’ notice</span>
           </li>
           <li>
             <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="2.5" fill="none" stroke="#b84a27" stroke-width="1.8"/><path d="M4 18c0-3 2.5-4.5 5-4.5s5 1.5 5 4.5" fill="none" stroke="#b84a27" stroke-width="1.8" stroke-linecap="round"/><circle cx="16.5" cy="9" r="2" fill="none" stroke="#b84a27" stroke-width="1.8"/><path d="M15 14c2.2 0 4 1.3 4 4" fill="none" stroke="#b84a27" stroke-width="1.8" stroke-linecap="round"/></svg>
-            <span>Group Seating</span>
+            <span>Booths built for arguing</span>
           </li>
           <li>
             <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="15" rx="2" fill="none" stroke="#b84a27" stroke-width="1.8"/><path d="M3 10h18M8 3v4M16 3v4" fill="none" stroke="#b84a27" stroke-width="1.8" stroke-linecap="round"/></svg>
-            <span>Catering Available</span>
+            <span>Wing &amp; trivia Wednesday, 7 PM</span>
           </li>
         </ul>
       </div>

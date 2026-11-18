@@ -9,8 +9,8 @@
   <div class="wrap wh-spec-hero-grid">
     <div class="wh-spec-hero-copy">
       <h1 id="wh-spec-page-title" class="wh-spec-hero-title">Specials</h1>
-      <p class="wh-ribbon-tag wh-spec-hero-ribbon">Great pizza. Even better deals.</p>
-      <p class="wh-spec-hero-intro">Local favorites, limited-time creations, and holler-worthy savings—there’s always something special at Windy Holler.</p>
+      <p class="wh-ribbon-tag wh-spec-hero-ribbon">A deal for every weekday.</p>
+      <p class="wh-spec-hero-intro">Five weekdays, five excuses, and two pies the kitchen is still arguing about.</p>
     </div>
 
     <div class="wh-spec-hero-media">
@@ -42,18 +42,18 @@
       </div>
       <p class="wh-spec-sub-rays">
         <span class="wh-ready-rays" aria-hidden="true"></span>
-        <span>Great deals all week long.</span>
+        <span>Monday through Friday, no coupons, no math.</span>
         <span class="wh-ready-rays wh-ready-rays-right" aria-hidden="true"></span>
       </p>
     </div>
 
     <div class="wh-daily-grid">
       {{ $daily := slice
-        (dict "day" "Monday" "title" "Deep Dish Monday" "src" "images/windy-holler/menu-deep-dish.webp" "alt" "Chicago deep-dish pizza slice with melted mozzarella cheese pull." "deal" "$3 OFF" "note" "Any Deep-Dish Pizza")
-        (dict "day" "Tuesday" "title" "Tavern-Style Tuesday" "src" "images/windy-holler/menu-tavern-style.webp" "alt" "Crispy pepperoni tavern-style pizza cut into squares." "deal" "$2 OFF" "note" "Any Tavern-Style Pizza")
-        (dict "day" "Wednesday" "title" "Wing Wednesday" "src" "images/windy-holler/menu-wings-apps.webp" "alt" "Glazed chicken wings with celery sticks and ranch dip." "deal" "$1 OFF" "note" "Any Order of Wings")
-        (dict "day" "Thursday" "title" "Lunch Special" "src" "images/windy-holler/special-lunch.webp" "alt" "Pepperoni pizza slice with side salad and iced tea." "deal" "$9.99" "note" "Pizza Slice + Side + Drink (11 AM – 3 PM)")
-        (dict "day" "Friday" "title" "Family Night" "src" "images/windy-holler/hero-deep-dish.webp" "alt" "Whole cast-iron deep-dish pizza." "deal" "$5 OFF" "note" "Any Family-Size Pizza")
+        (dict "day" "Monday" "title" "The Monday Pan" "src" "images/windy-holler/menu-deep-dish.webp" "alt" "Chicago deep-dish pizza slice with melted mozzarella cheese pull." "deal" "$14" "note" "Any 9-inch deep dish")
+        (dict "day" "Tuesday" "title" "Tavern-cut Tuesday" "src" "images/windy-holler/menu-tavern-style.webp" "alt" "Crispy pepperoni tavern-style pizza cut into squares." "deal" "$16" "note" "Any 16-inch tavern-cut")
+        (dict "day" "Wednesday" "title" "Wing & Trivia Night" "src" "images/windy-holler/menu-wings-apps.webp" "alt" "Sorghum-glazed chicken wings with celery sticks and ranch dip." "deal" "½ OFF" "note" "Sorghum wings during trivia, 7 PM")
+        (dict "day" "Thursday" "title" "The Lunch Shift" "src" "images/windy-holler/special-lunch.webp" "alt" "Pepperoni pizza slice with side salad and iced tea." "deal" "$11" "note" "Slice + Cornbread Caesar + sweet tea (11 AM – 3 PM)")
+        (dict "day" "Friday" "title" "Family Pan Friday" "src" "images/windy-holler/hero-deep-dish.webp" "alt" "Whole cast-iron deep-dish pizza." "deal" "$55" "note" "Two 12-inch deep dish + Holler Chopped + pop")
       }}
       {{ range $daily }}
         <article class="wh-daily-card">
@@ -78,37 +78,37 @@
           </svg>
         </div>
       </div>
-      <p class="wh-spec-sub">Limited-time creations, seasonal flavors, and can’t-miss offers.</p>
+      <p class="wh-spec-sub">One new in the pan, and one that never left.</p>
     </div>
 
     <div class="wh-feat-grid">
       <article class="wh-feat-card restaurant-offer" data-layout="{{ $offerLayout }}">
         <div class="wh-feat-copy">
-          <p class="wh-feat-tag">Limited Time</p>
-          <h3 class="wh-feat-title wh-slanted">The Hogtown<br>Deep Dish</h3>
-          <p class="wh-feat-desc">Italian sausage, pepperoni, bacon, and our signature red sauce—built for Arkansas-sized appetites.</p>
+          <p class="wh-feat-tag">New in the Pan</p>
+          <h3 class="wh-feat-title wh-slanted">The Delta<br>Deep Dish</h3>
+          <p class="wh-feat-desc">Cornmeal crust, chili-braised pork, sharp cheddar, and a crown of hot tamale sauce, with onions and saltines on the side. The South Side’s tamale habit meets the Delta’s.</p>
           <a class="wh-btn wh-btn-primary" data-context-link href="{{ partial "site-url.html" "ordering/" }}">
             <span>Order Now</span>
             <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
         <div class="wh-feat-media">
-          {{ partial "image.html" (dict "src" "images/windy-holler/menu-deep-dish.webp" "alt" "The Hogtown Deep Dish pizza slice with melted cheese and Italian sausage." "width" 800 "height" 600 "sizes" "(max-width: 820px) 92vw, 24vw") }}
+          {{ partial "image.html" (dict "src" "images/windy-holler/menu-deep-dish.webp" "alt" "The Delta Deep Dish, a Chicago-style deep dish with a lifted slice and a long cheese pull." "width" 800 "height" 600 "sizes" "(max-width: 820px) 92vw, 24vw") }}
         </div>
       </article>
 
       <article class="wh-feat-card restaurant-offer" data-layout="{{ $offerLayout }}">
         <div class="wh-feat-copy">
-          <p class="wh-feat-tag">Seasonal Special</p>
-          <h3 class="wh-feat-title wh-slanted">Garden<br>Market Pie</h3>
-          <p class="wh-feat-desc">Roasted vegetables, mozzarella, and fresh herbs on our tavern-style crust. Fresh, bold, and in season now.</p>
+          <p class="wh-feat-tag">Fan Favorite</p>
+          <h3 class="wh-feat-title wh-slanted">The Pig Trail,<br>Tavern-Cut</h3>
+          <p class="wh-feat-desc">Hot soppressata, pickled jalapeño, and sorghum hot honey on cracker-thin crust, cut into squares. Seventeen switchbacks of heat; pull over if you need to.</p>
           <a class="wh-btn wh-btn-primary" data-context-link href="{{ partial "site-url.html" "ordering/" }}">
             <span>Order Now</span>
             <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
         <div class="wh-feat-media">
-          {{ partial "image.html" (dict "src" "images/windy-holler/menu-tavern-style.webp" "alt" "Garden Market Pie crispy tavern-style pizza." "width" 800 "height" 600 "sizes" "(max-width: 820px) 92vw, 24vw") }}
+          {{ partial "image.html" (dict "src" "images/windy-holler/menu-tavern-style.webp" "alt" "The Pig Trail, a thin tavern-cut pizza with cured sausage, cut into squares." "width" 800 "height" 600 "sizes" "(max-width: 820px) 92vw, 24vw") }}
         </div>
       </article>
     </div>
@@ -124,7 +124,7 @@
         <h2 class="wh-miss-title wh-slanted">Don’t Miss<br>A Special</h2>
       </div>
 
-      <p class="wh-miss-desc">Get the latest deals, seasonal pizzas, and Windy Holler news in your inbox.</p>
+      <p class="wh-miss-desc">New pans, weekday deals, and the occasional lake-effect cheese advisory.</p>
 
       <div class="wh-miss-form-wrap">
         <form class="wh-newsletter-form" action="{{ partial "site-url.html" "contact/" }}" method="GET" aria-label="Specials email updates" novalidate data-wh-newsletter>

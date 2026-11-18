@@ -10,7 +10,7 @@
   <div class="wrap wh-contact-hero-inner">
     <h1 id="wh-contact-page-title" class="wh-contact-hero-title">Contact Us</h1>
     <p class="wh-ribbon-tag wh-contact-hero-ribbon">We’re here for pizza people.</p>
-    <p class="wh-contact-hero-intro">Questions, feedback, catering, or just a pizza comment? We’d love to hear from you.</p>
+    <p class="wh-contact-hero-intro">Questions, catering, or a strongly held position on ketchup? We’d love to hear from you.</p>
   </div>
 </section>
 
@@ -86,7 +86,7 @@
             {{ with $data.contacts.phone }}
               <p class="wh-info-strong"><a href="tel:{{ . | replaceRE "[^0-9+]" "" }}">{{ . }}</a></p>
             {{ end }}
-            <p class="wh-info-sub">Mon–Sat: 10:00 AM – 10:00 PM<br>Sun: 11:00 AM – 10:00 PM</p>
+            {{/* ponytail: mirrors data hours (all six locations share them); render from shared/hours.html if they ever differ */}}<p class="wh-info-sub">Mon–Thu 11 AM – 10 PM<br>Fri–Sat 11 AM – midnight<br>Sun noon – 9 PM</p>
           </div>
         </div>
 
@@ -144,7 +144,7 @@
         </svg>
         <div>
           <h3>Six Locations Across Arkansas</h3>
-          <p>Find the Windy Holler nearest you for dine-in, carryout, or delivery.</p>
+          <p>Find the Windy Holler nearest you. Bring a fork and a friend with a good grip.</p>
         </div>
       </div>
 
