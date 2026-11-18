@@ -7,7 +7,7 @@
   },
   "brand": {
     "headline": "Deep dish. No apologies.",
-    "intro": "Chicago-style pizza with serious substance and a little Arkansas rebellion. Pull up a chair. Bring your appetite.",
+    "intro": "Chicago deep dish with an Ozark accent: cornmeal-butter crust, okra in the giardiniera, and sorghum where you least expect it. Pull up a chair. Bring a fork.",
     "eyebrow": "Chicago-style pizza. Arkansas attitude.",
     "tagline": "Chicago roots. Arkansas home.",
     "note": "Windy Holler is a fictional parody pizzeria. Every name, address, phone number, dish, price, and story on this site is invented. Not affiliated with any real restaurant or with the University of Arkansas.",
@@ -19,14 +19,14 @@
     },
     "story_title": "Chicago roots. Arkansas home.",
     "story": [
-      "Windy Holler brings the big, bold tradition of Chicago-style pizza to Arkansas, with a little local attitude baked in."
+      "A Chicago pizza moved to the Ozarks and started borrowing from the neighbors: sorghum in the wing glaze, okra in the giardiniera, chocolate gravy on the brownie. Nobody in either state asked for this. Both states keep coming back."
     ],
     "ticker": [
       "Tavern-cut Tuesday",
-      "Trivia most nights",
-      "Tailgate pans",
+      "Half-price wings at Wednesday trivia",
+      "Okra in the giardiniera, on purpose",
       "Deep dish: a pizza with a basement",
-      "Fork, knife, Woo Pig",
+      "Tailgate pans, 48 hours' notice",
       "Hold the ketchup"
     ]
   },
@@ -704,18 +704,18 @@
   "menu": {
     "currency": "USD",
     "reviewed_on": "",
-    "note": "Fictional prices for a fictional pizzeria. Listed price is a 12-inch deep dish. Nothing here can be ordered.",
+    "note": "Fictional prices for a fictional pizzeria. Listed price is a 12-inch deep dish, or a 12-inch tavern-cut where that's the only way we make it. Nothing here can be ordered.",
     "allergen_note": "This is a parody menu. Real allergies deserve a real restaurant's answer.",
     "categories": [
       {
         "id": "pizza",
         "label": "Deep dish & tavern-cut",
-        "eyebrow": "The crust that needs a fork, and the one that doesn't",
+        "eyebrow": "One needs a fork. One needs a napkin. Both need you.",
         "items": [
           {
             "id": "lake-shore-drive",
             "name": "The Lake Shore Drive",
-            "description": "A wall-to-wall sausage patty under mozzarella and chunky crushed tomato. Takes the long way, worth it.",
+            "description": "A wall-to-wall fennel sausage patty, aged mozzarella, and crushed tomato on our cornmeal-butter crust. The classic. Takes the long way; worth it.",
             "price": "26.00",
             "state": "available",
             "location_ids": [],
@@ -734,7 +734,7 @@
           {
             "id": "big-shoulders",
             "name": "The Big Shoulders",
-            "description": "Sausage, pepperoni, ham, and bacon on a crust that does its own lifting.",
+            "description": "Sausage, pepperoni, smoked ham, and pecan-smoked bacon on a crust that does its own lifting. Named for the poem. The poem was about the city, but the pizza read it too.",
             "price": "29.00",
             "state": "available",
             "location_ids": [],
@@ -751,9 +751,48 @@
             }
           },
           {
+            "id": "italian-beef",
+            "name": "The Italian Beef, Dipped",
+            "description": "Thin-shaved garlic beef, sweet peppers, and Holler-diniera, our hot giardiniera with pickled okra in the jar. Say \"dipped\" and we ladle jus over the top crust at the table.",
+            "price": "28.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Deep dish: 9\" $18 · 12\" $28",
+              "Tavern-cut thin: 12\" $16 · 16\" $23",
+              "Dipped at the table, no charge"
+            ],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "delta-deep-dish",
+            "name": "The Delta Deep Dish",
+            "description": "Cornmeal crust, chili-braised pork, sharp cheddar, and a crown of hot tamale sauce, with diced onion and saltines on the side. Chicago's South Side tucks tamales into hot-dog buns; the Delta wraps them in husks. We put both ideas in one pan.",
+            "price": "28.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Deep dish: 9\" $18 · 12\" $28",
+              "Tavern-cut thin: 12\" $16 · 16\" $23"
+            ],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
             "id": "pig-trail",
             "name": "The Pig Trail",
-            "description": "Pepperoni, jalapeños, and hot honey, arranged in switchbacks.",
+            "description": "Hot soppressata, pickled jalapeño, and sorghum hot honey, laid out in switchbacks. Seventeen curves of heat; pull over if you need to.",
             "price": "27.00",
             "state": "available",
             "location_ids": [],
@@ -772,7 +811,7 @@
           {
             "id": "lake-effect",
             "name": "The Lake Effect",
-            "description": "Mozzarella, provolone, parmesan, and ricotta, accumulating fast.",
+            "description": "A white pie under a winter storm warning: roasted garlic, mozzarella, provolone, aged white cheddar, and whipped ricotta, accumulating fast. Visibility near zero.",
             "price": "25.00",
             "state": "available",
             "location_ids": [],
@@ -783,44 +822,6 @@
             "options": [
               "Deep dish: 9\" $16 · 12\" $25",
               "Tavern-cut thin: 12\" $14 · 16\" $20"
-            ],
-            "meta": {
-              "status": "demo",
-              "reviewed_on": "",
-              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
-            }
-          },
-          {
-            "id": "buffalo-river",
-            "name": "The Buffalo River",
-            "description": "Buffalo chicken, ranch drizzle, and a gentle current of hot sauce.",
-            "price": "27.00",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [
-              "Deep dish: 9\" $18 · 12\" $27",
-              "Tavern-cut thin: 12\" $16 · 16\" $22"
-            ],
-            "meta": {
-              "status": "demo",
-              "reviewed_on": "",
-              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
-            }
-          },
-          {
-            "id": "italian-beef",
-            "name": "The Italian Beef",
-            "description": "Shaved beef, sweet peppers, hot giardiniera, and a little jus on the side for dunking.",
-            "price": "28.00",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [
-              "Deep dish: 9\" $18 · 12\" $28",
-              "Tavern-cut thin: 12\" $16 · 16\" $23"
             ],
             "meta": {
               "status": "demo",
@@ -831,13 +832,14 @@
           {
             "id": "garden-holler",
             "name": "The Garden Holler",
-            "description": "Spinach, mushrooms, green peppers, onions, black olives, and tomatoes.",
+            "description": "Fire-roasted okra, charred sweet corn, poblano, red onion, and smoked mozzarella over basil-pecan pesto. The okra is crisp, not slimy, and we will not be taking questions.",
             "price": "25.00",
             "state": "available",
             "location_ids": [],
             "service_ids": [],
             "dietary": [
-              "vegetarian"
+              "vegetarian",
+              "contains pecans"
             ],
             "options": [
               "Deep dish: 9\" $16 · 12\" $25",
@@ -850,16 +852,54 @@
             }
           },
           {
-            "id": "second-city",
-            "name": "The Second City",
-            "description": "Tavern-cut thin only: pepperoni and giardiniera, cut in squares the way Chicago bars intended.",
+            "id": "dragged-through-the-holler",
+            "name": "Dragged Through the Holler",
+            "description": "A Chicago dog, reborn as a tavern pie: all-beef frank coins, yellow mustard, neon relish, onion, tomato, dill ribbons, sport peppers, and celery salt on a poppy-seed crust. Ketchup is a misdemeanor in two states.",
             "price": "17.00",
             "state": "available",
             "location_ids": [],
             "service_ids": [],
             "dietary": [],
             "options": [
-              "Tavern-cut thin: 12\" $17 · 16\" $23"
+              "Tavern-cut thin only: 12\" $17 · 16\" $23"
+            ],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "duck-capital",
+            "name": "The Duck Capital",
+            "description": "Smoked duck, muscadine jam, caramelized onion, and goat cheese on tavern-cut, finished with arugula. For the Arkansas rice town that calls itself the duck capital of the world and has the trophies to argue it.",
+            "price": "21.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Tavern-cut thin only: 12\" $21 · 16\" $28"
+            ],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "state-fruit",
+            "name": "The State Fruit (and Vegetable)",
+            "description": "Arkansas law names the South Arkansas pink tomato both its state fruit and its state vegetable. We take no side; we slice it raw onto a hot tavern crust with buttermilk mayo, white cheddar, basil, and flaky salt. Back in July; the tomato has a contract.",
+            "price": "19.00",
+            "state": "sold-out",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [
+              "vegetarian"
+            ],
+            "options": [
+              "Tavern-cut thin only: 12\" $19 · 16\" $26"
             ],
             "meta": {
               "status": "demo",
@@ -870,7 +910,7 @@
           {
             "id": "state-line",
             "name": "The State Line",
-            "description": "Half Texas brisket, half Arkansas sausage, divided by a strict line of mozzarella. Texarkana only.",
+            "description": "Half Texas brisket with pickled red onion, half Arkansas hickory sausage with chow-chow, divided by a strict line of mozzarella. Customs inspects at the table. Texarkana only.",
             "price": "30.00",
             "state": "available",
             "location_ids": [
@@ -892,13 +932,110 @@
       },
       {
         "id": "appetizers",
-        "label": "Appetizers",
+        "label": "Wings & apps",
         "eyebrow": "The opening drive",
         "items": [
           {
-            "id": "garlic-knots",
-            "name": "Garlic knots",
-            "description": "Six knots, garlic butter, parmesan, marinara for dipping.",
+            "id": "sorghum-wings",
+            "name": "Sorghum-glazed wings",
+            "description": "Smoked, then fried, then glazed in sorghum, black pepper, and a splash of giardiniera brine. Eight to an order, and the brine is the trick.",
+            "price": "13.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [
+              "Make them hot +$0.50"
+            ],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "fried-giardiniera",
+            "name": "Fried Holler-diniera",
+            "description": "Arkansas claims the fried pickle. Chicago claims giardiniera. Somebody had to introduce them: pickled okra, cauliflower, carrot, and sport peppers in cornmeal batter with comeback ranch.",
+            "price": "9.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [
+              "vegetarian"
+            ],
+            "options": [],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "mother-in-law",
+            "name": "The Mother-in-Law",
+            "description": "A Delta hot tamale in a poppy-seed bun under beef chili, yellow mustard, and sport peppers. A South Side classic with a Delta tamale. Visits twice a year, stays for chili.",
+            "price": "8.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "tavern-chips-dip",
+            "name": "Tavern chips & cheese dip",
+            "description": "Arkansas says it invented cheese dip in the 1930s and will show you the paperwork. We serve it hot with tavern-crust squares, baked crisp for scooping.",
+            "price": "10.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [
+              "vegetarian"
+            ],
+            "options": [
+              "Add chorizo +$2"
+            ],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "saganaki",
+            "name": "Opa-Holler saganaki",
+            "description": "Kasseri cheese, flamed at the table with a shout, then squeezed with lemon and drizzled with sorghum. Chicago's Greektown taught us to yell at cheese; Arkansas taught us to put syrup on it.",
+            "price": "12.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [
+              "vegetarian"
+            ],
+            "options": [],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          }
+        ]
+      },
+      {
+        "id": "sides",
+        "label": "Sides",
+        "eyebrow": "The supporting cast",
+        "items": [
+          {
+            "id": "lower-wacker-garlic-bread",
+            "name": "Lower Wacker garlic bread",
+            "description": "Tavern crust brushed with roasted-garlic butter, parmesan, and parsley, with red gravy for dunking. Named for the street underneath the street.",
             "price": "7.00",
             "state": "available",
             "location_ids": [],
@@ -916,10 +1053,10 @@
             }
           },
           {
-            "id": "fried-pickles",
-            "name": "Ozark fried pickle chips",
-            "description": "Dill chips in cornmeal batter with buttermilk ranch.",
-            "price": "8.00",
+            "id": "stuttgart-arancini",
+            "name": "Stuttgart arancini",
+            "description": "Arkansas grows about half of America's rice. We turn a little of it into risotto balls stuffed with smoked mozzarella, fried crisp, three to an order, with red gravy.",
+            "price": "9.00",
             "state": "available",
             "location_ids": [],
             "service_ids": [],
@@ -936,43 +1073,7 @@
           {
             "id": "giardiniera-fries",
             "name": "Giardiniera fries",
-            "description": "Crinkle fries under hot giardiniera and melted provolone.",
-            "price": "9.00",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [
-              "vegetarian"
-            ],
-            "options": [],
-            "meta": {
-              "status": "demo",
-              "reviewed_on": "",
-              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
-            }
-          },
-          {
-            "id": "sorghum-wings",
-            "name": "Sorghum-glazed wings",
-            "description": "Eight wings in a sticky sorghum and black pepper glaze.",
-            "price": "13.00",
-            "state": "available",
-            "location_ids": [],
-            "service_ids": [],
-            "dietary": [],
-            "options": [
-              "Make them hot +$0.50"
-            ],
-            "meta": {
-              "status": "demo",
-              "reviewed_on": "",
-              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
-            }
-          },
-          {
-            "id": "mozz-sticks",
-            "name": "Mozzarella wind sticks",
-            "description": "Breaded mozzarella, marinara, and a stiff breeze.",
+            "description": "Crinkle fries under hot Holler-diniera and melted provolone. Eat them first; they don't travel.",
             "price": "9.00",
             "state": "available",
             "location_ids": [],
@@ -995,9 +1096,9 @@
         "eyebrow": "Something green before the deep end",
         "items": [
           {
-            "id": "chopped-salad",
-            "name": "Chicago chopped salad",
-            "description": "Romaine, salami, chickpeas, tomato, provolone, and pepperoncini in red wine vinaigrette.",
+            "id": "cornbread-caesar",
+            "name": "Cornbread Caesar",
+            "description": "Romaine, shaved parmesan, and skillet-cornbread croutons in an anchovy-buttermilk Caesar. The croutons are the whole pitch, and the pitch works.",
             "price": "11.00",
             "state": "available",
             "location_ids": [],
@@ -1011,14 +1112,32 @@
             }
           },
           {
-            "id": "wedge",
-            "name": "Buttermilk wedge",
-            "description": "Iceberg wedge, bacon, tomato, and buttermilk ranch.",
-            "price": "10.00",
+            "id": "holler-chopped",
+            "name": "The Holler Chopped",
+            "description": "Chicago's chopped salad, relocated: romaine, salami, chickpeas, purple hull peas, provolone, and pepperoncini in a red wine–sorghum vinaigrette, chopped fine enough for a spoon.",
+            "price": "12.00",
             "state": "available",
             "location_ids": [],
             "service_ids": [],
             "dietary": [],
+            "options": [],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "buttermilk-wedge",
+            "name": "Buttermilk wedge",
+            "description": "Iceberg, pecan-smoked bacon, blistered tomato, buttermilk blue cheese, and toasted pecans. A steakhouse salad that moved to the country.",
+            "price": "10.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [
+              "contains pecans"
+            ],
             "options": [
               "Hold the bacon"
             ],
@@ -1036,15 +1155,34 @@
         "eyebrow": "Fourth quarter",
         "items": [
           {
-            "id": "blackberry-cobbler",
-            "name": "Ozark blackberry cobbler",
-            "description": "Baked in a deep-dish pan, because of course it is. Vanilla ice cream on top.",
+            "id": "chocolate-gravy-brownie",
+            "name": "Chocolate gravy brownie",
+            "description": "A skillet brownie under warm Ozark chocolate gravy, the biscuit-breakfast tradition promoted to dessert, with vanilla ice cream and flaky salt. We don't argue with grandmothers.",
+            "price": "8.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [
+              "vegetarian"
+            ],
+            "options": [],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "possum-pie",
+            "name": "Playing possum pie",
+            "description": "Arkansas's layered icebox pie: pecan shortbread, cream cheese, chocolate pudding, and whipped cream. Contains no possum; the chocolate is just playing dead under the cream.",
             "price": "7.00",
             "state": "available",
             "location_ids": [],
             "service_ids": [],
             "dietary": [
-              "vegetarian"
+              "vegetarian",
+              "contains pecans"
             ],
             "options": [],
             "meta": {
@@ -1054,10 +1192,10 @@
             }
           },
           {
-            "id": "fried-pie",
-            "name": "Fried apple hand pie",
-            "description": "Half-moon pie, crimped edges, cinnamon sugar.",
-            "price": "5.00",
+            "id": "arkansas-black-fried-pie",
+            "name": "Arkansas Black fried pie",
+            "description": "A crimped half-moon of Arkansas Black apples, an heirloom so dark it looks burnt, with a slice of sharp cheddar baked in the way the Midwest insists.",
+            "price": "6.00",
             "state": "available",
             "location_ids": [],
             "service_ids": [],
@@ -1072,9 +1210,9 @@
             }
           },
           {
-            "id": "popcorn",
-            "name": "Cheddar-caramel popcorn",
-            "description": "A bag of half cheddar, half caramel. Shake it.",
+            "id": "lake-effect-mix",
+            "name": "Lake Effect mix",
+            "description": "Cheddar and caramel popcorn shaken together in one bag, the way Chicago settles arguments. Accumulation varies.",
             "price": "4.00",
             "state": "available",
             "location_ids": [],
@@ -1099,7 +1237,7 @@
           {
             "id": "fountain-pop",
             "name": "Fountain pop",
-            "description": "It's Coke. It's pop. It's whatever you ordered.",
+            "description": "It's pop. It's Coke. It's whatever you called it growing up.",
             "price": "3.00",
             "state": "available",
             "location_ids": [],
@@ -1117,8 +1255,24 @@
           {
             "id": "sweet-tea",
             "name": "Sweet tea",
-            "description": "Arkansas-sweet. Unsweet available for Chicagoans.",
+            "description": "Arkansas sweet. Unsweet is available for Chicagoans and anyone who has met a dentist.",
             "price": "3.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
+          },
+          {
+            "id": "half-and-half",
+            "name": "Half & half",
+            "description": "Half sweet tea, half fresh lemonade, all porch.",
+            "price": "3.50",
             "state": "available",
             "location_ids": [],
             "service_ids": [],
@@ -1145,6 +1299,22 @@
               "reviewed_on": "",
               "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
             }
+          },
+          {
+            "id": "bitter-shot",
+            "name": "The Bitter Shot",
+            "description": "A thimble of house wormwood-and-grapefruit tonic, alcohol-free, in honor of a famously bitter Chicago liqueur. Sip it, make the face, and you're an honorary Chicagoan.",
+            "price": "2.00",
+            "state": "available",
+            "location_ids": [],
+            "service_ids": [],
+            "dietary": [],
+            "options": [],
+            "meta": {
+              "status": "demo",
+              "reviewed_on": "",
+              "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+            }
           }
         ]
       }
@@ -1153,16 +1323,35 @@
   "collections": {
     "specials": [
       {
-        "id": "tavern-cut-tuesday",
-        "title": "Tavern-cut Tuesday",
-        "text": "Any 16-inch tavern-cut thin pizza for one flat price. Corner pieces are first come, first served.",
+        "id": "monday-pan",
+        "title": "The Monday Pan",
+        "text": "Any 9-inch deep dish for one flat price. Mondays are heavy; lunch should match.",
         "state": "available",
         "location_ids": [],
+        "facts": [
+          {
+            "label": "When",
+            "value": "Mondays, all day"
+          },
+          {
+            "label": "Deal",
+            "value": "Any 9-inch deep dish $14 (fictional)"
+          }
+        ],
+        "url": "",
+        "attachments": [],
         "meta": {
           "status": "demo",
           "reviewed_on": "",
           "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
-        },
+        }
+      },
+      {
+        "id": "tavern-cut-tuesday",
+        "title": "Tavern-cut Tuesday",
+        "text": "Any 16-inch tavern-cut for one flat price. Corner pieces are first come, first served; no trades after the first bite.",
+        "state": "available",
+        "location_ids": [],
         "facts": [
           {
             "label": "When",
@@ -1174,111 +1363,141 @@
           }
         ],
         "url": "",
-        "attachments": []
+        "attachments": [],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        }
       },
       {
-        "id": "game-day-deep-dish",
-        "title": "Game-day deep dish",
-        "text": "On home-game Saturdays, a 12-inch deep dish and a pitcher of pop. Calling the Hogs is free.",
+        "id": "wing-trivia-wednesday",
+        "title": "Wing & trivia Wednesday",
+        "text": "Half-price sorghum wings during trivia at every location. Categories include Chicago, the Ozarks, and whether that was a casserole. Texarkana asks every question twice, once per state.",
         "state": "available",
         "location_ids": [],
-        "meta": {
-          "status": "demo",
-          "reviewed_on": "",
-          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
-        },
-        "facts": [
-          {
-            "label": "When",
-            "value": "Home-game Saturdays"
-          },
-          {
-            "label": "Deal",
-            "value": "12-inch deep dish and pitcher of pop $30 (fictional)"
-          }
-        ],
-        "url": "",
-        "attachments": []
-      },
-      {
-        "id": "trivia-fayetteville",
-        "title": "Trivia night: Da Hogs Bowl – Fayetteville",
-        "text": "Teams of up to six. Categories include Chicago, the Ozarks, and whether that was a casserole.",
-        "state": "available",
-        "location_ids": [
-          "fayetteville"
-        ],
-        "meta": {
-          "status": "demo",
-          "reviewed_on": "",
-          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
-        },
         "facts": [
           {
             "label": "When",
             "value": "Wednesdays at 7 pm"
+          },
+          {
+            "label": "Deal",
+            "value": "Sorghum wings half price during trivia (fictional)"
           }
         ],
         "url": "",
-        "attachments": []
-      },
-      {
-        "id": "trivia-bentonville",
-        "title": "Trivia night – Bentonville",
-        "text": "Bring a team and a pencil. The pencil is not fictional; bring your own.",
-        "state": "available",
-        "location_ids": [
-          "bentonville"
-        ],
+        "attachments": [],
         "meta": {
           "status": "demo",
           "reviewed_on": "",
           "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
-        },
+        }
+      },
+      {
+        "id": "lunch-shift",
+        "title": "The Lunch Shift",
+        "text": "A slice of the day, a side Cornbread Caesar, and a sweet tea, back at your desk before anyone notices the cornbread crumbs.",
+        "state": "available",
+        "location_ids": [],
         "facts": [
           {
             "label": "When",
-            "value": "Tuesdays at 7 pm"
+            "value": "Thursdays, 11 am to 3 pm"
+          },
+          {
+            "label": "Deal",
+            "value": "Slice, side Caesar, and tea $11 (fictional)"
           }
         ],
         "url": "",
-        "attachments": []
-      },
-      {
-        "id": "trivia-texarkana",
-        "title": "Two-state trivia – Texarkana",
-        "text": "Every question asked once in Arkansas and once in Texas. Answers accepted from either side.",
-        "state": "available",
-        "location_ids": [
-          "texarkana"
-        ],
+        "attachments": [],
         "meta": {
           "status": "demo",
           "reviewed_on": "",
           "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
-        },
+        }
+      },
+      {
+        "id": "family-pan-friday",
+        "title": "Family Pan Friday",
+        "text": "Two 12-inch deep dish, a Holler Chopped, and a pitcher of pop. Feeds four, or two people with plans for tomorrow.",
+        "state": "available",
+        "location_ids": [],
         "facts": [
           {
             "label": "When",
-            "value": "Thursdays at 7 pm"
+            "value": "Fridays, all day"
+          },
+          {
+            "label": "Deal",
+            "value": "Two 12-inch deep dish, salad, and pop $55 (fictional)"
           }
         ],
         "url": "",
-        "attachments": []
+        "attachments": [],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        }
+      },
+      {
+        "id": "delta-deep-dish-launch",
+        "title": "New in the pan: The Delta Deep Dish",
+        "text": "Cornmeal crust, chili-braised pork, sharp cheddar, and hot tamale sauce, with onions and saltines on the side. The South Side's tamale habit meets the Delta's.",
+        "state": "available",
+        "location_ids": [],
+        "facts": [
+          {
+            "label": "When",
+            "value": "While the tamale sauce holds out"
+          },
+          {
+            "label": "Deal",
+            "value": "12-inch deep dish $28 (fictional)"
+          }
+        ],
+        "url": "",
+        "attachments": [],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        }
+      },
+      {
+        "id": "pig-trail-tavern",
+        "title": "Fan favorite: The Pig Trail, tavern-cut",
+        "text": "Hot soppressata, pickled jalapeño, and sorghum hot honey on cracker-thin crust, cut into squares. Seventeen switchbacks of heat.",
+        "state": "available",
+        "location_ids": [],
+        "facts": [
+          {
+            "label": "When",
+            "value": "Every day"
+          },
+          {
+            "label": "Deal",
+            "value": "12-inch tavern-cut $16 (fictional)"
+          }
+        ],
+        "url": "",
+        "attachments": [],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        }
       }
     ],
     "catering": [
       {
         "id": "tailgate-pans",
         "title": "Tailgate pans",
-        "text": "Half and full pans of deep dish cut into squares, carried to wherever you parked.",
+        "text": "Deep dish baked in sheet pans and cut into squares, so it eats like tavern-cut and travels like a casserole. Don't tell Chicago.",
         "state": "available",
         "location_ids": [],
-        "meta": {
-          "status": "demo",
-          "reviewed_on": "",
-          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
-        },
         "facts": [
           {
             "label": "Half pan",
@@ -1290,11 +1509,92 @@
           },
           {
             "label": "Lead time",
-            "value": "48 hours, or one bye week"
+            "value": "48 hours"
           }
         ],
         "url": "",
-        "attachments": []
+        "attachments": [],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        }
+      },
+      {
+        "id": "supper-club",
+        "title": "The Supper Club",
+        "text": "Two tailgate pans, a tray of Holler Chopped, Lower Wacker garlic bread, and a gallon each of sweet tea and lemonade.",
+        "state": "available",
+        "location_ids": [],
+        "facts": [
+          {
+            "label": "Feeds",
+            "value": "20 to 25 · $210 (fictional)"
+          },
+          {
+            "label": "Lead time",
+            "value": "48 hours"
+          }
+        ],
+        "url": "",
+        "attachments": [],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        }
+      },
+      {
+        "id": "wings-and-things",
+        "title": "Wings & things",
+        "text": "Sorghum wings by the fifty, fried Holler-diniera, Stuttgart arancini, and enough cheese dip to need a ladle.",
+        "state": "available",
+        "location_ids": [],
+        "facts": [
+          {
+            "label": "Fifty wings",
+            "value": "$70 (fictional)"
+          },
+          {
+            "label": "Party tray",
+            "value": "Feeds 15 · $85 (fictional)"
+          },
+          {
+            "label": "Lead time",
+            "value": "48 hours"
+          }
+        ],
+        "url": "",
+        "attachments": [],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        }
+      },
+      {
+        "id": "off-menu",
+        "title": "Off-menu",
+        "text": "Tell us the crowd and the occasion and we'll build the spread. We have done a Chicago dog bar for a retirement party and a cheese-dip fountain for a gender reveal. It was cheddar.",
+        "state": "available",
+        "location_ids": [],
+        "facts": [
+          {
+            "label": "Minimum",
+            "value": "Feeds 25 (fictional)"
+          },
+          {
+            "label": "Lead time",
+            "value": "One week"
+          }
+        ],
+        "url": "",
+        "attachments": [],
+        "meta": {
+          "status": "demo",
+          "reviewed_on": "",
+          "source": "Fictional parody pizzeria, written 2026-11-17; nothing here is real"
+        }
       }
     ],
     "events": [
@@ -2084,7 +2384,25 @@
       "id": "trivia",
       "question": "When is trivia night?",
       "location_ids": [],
-      "answer": "Fayetteville on Wednesdays, Bentonville on Tuesdays, and Texarkana on Thursdays, in both states."
+      "answer": "Wednesdays at 7 pm at every location, with half-price sorghum wings. Texarkana asks every question twice, once in each state."
+    },
+    {
+      "id": "okra-giardiniera",
+      "question": "Why is there okra in the giardiniera?",
+      "location_ids": [],
+      "answer": "Giardiniera is just pickled vegetables that moved to Chicago, and pickled okra is the most Arkansas pickle there is. It stays crisp, carries heat, and has never once been slimy in our care."
+    },
+    {
+      "id": "chocolate-gravy",
+      "question": "What is chocolate gravy?",
+      "location_ids": [],
+      "answer": "An Ozark breakfast: cocoa, sugar, butter, and milk cooked into a pourable gravy and spooned over hot biscuits. We pour it over a skillet brownie, which is the same idea after 5 pm."
+    },
+    {
+      "id": "ketchup",
+      "question": "Can I get ketchup?",
+      "location_ids": [],
+      "answer": "On fries, yes. On anything shaped like a hot dog, we'll need to see two forms of ID."
     }
   ]
 }
